@@ -1,0 +1,34 @@
+metric,value,units,scope,interpretation
+independent_realizations,20,count,all,15 training and 5 held out
+training_switches,316,count,training,complete dominance switches at absolute q equals 0.4
+heldout_switches,108,count,validation,54 in each direction
+heldout_mfpt_lr,34.2073,time,validation,seed bootstrap 95 percent interval 28.9147 to 39.3019
+heldout_mfpt_rl,37.5481,time,validation,seed bootstrap 95 percent interval 31.6156 to 44.1785
+supported_fitting_lag_interval,,time,training,no lag interval passed Gaussianity and diffusion stability together
+near_gaussian_diffusion_ratio,1.80688,ratio,training,no coefficient plateau between lag 0.5 and 1.0
+reference_max_lag,0.5,time,training,first tested near-Gaussian increment scale
+reference_dynamic_barrier,4.09896,dimensionless,training,finite but lag dependent
+histogram_barrier,4.99764,dimensionless,training,confirms occupancy bistability only
+barrier_max_to_min_ratio,1.31975,ratio,training,across tested regression windows
+stationary_js_divergence,0.0301109,dimensionless,validation,reference lag stationary marginal discrepancy
+stationary_flux_relative_rms,0.86658,dimensionless,validation,large zero-current balance residual
+ck_weighted_tv_min,0.002483,dimensionless,training,lag 0.01
+ck_weighted_tv_max,0.1381,dimensionless,training,lag 1.0
+neck_current_rmse_improvement_horizon_0p1,0.3998,fraction,validation,q is not dynamically closed
+neck_current_rmse_improvement_horizon_0p5,0.6857,fraction,validation,q is not dynamically closed
+neck_current_rmse_improvement_horizon_1p0,0.6752,fraction,validation,q is not dynamically closed
+reference_predicted_mfpt_lr,65.8215,time,validation,relative error plus 92.4 percent
+reference_predicted_mfpt_rl,77.4102,time,validation,relative error plus 106.2 percent
+symmetry_constrained_reference_mfpt,70.9923,time,validation,symmetry does not rescue the prediction
+posthoc_lag1_mfpt_lr,33.0167,time,validation,mean matches only after lag selection
+posthoc_lag1_mfpt_rl,35.5034,time,validation,mean matches only after lag selection
+reference_survival_max_error_lr,0.26210,probability,validation,full FPT distribution fails
+reference_survival_max_error_rl,0.26582,probability,validation,full FPT distribution fails
+posthoc_lag1_survival_max_error_lr,0.37466,probability,validation,worse despite matched mean
+posthoc_lag1_survival_max_error_rl,0.34431,probability,validation,worse despite matched mean
+post_transient_cluster_events,689,count,all,archived aggregated event definition
+mean_absolute_cluster_mark,62.4775,fish,all,aggregated cluster mark not native step size
+median_absolute_cluster_mark,78,fish,all,aggregated cluster mark
+mean_nonzero_native_abs_delta_q,0.0201373,dimensionless,all,approximately one fish per nonzero native step
+max_nonzero_native_abs_delta_q,0.06,dimensionless,all,three fish in one native step
+event_wait_lag1_correlation,0.110734,correlation,all,weak interval-to-interval correlation

@@ -1,0 +1,38 @@
+{
+  "analysis": {
+    "burn_in_time": 200.0,
+    "dominance_threshold_abs_q": 0.4,
+    "feature_stride_native_steps": 10,
+    "primary_coordinate": "q=(N_R-N_L)/N",
+    "q_state_spacing": 0.02,
+    "reference_regression_max_lag": 0.5,
+    "regression_max_lags": [0.01, 0.02, 0.05, 0.1, 0.2, 0.5, 1.0],
+    "smoothing_lengths": [0.25, 0.5, 1.0],
+    "test_seeds": [15, 16, 17, 18, 19],
+    "train_seeds": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+  },
+  "data_policy": {
+    "feature_caches_committed": false,
+    "processed_mat_files_committed": false,
+    "raw_mat_files_committed": false
+  },
+  "geometry_warning": {
+    "archive_label": "R50/gap50",
+    "gap_over_diameter": 0.5,
+    "gap_over_radius": 1.0,
+    "literal_gap_over_radius_0p5_dataset_available": false
+  },
+  "simulation": {
+    "If": 0.01,
+    "In": 0.5,
+    "Ip": 4.0,
+    "Iw": 0.94,
+    "N": 100,
+    "chamber_radius_physical": 7.158910531638177,
+    "duration": 1000.0,
+    "gap_physical": 7.158910531638177,
+    "hydrodynamics": "direct plus BEM boundary-mediated, source verified",
+    "independent_realizations": 20,
+    "time_step": 0.001
+  }
+}
