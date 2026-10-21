@@ -1,0 +1,21 @@
+{
+  "analysis": {
+    "burn_in_time": 200.0,
+    "dominance_threshold": 0.4,
+    "feature_dt": 0.01,
+    "kernel_conditional_current_bins": 3,
+    "kernel_lags": [0.1, 0.2, 0.5, 1.0],
+    "kernel_minimum_test_row_support": 200,
+    "kernel_minimum_training_row_support": 500,
+    "prediction_conditional_current_bins": 15,
+    "primary_smoothing_length": 0.5,
+    "test_seeds": [15, 16, 17, 18, 19],
+    "train_seeds": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+  },
+  "geometry": {
+    "archive_label": "R50/gap50",
+    "gap_over_diameter": 0.5,
+    "gap_over_radius": 1.0
+  },
+  "output_classification": "B. Partially successful closure"
+}
