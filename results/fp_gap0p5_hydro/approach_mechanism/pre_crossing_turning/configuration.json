@@ -1,0 +1,30 @@
+{
+  "lags": [
+    -2.0,
+    -1.0,
+    -0.2
+  ],
+  "leading_edge_fish": 10,
+  "seeds": [
+    15,
+    16,
+    17,
+    18,
+    19
+  ],
+  "selection": "two within-seed success/failure/control triplets; match chamber, y center, vertical COM velocity, front distance, x/y extent; never heading; exclude end-censored episodes",
+  "parameters": {
+    "R": 7.158910531638177,
+    "gap": 7.158910531638177,
+    "tip_r": 0.5,
+    "smooth_r": 0.5,
+    "Ip": 4.0,
+    "In": 0.5,
+    "Iw": 0.94,
+    "If": 0.01,
+    "delta": 0.01,
+    "dt": 0.001,
+    "safedis": -0.1,
+    "high_order": 6
+  }
+}

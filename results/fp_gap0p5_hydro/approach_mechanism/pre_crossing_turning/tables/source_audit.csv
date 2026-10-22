@@ -1,0 +1,8 @@
+component,simulator_source_lines,replay_function,verification
+visibility and social torque,"852-963",social_terms,"Delaunay neighbors; straight-wall and rounded-tip occlusion; alignment and attraction sum to GetVision"
+direct hydrodynamics,"966-1005",direct_hydrodynamics,"same complex dipole velocity and angular-rate formulas"
+boundary hydrodynamics,"1008-1059",boundary_hydrodynamics,"saved boundary nodes normals weights and LU solve"
+wall avoidance,"686-849;1227-1246",wall_avoidance,"same outer circle divider rounded tips smoothing arcs forward-ray rule and clipping"
+angular noise,"1219-1224",replay_snapshot,"observed increment minus deterministic update divided by In*sqrt(dt)"
+assembled update and overrides,"1320-1391",replay_snapshot,"same sum clipping wall-jump and speed override; zero overrides in analyzed snapshots"
+parameters,"raw MAT para;1450-1467",Parameters,"R=gap=7.158910531638177 Ip=4 In=0.5 Iw=0.94 If=0.01 dt=0.001 N=100"
