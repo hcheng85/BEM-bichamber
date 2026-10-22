@@ -1,0 +1,8 @@
+component,function,source_lines,divider_behavior,role
+social_neighbor_graph,GetVoronoi and CheckVoronoi,852-916,"Delaunay edges crossing solid segments or rounded tips are removed; line of sight through the opening remains possible",Defines eligible attraction and alignment neighbors
+social_turning,GetVision,931-963,Uses only retained visible neighbors,"Ip*sin heading difference is alignment; distance*sin bearing is attraction"
+direct_hydrodynamics,GetHydro,966-1005,Sums every other fish without an occlusion mask,Direct dipolar translation and turning
+boundary_hydrodynamics,GetHydroBEM,1008-1059,All fish force a single global BEM boundary solve,Boundary-mediated translation and turning
+angular_noise,GetNoise,1219-1224,Independent of divider,Adds In*sqrt(dt)*normal noise to heading
+wall_turning,GetWallAvoid,1227-1246,Uses forward wall intersection and a near-wall correction,Turns away from predicted collision
+assembled_dynamics,step_Computation,1322-1372,"Explicit attraction-to-point term is commented out",No direct target force toward divider or opening

@@ -1,0 +1,74 @@
+[
+  {
+    "episode": "successful recruitment",
+    "seed": 1,
+    "origin": "left",
+    "first_cross_time": 224.79,
+    "relative_time": -10.0,
+    "raw_index": 214790,
+    "opposite_fish": 0
+  },
+  {
+    "episode": "successful recruitment",
+    "seed": 1,
+    "origin": "left",
+    "first_cross_time": 224.79,
+    "relative_time": -2.0,
+    "raw_index": 222790,
+    "opposite_fish": 0
+  },
+  {
+    "episode": "successful recruitment",
+    "seed": 1,
+    "origin": "left",
+    "first_cross_time": 224.79,
+    "relative_time": 0.0,
+    "raw_index": 224790,
+    "opposite_fish": 1
+  },
+  {
+    "episode": "successful recruitment",
+    "seed": 1,
+    "origin": "left",
+    "first_cross_time": 224.79,
+    "relative_time": 2.0,
+    "raw_index": 226790,
+    "opposite_fish": 5
+  },
+  {
+    "episode": "failed nucleation",
+    "seed": 1,
+    "origin": "left",
+    "first_cross_time": 989.5600000000001,
+    "relative_time": -10.0,
+    "raw_index": 979560,
+    "opposite_fish": 0
+  },
+  {
+    "episode": "failed nucleation",
+    "seed": 1,
+    "origin": "left",
+    "first_cross_time": 989.5600000000001,
+    "relative_time": -2.0,
+    "raw_index": 987560,
+    "opposite_fish": 0
+  },
+  {
+    "episode": "failed nucleation",
+    "seed": 1,
+    "origin": "left",
+    "first_cross_time": 989.5600000000001,
+    "relative_time": 0.0,
+    "raw_index": 989560,
+    "opposite_fish": 1
+  },
+  {
+    "episode": "failed nucleation",
+    "seed": 1,
+    "origin": "left",
+    "first_cross_time": 989.5600000000001,
+    "relative_time": 2.0,
+    "raw_index": 991560,
+    "opposite_fish": 7
+  }
+]

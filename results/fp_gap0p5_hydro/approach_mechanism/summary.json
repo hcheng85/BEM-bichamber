@@ -1,0 +1,86 @@
+{
+  "cycle_crossing_next": 92,
+  "cycle_delta_d_not_success_mean": 0.13355797049717164,
+  "cycle_delta_d_success_mean": 0.3384911148584564,
+  "cycle_pairs": 103,
+  "definitions": {
+    "burn_time": 200.0,
+    "first_crossing": "first opposite-side fish after N_origin=100",
+    "success": "N_opposite reaches 70 before returning to zero"
+  },
+  "geometry": {
+    "R": 7.158910531638177,
+    "gap": 7.158910531638177,
+    "gap_over_2R": 0.5,
+    "gap_over_R": 1.0
+  },
+  "heldout": {
+    "episodes": 124,
+    "failed": 38,
+    "failure_admissible_at_cross_fraction": 0.02631578947368421,
+    "failure_admissible_pre10_fraction": 0.5,
+    "failure_median_center_distance_at_cross": 1.607913560353894,
+    "failure_median_front_distance_at_cross": 0.0032421201004717466,
+    "failure_pre10_inward_fraction": 0.75,
+    "failure_pre_d_slope_mean": -0.09257896932436299,
+    "median_failed_excursion_duration": 2.685,
+    "median_success_time_first_to_five": 0.45,
+    "median_success_time_five_to_commit": 3.49,
+    "success_admissible_at_cross_fraction": 0.5581395348837209,
+    "success_admissible_pre10_fraction": 0.6575342465753424,
+    "success_fraction": 0.6935483870967742,
+    "success_median_center_distance_at_cross": 2.3352507602902053,
+    "success_median_front_distance_at_cross": 0.00571833523005464,
+    "success_pre10_inward_fraction": 0.3013698630136986,
+    "success_pre_d_slope_mean": 0.06907722629528416,
+    "successful": 86
+  },
+  "matched_pairs": 33,
+  "median_period_cv": 0.04217827692344645,
+  "seed_clustered_admissible_at_cross_difference": {
+    "ci_high": 0.5214405693918056,
+    "ci_low": 0.3705308805908293,
+    "difference_success_minus_failure": 0.4507338567491347
+  },
+  "seed_clustered_cospsi_at_cross_difference": {
+    "ci_high": 0.4821003467843123,
+    "ci_low": 0.3034201753829014,
+    "difference_success_minus_failure": 0.3903346205760374
+  },
+  "seed_clustered_cycle_delta_d_difference": {
+    "ci_high": 0.815905536799206,
+    "ci_low": -0.10093689221154185,
+    "difference_success_minus_failure": 0.3600035873654301
+  },
+  "seed_clustered_pre_d_slope_difference": {
+    "ci_high": 0.23843664578086218,
+    "ci_low": 0.14285772556776583,
+    "difference_success_minus_failure": 0.19070661818142193
+  },
+  "seed_clustered_xstd_at_cross_difference": {
+    "ci_high": 0.1336697267761235,
+    "ci_low": 0.05168343865524589,
+    "difference_success_minus_failure": 0.09400716489437444
+  },
+  "train": {
+    "episodes": 388,
+    "failed": 121,
+    "failure_admissible_at_cross_fraction": 0.06611570247933884,
+    "failure_admissible_pre10_fraction": 0.5066666666666667,
+    "failure_median_center_distance_at_cross": 1.623991332131152,
+    "failure_median_front_distance_at_cross": 0.002754439400560411,
+    "failure_pre10_inward_fraction": 0.7733333333333333,
+    "failure_pre_d_slope_mean": -0.1288750316588605,
+    "median_failed_excursion_duration": 2.6,
+    "median_success_time_first_to_five": 0.5,
+    "median_success_time_five_to_commit": 3.4400000000000004,
+    "success_admissible_at_cross_fraction": 0.5093632958801498,
+    "success_admissible_pre10_fraction": 0.6822429906542056,
+    "success_fraction": 0.6881443298969072,
+    "success_median_center_distance_at_cross": 2.2053280284860444,
+    "success_median_front_distance_at_cross": 0.005096972481279239,
+    "success_pre10_inward_fraction": 0.3411214953271028,
+    "success_pre_d_slope_mean": 0.0649084943696285,
+    "successful": 267
+  }
+}

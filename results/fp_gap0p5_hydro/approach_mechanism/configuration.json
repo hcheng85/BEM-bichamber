@@ -1,0 +1,22 @@
+{
+  "analysis_dt": 0.01,
+  "burn_time": 200.0,
+  "commit_count": 70,
+  "dataset": "R50/gap50 full hydrodynamic BEM",
+  "feature_stride_native_steps": 10,
+  "gap": 7.158910531638177,
+  "gap_over_2R": 0.5,
+  "gap_over_R": 1.0,
+  "heldout_seeds": [15, 16, 17, 18, 19],
+  "native_dt": 0.001,
+  "new_simulations": false,
+  "population": 100,
+  "radius": 7.158910531638177,
+  "source_sha256": {
+    "BEM_bichamber_parallel_instance.py": "f0c841dce2c1ba735ca6784889c0374095879f12760ffcd5ba591ac5fa38edba",
+    "BEM_geometry_R50_wid50.mat": "625839304da4fff77c4843d48ecd4aff329255b45fa91126c8b1dbd5f75e7bcb",
+    "lu_R_50_wid_50.npy": "919e3f8a48d204d6cad4019de45617ca95d0526da984ae9c70df294e6bb92cf1",
+    "piv_R_50_wid_50.npy": "7a18affc8194289ce0194816af37eb52f2e46680a7515dfc34d7f2ca2d48b253"
+  },
+  "training_seeds": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+}
