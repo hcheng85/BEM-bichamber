@@ -1,0 +1,22 @@
+{
+  "source_commit": "4259ba7",
+  "n_seeds": 20,
+  "n_pairs": 456,
+  "n_leading": 10,
+  "dt": 0.001,
+  "replay_stride": 5,
+  "replay_dt": 0.005,
+  "noise_reconstruction": "RandomState(seed), 300 initialization uniforms, then 100 normals/step",
+  "rng_discontinuity_steps": {
+    "10": 600000,
+    "11": 600000,
+    "13": 600000,
+    "15": 600000,
+    "17": 600000,
+    "19": 600000
+  },
+  "risk_set": "results/fp_gap0p5_hydro/approach_mechanism/reorientation_translation/tables/distance_matched_risk_set.csv",
+  "raw_dir": "/Volumes/storage2/BEM_bichamber/archive_one_R_60/BEM_data",
+  "potential_fitted": false,
+  "new_simulation": false
+}
