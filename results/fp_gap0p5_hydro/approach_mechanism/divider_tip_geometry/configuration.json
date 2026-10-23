@@ -1,0 +1,56 @@
+{
+  "source_branch": "analysis/social-alignment-angular-landscape",
+  "source_commit": "e8fef2091dc949e72dcb7bd5bf453f925b32d8ff",
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+  ],
+  "offsets": [
+    0.0,
+    1.5,
+    1.8
+  ],
+  "epsilons": [
+    0.001,
+    0.005
+  ],
+  "focal_selection": "closest fish still in origin chamber at observation time",
+  "no_fitted_coefficients": true,
+  "new_simulations": false,
+  "parameters": {
+    "R": 7.158910531638177,
+    "gap": 7.158910531638177,
+    "tip_r": 0.5,
+    "smooth_r": 0.5,
+    "Ip": 4.0,
+    "In": 0.5,
+    "Iw": 0.94,
+    "If": 0.01,
+    "delta": 0.01,
+    "dt": 0.001,
+    "safedis": -0.1,
+    "high_order": 6
+  },
+  "raw_dir": "/Volumes/storage2/BEM_bichamber/archive_one_R_60/BEM_data",
+  "risk_set": "results/fp_gap0p5_hydro/approach_mechanism/reorientation_translation/tables/distance_matched_risk_set.csv",
+  "production_source": "../BEM_bichamber_parallel_instance.py",
+  "exact_replay_source": "pre_crossing_turning/scripts/replay_dynamics.py"
+}
