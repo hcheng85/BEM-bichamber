@@ -72,7 +72,8 @@ def outcomes(state, idx, fish, origin, p, horizon):
     return int(np.any(inside)), int(focal_cross), int(any_cross)
 
 
-def evaluate_snapshot(state, idx, focal, meta, boundary, lu, piv, p, geom):
+def evaluate_snapshot(state, idx, focal, meta, boundary, lu, piv, p, geom,
+                      counterfactual_gate_velocity=False):
     origin = meta["origin"]
     side = chamber_side(origin)
     velocity = (state[:2, :, idx+1]-state[:2, :, idx])/DT
@@ -137,9 +138,19 @@ def evaluate_snapshot(state, idx, focal, meta, boundary, lu, piv, p, geom):
                 trial_global = local_to_global(trial_local, side)
                 rep = focal_replay(state[:, :, idx], focal, trial_global,
                                    visible, bem, geom, p)
+                # The reduced boundary q=theta-alpha moves with the same
+                # counterfactual trial translation as theta.  This must not use
+                # the observed trajectory velocity.  focal_replay has already
+                # applied the production collision/velocity override to rdot.
+                trial_gate = tangent_geometry(state[:2, focal, idx], rep["rdot"], origin, p)
+                trial_alpha_dot = (trial_gate["alpha_plus_dot"] if tip == "upper"
+                                   else trial_gate["alpha_minus_dot"])
+                alpha_dot_used = trial_alpha_dot if counterfactual_gate_velocity else alpha_dot
                 local_rate = side*rep["total"]
-                mu = local_rate-alpha_dot if tip == "upper" else alpha_dot-local_rate
-                evaluated[label] = (mu, rep, trial_local, trial_global)
+                mu = (local_rate-alpha_dot_used if tip == "upper"
+                      else alpha_dot_used-local_rate)
+                evaluated[label] = (mu, rep, trial_local, trial_global,
+                                    trial_alpha_dot, alpha_dot_used)
             mu_out, out_rep = evaluated["out"][0], evaluated["out"][1]
             mu_in, in_rep = evaluated["in"][0], evaluated["in"][1]
             row = dict(base, tip=tip, epsilon=eps, initial_q=float(initial_q),
@@ -152,6 +163,11 @@ def evaluate_snapshot(state, idx, focal, meta, boundary, lu, piv, p, geom):
                        out_ray_distance=out_rep["hit"]["distance"],
                        in_ray_distance=in_rep["hit"]["distance"],
                        out_override=int(out_rep["override"]), in_override=int(in_rep["override"]),
+                       out_counterfactual_alpha_dot=evaluated["out"][4],
+                       in_counterfactual_alpha_dot=evaluated["in"][4],
+                       out_alpha_dot_used=evaluated["out"][5],
+                       in_alpha_dot_used=evaluated["in"][5],
+                       counterfactual_gate_velocity=int(counterfactual_gate_velocity),
                        out_total_raw=out_rep["total_raw"], in_total_raw=in_rep["total_raw"])
             for side_name, rep in (("out", out_rep), ("in", in_rep)):
                 for term, value in rep["terms"].items():
@@ -161,7 +177,8 @@ def evaluate_snapshot(state, idx, focal, meta, boundary, lu, piv, p, geom):
     return rows
 
 
-def analyze_seed(seed, risk_rows, raw, boundary, lu, piv, p, geom, offsets):
+def analyze_seed(seed, risk_rows, raw, boundary, lu, piv, p, geom, offsets,
+                 counterfactual_gate_velocity=False):
     started = time.time()
     print(f"seed {seed}: loading {raw.name}", flush=True)
     state = np.asarray(sio.loadmat(raw, variable_names=["state"], squeeze_me=True)["state"])
@@ -176,7 +193,8 @@ def analyze_seed(seed, risk_rows, raw, boundary, lu, piv, p, geom, offsets):
             eligible = np.flatnonzero(d > 0)
             focal = int(eligible[np.argmin(d[eligible])])
             meta = dict(rr, seed=seed, offset=offset)
-            snaprows = evaluate_snapshot(state, idx, focal, meta, boundary, lu, piv, p, geom)
+            snaprows = evaluate_snapshot(state, idx, focal, meta, boundary, lu, piv, p, geom,
+                                         counterfactual_gate_velocity)
             rows.extend(snaprows)
             velocity = (state[:2, focal, idx+1]-state[:2, focal, idx])/DT
             gate = tangent_geometry(state[:2, focal, idx], velocity, rr["origin"], p)
@@ -259,9 +277,12 @@ def main():
     ap.add_argument("--seeds", type=int, nargs="*", default=list(range(20)))
     ap.add_argument("--offsets", type=float, nargs="*", default=list(OFFSETS))
     ap.add_argument("--force", action="store_true")
+    ap.add_argument("--counterfactual-gate-velocity", action="store_true",
+                    help="use each trial heading's replayed rdot in tangent-angle velocity")
     args = ap.parse_args()
     out = args.out.resolve()
-    (out/"tables"/"by_seed").mkdir(parents=True, exist_ok=True)
+    checkpoint_name = ("corrected_by_seed" if args.counterfactual_gate_velocity else "by_seed")
+    (out/"tables"/checkpoint_name).mkdir(parents=True, exist_ok=True)
     p = Parameters()
     geom = analytic_geometry(p)
     g = sio.loadmat(args.geometry)
@@ -274,8 +295,8 @@ def main():
     risk = read_csv(args.risk_set)
     all_rows, all_candidates = [], []
     for seed in args.seeds:
-        target = out/"tables"/"by_seed"/f"seed_{seed:02d}.csv"
-        ctarget = out/"tables"/"by_seed"/f"seed_{seed:02d}_geometry.csv"
+        target = out/"tables"/checkpoint_name/f"seed_{seed:02d}.csv"
+        ctarget = out/"tables"/checkpoint_name/f"seed_{seed:02d}_geometry.csv"
         if target.exists() and ctarget.exists() and not args.force:
             rows = read_csv(target)
             candidates = read_csv(ctarget)
@@ -284,17 +305,20 @@ def main():
             seedrisk = [r for r in risk if int(r["seed"]) == seed]
             raw = args.raw_dir/f"If1e-02_Ip40_In05_R50_num100_wid50_n{seed}_BEM.mat"
             rows, candidates = analyze_seed(seed, seedrisk, raw, boundary, lu, piv, p, geom,
-                                            tuple(args.offsets))
+                                            tuple(args.offsets), args.counterfactual_gate_velocity)
             write_csv(target, rows)
             write_csv(ctarget, candidates)
         all_rows.extend(rows)
         all_candidates.extend(candidates)
-    write_csv(out/"tables"/"tangent_snapshot_replay.csv", all_rows)
-    write_csv(out/"tables"/"geometry_candidates.csv", all_candidates)
-    ident = planar_identity(p, geom)
-    write_csv(out/"tables"/"planar_wall_identity.csv", ident)
-    sweeps = tangent_sweeps(all_candidates, geom, p)
-    write_csv(out/"tables"/"ray_branch_sweeps.csv", sweeps)
+    table_name = ("tangent_snapshot_replay_corrected.csv" if args.counterfactual_gate_velocity
+                  else "tangent_snapshot_replay.csv")
+    write_csv(out/"tables"/table_name, all_rows)
+    if not args.counterfactual_gate_velocity:
+        write_csv(out/"tables"/"geometry_candidates.csv", all_candidates)
+        ident = planar_identity(p, geom)
+        write_csv(out/"tables"/"planar_wall_identity.csv", ident)
+        sweeps = tangent_sweeps(all_candidates, geom, p)
+        write_csv(out/"tables"/"ray_branch_sweeps.csv", sweeps)
     config = dict(source_branch="analysis/social-alignment-angular-landscape",
                   source_commit="e8fef2091dc949e72dcb7bd5bf453f925b32d8ff",
                   seeds=args.seeds, offsets=args.offsets, epsilons=list(EPSILONS),
@@ -303,7 +327,12 @@ def main():
                   parameters=p.__dict__, raw_dir=str(args.raw_dir), risk_set=str(args.risk_set),
                   production_source="../BEM_bichamber_parallel_instance.py",
                   exact_replay_source="pre_crossing_turning/scripts/replay_dynamics.py")
-    (out/"configuration.json").write_text(json.dumps(config, indent=2)+"\n")
+    config["counterfactual_gate_velocity"] = args.counterfactual_gate_velocity
+    if args.counterfactual_gate_velocity:
+        config["correction_parent_commit"] = "ebe27c878831cd762af47f72fadaaf03e5fef844"
+    config_name = ("correction_configuration.json" if args.counterfactual_gate_velocity
+                   else "configuration.json")
+    (out/config_name).write_text(json.dumps(config, indent=2)+"\n")
 
 
 if __name__ == "__main__":

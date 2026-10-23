@@ -1,0 +1,12 @@
+metric,value
+valid_trial_sides_all_eps,20048
+collision_or_speed_override_activations,0
+production_override_translation_rule,rdot=e when override is active
+production_override_angular_rule,remove direct and BEM hydro torque
+epsilon_1e3_class_changes,99
+epsilon_1e3_valid_evaluations,5012
+old_pinning_count,80
+corrected_pinning_count,96
+alpha_dot_change_median,0.005857413280879249
+alpha_dot_change_abs_q95,1.0756607030121437
+alpha_dot_change_abs_max,3.0353202601289357
