@@ -1,0 +1,8 @@
+quantity,definition,source_or_check
+psi,wrapped collective heading minus direction from COM to opening,"left/right reflected to common inward-positive-x convention"
+Lambda,sqrt(C_xx)/abs(x_center),population covariance of saved fish positions
+ell,"mean_j ((r_j-r_c) cross rdot_j)/(norm(r_j-r_c) norm(rdot_j))","saved full rdot; Huang et al. Eq. 2 / Filella et al. convention"
+M,abs(ell),magnitude of signed school-mean normalized angular momentum
+aspect_ratio,sqrt(largest covariance eigenvalue/smallest covariance eigenvalue),conventional geometric aspect ratio
+angular_replay,"wall + alignment + attraction + direct hydro + BEM hydro","same validated replay as pre_crossing_turning; normalized residual mean 0.0019 and SD 0.996"
+Lambda_replay,"analytic derivative from self + direct hydro + BEM translational velocities",instantaneous Euler position dynamics

@@ -1,0 +1,22 @@
+metric,value,detail
+n_nucleation_control_pairs,456,20 independent seeds
+phase_match_median_chord_distance,0.0015534687348248927,
+phase_match_p99_chord_distance,0.01087186025238251,
+heldout_auc_psi_Lambda_lead2,0.689148608067527,seeds 15-19; trained on 0-14
+heldout_auc_angular_momentum_lead2,0.6815193571950329,seeds 15-19; trained on 0-14
+heldout_auc_aspect_ratio_lead2,0.42537131726320915,seeds 15-19; trained on 0-14
+heldout_auc_psi_Lambda_lead1,0.7678759840922003,seeds 15-19; trained on 0-14
+heldout_auc_angular_momentum_lead1,0.6814381949517084,seeds 15-19; trained on 0-14
+heldout_auc_aspect_ratio_lead1,0.6476747017287557,seeds 15-19; trained on 0-14
+event_minus_control_cos_psi_lead2,0.2897037462258078,95% seed bootstrap 0.25763739899319565 to 0.3228763518602466
+event_minus_control_Lambda_lead2,0.012530530633064817,95% seed bootstrap -0.001312674973394421 to 0.02663182486389658
+event_minus_control_cos_psi_lead1,0.2979530277717124,95% seed bootstrap 0.2541005395240786 to 0.3408194274392812
+event_minus_control_Lambda_lead1,0.0643092180737422,95% seed bootstrap 0.051809465866475016 to 0.07695097000990136
+history_rmse_reduction_dpsi_next,0.09074083752413975,held-out seeds
+phase_history_rmse_reduction_dpsi_next,0.11519136026320054,held-out seeds
+history_rmse_reduction_dLambda_next,0.755955699005153,held-out seeds
+phase_history_rmse_reduction_dLambda_next,0.7558893584242862,held-out seeds
+replay_snapshots,80,
+replay_noise_z_mean,-0.0045067766308235085,
+replay_noise_z_sd,0.9955656603506144,
+replay_overrides,0,

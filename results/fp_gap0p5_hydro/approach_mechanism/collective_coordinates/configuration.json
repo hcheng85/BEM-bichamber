@@ -1,0 +1,55 @@
+{
+  "dataset": "20 existing gap-50 full-BEM hydrodynamic trajectories",
+  "new_simulations": false,
+  "leads": [
+    -2.0,
+    -1.0
+  ],
+  "training_seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+  ],
+  "heldout_seeds": [
+    15,
+    16,
+    17,
+    18,
+    19
+  ],
+  "control_matching": "within seed and origin chamber; nearest vertical phase at A-2; no heading, extension, angular momentum, aspect ratio, or outcome matching",
+  "coordinate_definitions": {
+    "psi": "wrapped reflected collective heading minus COM-to-opening direction",
+    "Lambda": "sqrt(C_xx)/abs(x_center)",
+    "ell": "Filella signed normalized angular momentum using saved full rdot after chamber reflection",
+    "M": "abs(ell)",
+    "A": "sqrt(largest covariance eigenvalue/smallest covariance eigenvalue)"
+  },
+  "replay": "one temporally central event-control pair per seed at leads 2 and 1; 80 snapshots total",
+  "parameters": {
+    "R": 7.158910531638177,
+    "gap": 7.158910531638177,
+    "tip_r": 0.5,
+    "smooth_r": 0.5,
+    "Ip": 4.0,
+    "In": 0.5,
+    "Iw": 0.94,
+    "If": 0.01,
+    "delta": 0.01,
+    "dt": 0.001,
+    "safedis": -0.1,
+    "high_order": 6
+  }
+}
