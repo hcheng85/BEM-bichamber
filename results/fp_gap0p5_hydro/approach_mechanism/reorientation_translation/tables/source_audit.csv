@@ -1,0 +1,6 @@
+component,source_or_validation,result
+archived coordinates,collective_coordinates/tables/coordinate_samples.csv,"456 event/control pairs at leads 2 and 1"
+direct dipolar velocity,original GetHydro equation and previous replay,"maximum x-component discrepancy over three audited snapshots 3.33e-16"
+saved update indexing,simulator writes rDotList[:,:,count] after advancing state,"native integrated center residual order 1e-17"
+override accounting,"zero saved rdot is freeze; saved rdot equal heading is self-only","freeze fraction about 0.08%-0.67% by seed; self-only fraction below 5e-7"
+self-propelled identity,"mean cos(theta)=P cos(psi+alpha_gap)",exact algebraic identity

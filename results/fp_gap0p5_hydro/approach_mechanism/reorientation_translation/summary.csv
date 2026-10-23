@@ -1,0 +1,18 @@
+metric,value,note
+lead1_delta_log_Lambda,0.24702420813373238,95% seed CI 0.2066018823317341 to 0.28762541032117356
+lead1_delta_log_sigma_perp,0.03832570572846859,95% seed CI 0.008893860037190253 to 0.06927273489274126
+lead1_minus_delta_log_distance,0.2086985024052638,95% seed CI 0.16887946122153605 to 0.2498099725920166
+lead1_distance_fraction,0.8448504054804213,
+lead1_auc_psi,0.7417417417417418,held-out seeds 15-19
+lead1_auc_psi_Lambda,0.7678759840922003,held-out seeds 15-19
+lead1_auc_psi_distance,0.8053729405080756,held-out seeds 15-19
+lead1_auc_psi_sigma_perp,0.7390633877120364,held-out seeds 15-19
+lead1_auc_psi_distance_sigma_perp,0.8052106160214269,held-out seeds 15-19
+segment_event_minus_control_actual_delta_distance,-0.3237791422566045,95% seed CI -0.351928867576577 to -0.2950495413767441
+segment_event_minus_control_self_propulsion_delta_distance,-0.2611533068897649,95% seed CI -0.28486833320681354 to -0.2367880530714561
+segment_event_minus_control_direct_hydro_delta_distance,-0.06835299485838804,95% seed CI -0.07410628700222709 to -0.0627010205047732
+segment_event_minus_control_boundary_hydro_effective_delta_distance,0.005727159491548393,95% seed CI 0.004443443020802482 to 0.007006741258244394
+segment_event_minus_control_actual_delta_sigma_perp,0.05969003173545952,95% seed CI 0.04502358310077322 to 0.07349669081800053
+distance_matched_heading_mean_seed_auc,0.5355035537005131,95% seed CI 0.5314659863945578 to 0.5385124716553288
+distance_matched_cos_psi_event_minus_control,0.05989507371188716,95% seed CI 0.046553978548684774 to 0.07440796491867264
+distance_matched_distance_event_minus_control,-0.009011207451241201,95% seed CI -0.010527603327856423 to -0.007491751928175366

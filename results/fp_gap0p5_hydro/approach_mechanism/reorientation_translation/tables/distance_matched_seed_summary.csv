@@ -1,0 +1,2 @@
+mean_seed_auc,seed_bootstrap_ci_low,seed_bootstrap_ci_high,heldout_seeds
+0.5355035537005131,0.5314659863945578,0.5385124716553288,5
