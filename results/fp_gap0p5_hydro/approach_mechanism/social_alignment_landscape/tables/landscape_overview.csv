@@ -1,0 +1,9 @@
+metric,value,seed_ci_low,seed_ci_high,n
+harmonic_max_abs_error_max,4.7073456244106644e-14,,,9120
+has_stable_orientation_fraction,0.9961622807017544,,,9120
+stable_orientation_in_gate_fraction,0.17598684210526316,,,9120
+outside_gate_genuine_barrier_fraction,0.6066543924250395,,,7604
+outside_gate_median_barrier_height,0.0749392116633839,,,7571
+median_absolute_cycle_tilt,1.201921751760159,,,9120
+median_gate_entry_time_seed_mean,0.438875,0.39535,0.48097562499999996,5630
+pooled_median_alignment_reorientation_time,0.5388562263199135,,,4834
