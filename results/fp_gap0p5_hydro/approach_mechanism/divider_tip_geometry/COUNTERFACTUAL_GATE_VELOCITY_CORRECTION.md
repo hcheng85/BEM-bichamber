@@ -156,6 +156,7 @@ Corrected outputs are additive:
 - `tables/gate_velocity_association_comparison.csv`;
 - `tables/counterfactual_gate_velocity_audit.csv`.
 
-The extraction correction is implemented by
-`scripts/analyze_tip_mechanism.py --counterfactual-gate-velocity`; comparison
-tables are produced by `scripts/summarize_gate_velocity_correction.py`.
+The extraction correction is now the default in
+`scripts/analyze_tip_mechanism.py`; the former behavior requires the explicit
+`--legacy-observed-gate-velocity` flag. Comparison tables are produced by
+`scripts/summarize_gate_velocity_correction.py`.

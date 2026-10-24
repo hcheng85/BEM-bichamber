@@ -1,0 +1,8 @@
+metric,value
+n_prospective_snapshots,2736
+n_valid_tip_evaluations,5012
+pinning_frequency,0.01596169193934557
+epsilon_class_agreement,0.9963450292397661
+planar_identity_max_abs_error,1.5831715193259654e-06
+closed_or_invalid_tip_evaluations,460
+unique_Iw_values,1

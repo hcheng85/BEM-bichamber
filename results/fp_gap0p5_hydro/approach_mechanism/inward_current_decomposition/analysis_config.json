@@ -1,0 +1,19 @@
+{
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "replay_stride": 1,
+  "native_dt": 0.001,
+  "interval": "risk time A-2 through A-1",
+  "pair_selection": "minimum distance-match cost per seed, no outcome features",
+  "geometry_convention": "archived gap=R; gap/R=1; gap/(2R)=0.5",
+  "fitted_coefficients": false,
+  "new_simulations": false
+}

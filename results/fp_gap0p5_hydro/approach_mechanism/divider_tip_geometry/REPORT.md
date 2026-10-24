@@ -4,9 +4,9 @@
 
 This analysis tested whether the exact forward-ray wall rule creates a robust
 one-sided angular pin or transmission mechanism at the rounded bichamber tips.
-It used the existing 20 gap/R = 0.5 full-BEM trajectories, with no new
-simulation, fitted potential, logistic surrogate, or empirical physics
-coefficient.
+It used the existing 20 full-BEM trajectories for the archived geometry
+\(gap=R\), hence \(gap/R=1\) and \(gap/(2R)=0.5\), with no new simulation,
+fitted potential, logistic surrogate, or empirical physics coefficient.
 
 The result is **partial and bounded**:
 
@@ -18,7 +18,7 @@ The result is **partial and bounded**:
    pin.** Just outside either tangent, the rounded-tip wall torque points into
    the corridor and is stronger than the far-wall torque just inside. In the
    full deterministic angular rate, however, stable pinning occurs in only
-   1.60% of valid evaluations. Social and hydrodynamic dynamics usually make
+   1.92% of valid evaluations. Social and hydrodynamic dynamics usually make
    both one-sided rates have the same sign.
 3. **Predictive of chamber crossing: not independently established.** The
    transmission/pinning label predicts future angular entry, but spatial
@@ -30,6 +30,9 @@ The result is **partial and bounded**:
 Accordingly, the proposed mechanism is useful as an exact **instantaneous
 angular boundary condition**, but not as a closed reaction coordinate or a
 static angular barrier. No effective potential is justified by these results.
+All primary numbers below use the counterfactual trial-heading translation
+when evaluating tangent velocity. Earlier observed-velocity tables remain as
+explicit legacy comparisons; see `COUNTERFACTUAL_GATE_VELOCITY_CORRECTION.md`.
 
 ## Exact simulator audit
 
@@ -156,14 +159,15 @@ At \(\epsilon=10^{-3}\), among 5,012 valid evaluations:
 
 | class | count | frequency | seed-bootstrap 95% interval |
 |---|---:|---:|---:|
-| deflection | 2,256 | 0.450 | [0.432, 0.469] |
-| pinning | 80 | 0.0160 | [0.0115, 0.0209] |
-| transmission | 2,676 | 0.534 | [0.514, 0.554] |
+| deflection | 2,276 | 0.454 | [0.434, 0.474] |
+| pinning | 96 | 0.0192 | [0.0141, 0.0250] |
+| transmission | 2,640 | 0.527 | [0.508, 0.546] |
 
-The class agreed between the two epsilon values in 99.63% of cases. Pinning
-was nearly symmetric between lower (1.80%) and upper (1.40%) tips and showed no
-meaningful upward/downward phase dependence (1.42% versus 1.79%). It increased
-near the divider (2.27%) relative to the far divider-distance tertile (0.54%),
+Only 99 of 5,012 evaluations (1.98%) changed class relative to the legacy
+observed-velocity calculation. Pinning was nearly symmetric between lower
+(1.68%) and upper (2.15%) tips and showed no meaningful upward/downward phase
+dependence (2.17% versus 1.68%). It increased near the divider (2.15%) relative
+to the far divider-distance tertile (0.72%),
 but remained rare. Only one wall strength, \(I_w=0.94\), exists in these
 hydrodynamic data, so an \(I_w\) dependence cannot be tested without new data.
 
@@ -176,13 +180,13 @@ compared with deflection. Whole-seed bootstrap intervals were used; fish and
 frames were not treated as independent replicates.
 
 - At A-2, the access class predicted angular entry within 0.2 (seed-mean risk
-  difference 0.274, 95% interval [0.180, 0.375]) and 0.5 (0.244,
-  [0.151, 0.341]). No chamber crossings occur in those short windows.
+  difference 0.254, 95% interval [0.159, 0.361]) and 0.5 (0.232,
+  [0.140, 0.329]). No chamber crossings occur in those short windows.
 - At A-0.5, matching access-class and deflection configurations within seed,
-  origin, and tip on initial angular error and divider distance retained 61
-  pairs. Angular entry within 0.5 remained higher by 0.153 [0.009, 0.311], but
-  focal crossing was 0.151 [-0.018, 0.332] and any-fish crossing was 0.082
-  [-0.137, 0.298]. The mean standardized matching distance was 1.15, indicating
+  origin, and tip on initial angular error and divider distance retained 63
+  pairs. Angular entry within 0.5 remained higher by 0.161 [0.018, 0.318], but
+  focal crossing was 0.158 [-0.011, 0.339] and any-fish crossing was 0.090
+  [-0.131, 0.306]. The mean standardized matching distance was 1.20, indicating
   weak overlap; these are sensitivity estimates, not controlled causal effects.
 - At A-0.2, the analogous 22-pair match gave positive crossing differences,
   but overlap was worse (mean standardized distance 1.38) and the trajectory is
@@ -207,13 +211,14 @@ The first spatial crossings occurred 0.004--0.009 before the event marker due
 to the saved-grid/event-marker convention.
 
 The traces verify that ray switching and wall torque act before crossing, but
-also show why a static pinning mechanism fails. The two nominal pinning traces
-retained that label for only 35% and 18% of pre-crossing samples and were more
-often transmitting. Two transmission examples retained transmission for only
-45% and 27%; one retained it for 92%. All three displayed deflection examples
-still crossed, and their deflection label was persistent. Non-wall torque often
-varied on the same timescale and was larger than the wall term. The selected
-ray branch switched 0--16 times across the 0.6-unit pre-crossing records.
+also show why a static pinning mechanism fails. With counterfactual tangent
+velocity used consistently, the two nominal pinning traces retained that label
+for only 35% and 37% of pre-crossing samples and were more often transmitting.
+Two transmission examples retained transmission for only 43% and 25%; one
+retained it for 92%. All three displayed deflection examples still crossed,
+and their deflection label was persistent. Non-wall torque often varied on the
+same timescale and was larger than the wall term. The selected ray branch
+switched 0--16 times across the 0.6-unit pre-crossing records.
 
 ![Fixed-fish angular traces](figures/04_representative_q_torque_traces.png)
 
@@ -259,16 +264,22 @@ predictor of chamber crossing.
 
 - `configuration.json`: parameters, source branch, inputs, and sampling design.
 - `scripts/exact_tip_dynamics.py`: exact branch-labeled wall rule and focal BEM replay.
-- `scripts/analyze_tip_mechanism.py`: prospective extraction and outcomes.
+- `scripts/analyze_tip_mechanism.py`: prospective extraction and outcomes;
+  counterfactual tangent velocity is now the default and
+  `--legacy-observed-gate-velocity` explicitly reproduces the legacy method.
 - `scripts/validate_tip_replay.py`: comparison with full simulator functions.
 - `scripts/make_representative_traces.py`: fixed-fish traces.
 - `scripts/summarize_tip_mechanism.py`: seed bootstrap, matching, tables, figures.
 - `tables/exact_replay_validation.csv`: numerical replay validation.
 - `tables/geometry_verification.csv`: valid and closed-cone branch tests.
-- `tables/class_frequencies.csv`: class frequencies and conditioning.
-- `tables/prospective_association.csv`: unadjusted and geometry-matched outcomes.
-- `tables/event_control_matched_summary.csv`: event/control sensitivity analysis.
+- `tables/corrected_class_frequencies.csv`: primary class frequencies and conditioning.
+- `tables/corrected_angular_entry_association.csv`: primary angular-entry outcomes.
+- `tables/corrected_spatial_crossing_association.csv`: primary spatial outcomes.
+- `tables/tangent_snapshot_replay.csv`, `tables/class_frequencies.csv`, and
+  `tables/prospective_association.csv`: preserved legacy observed-velocity results.
 - `tables/representative_trace_summary.csv`: trace persistence and branch turnover.
+- `tables/representative_traces_legacy_observed_gate_velocity.csv`: preserved
+  legacy trace classifications for comparison.
 
 Large raw trajectories and LU factors remain outside Git and are referenced by
 `configuration.json`.

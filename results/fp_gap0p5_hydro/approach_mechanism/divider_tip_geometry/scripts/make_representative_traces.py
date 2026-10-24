@@ -46,7 +46,7 @@ def main():
  ap=argparse.ArgumentParser();ap.add_argument("--analysis-dir",type=Path,required=True)
  ap.add_argument("--raw-dir",type=Path,required=True);ap.add_argument("--geometry",type=Path,required=True)
  ap.add_argument("--lu",type=Path,required=True);ap.add_argument("--piv",type=Path,required=True);args=ap.parse_args()
- root=args.analysis_dir.resolve();allrows=read(root/"tables"/"tangent_snapshot_replay.csv");chosen=choose(allrows)
+ root=args.analysis_dir.resolve();allrows=read(root/"tables"/"tangent_snapshot_replay_corrected.csv");chosen=choose(allrows)
  p=Parameters();geom=analytic_geometry(p);g=sio.loadmat(args.geometry);normal=np.asarray(g["normal_vec"])
  boundary=dict(x=np.asarray(g["Sx"]).reshape(-1),y=np.asarray(g["Sy"]).reshape(-1),weights=np.asarray(g["weights"]).reshape(-1),nx=normal[:,0],ny=normal[:,1])
  lu=np.load(args.lu,mmap_mode="r");piv=np.load(args.piv);trace=[];crossings=[]
@@ -75,12 +75,16 @@ def main():
       tout,tin=alpha+1e-3,alpha-1e-3
       rout=focal_replay(st,focal,local_to_global(tout,side),visible,bem,geom,p)
       rin=focal_replay(st,focal,local_to_global(tin,side),visible,bem,geom,p)
-      muout=side*rout["total"]-gate["alpha_plus_dot"];muin=side*rin["total"]-gate["alpha_plus_dot"]
+      gout=tangent_geometry(st[:2,focal],rout["rdot"],sel["origin"],p)
+      gin=tangent_geometry(st[:2,focal],rin["rdot"],sel["origin"],p)
+      muout=side*rout["total"]-gout["alpha_plus_dot"];muin=side*rin["total"]-gin["alpha_plus_dot"]
      else:
       tout,tin=alpha-1e-3,alpha+1e-3
       rout=focal_replay(st,focal,local_to_global(tout,side),visible,bem,geom,p)
       rin=focal_replay(st,focal,local_to_global(tin,side),visible,bem,geom,p)
-      muout=gate["alpha_minus_dot"]-side*rout["total"];muin=gate["alpha_minus_dot"]-side*rin["total"]
+      gout=tangent_geometry(st[:2,focal],rout["rdot"],sel["origin"],p)
+      gin=tangent_geometry(st[:2,focal],rin["rdot"],sel["origin"],p)
+      muout=gout["alpha_minus_dot"]-side*rout["total"];muin=gin["alpha_minus_dot"]-side*rin["total"]
      instclass=classify(muout,muin)
     else:muout=muin=np.nan;instclass="invalid"
     trace.append(dict(seed=seed,pair_id=sel["pair_id"],focal_fish=focal,tip=tip,

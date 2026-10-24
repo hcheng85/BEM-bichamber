@@ -347,22 +347,27 @@ def trace_summary(trace):
 
 
 def main():
-    ap=argparse.ArgumentParser();ap.add_argument("--analysis-dir",type=Path,required=True);args=ap.parse_args()
+    ap=argparse.ArgumentParser();ap.add_argument("--analysis-dir",type=Path,required=True)
+    ap.add_argument("--legacy-observed-gate-velocity",action="store_true",
+                    help="summarize the preserved legacy observed-velocity replay")
+    args=ap.parse_args()
     root=args.analysis_dir.resolve();tab=root/"tables"
-    allrows=read(tab/"tangent_snapshot_replay.csv")
+    legacy=args.legacy_observed_gate_velocity
+    allrows=read(tab/("tangent_snapshot_replay.csv" if legacy else "tangent_snapshot_replay_corrected.csv"))
     primary=[r for r in allrows if r["epsilon"]=="0.001"]
     freq=class_frequencies(primary);branch=branch_summary(primary);eps=epsilon_sensitivity(allrows)
     assoc=association(primary);matched_pairs,matched=geometry_matched_class_association(primary)
     ec_pairs,ec_summary=event_control_matching(primary)
-    write(tab/"class_frequencies.csv",freq);write(tab/"branch_jump_summary.csv",branch)
-    write(tab/"epsilon_sensitivity.csv",eps);write(tab/"prospective_association.csv",assoc+matched)
-    write(tab/"geometry_matched_class_pairs.csv",matched_pairs);write(tab/"event_control_geometry_matches.csv",ec_pairs)
-    write(tab/"event_control_matched_summary.csv",ec_summary)
+    prefix="" if legacy else "corrected_"
+    write(tab/f"{prefix}class_frequencies.csv",freq);write(tab/f"{prefix}branch_jump_summary.csv",branch)
+    write(tab/f"{prefix}epsilon_sensitivity.csv",eps);write(tab/f"{prefix}prospective_association.csv",assoc+matched)
+    write(tab/f"{prefix}geometry_matched_class_pairs.csv",matched_pairs);write(tab/f"{prefix}event_control_geometry_matches.csv",ec_pairs)
+    write(tab/f"{prefix}event_control_matched_summary.csv",ec_summary)
     ident=read(tab/"planar_wall_identity.csv");sweeps=read(tab/"ray_branch_sweeps.csv")
     write(tab/"geometry_verification.csv",geometry_verification(sweeps))
     tracepath=tab/"representative_traces.csv"
     if tracepath.exists():write(tab/"representative_trace_summary.csv",trace_summary(read(tracepath)))
-    figures(root,primary,freq,assoc,branch,ident,sweeps)
+    if not legacy: figures(root,primary,freq,assoc,branch,ident,sweeps)
     valid=[r for r in primary if r["classification"]!="invalid"]
     overview=[dict(metric="n_prospective_snapshots",value=len(primary)//2),
       dict(metric="n_valid_tip_evaluations",value=len(valid)),
@@ -371,7 +376,7 @@ def main():
       dict(metric="planar_identity_max_abs_error",value=max(abs(f(r,"identity_error")) for r in ident if r["branch"]=="left_vertical")),
       dict(metric="closed_or_invalid_tip_evaluations",value=sum(r["classification"]=="invalid" for r in primary)),
       dict(metric="unique_Iw_values",value=len({r["Iw"] for r in primary}))]
-    write(root/"summary.csv",overview)
+    write(root/("summary_legacy_observed_gate_velocity.csv" if legacy else "summary.csv"),overview)
 
 
 if __name__=="__main__":main()

@@ -35,6 +35,9 @@
   "focal_selection": "closest fish still in origin chamber at observation time",
   "no_fitted_coefficients": true,
   "new_simulations": false,
+  "primary_gate_velocity": "counterfactual trial-heading translation",
+  "legacy_gate_velocity_flag": "--legacy-observed-gate-velocity",
+  "geometry_convention": "gap=R; gap/R=1; gap/(2R)=0.5",
   "parameters": {
     "R": 7.158910531638177,
     "gap": 7.158910531638177,

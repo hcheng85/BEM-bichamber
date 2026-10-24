@@ -259,9 +259,22 @@ def replay_snapshot(state, state_next, boundary, lu, piv, p, geom):
     terms["boundary_hydro_effective"] = w_bem.copy()
     terms["direct_hydro_effective"][overridden] = 0
     terms["boundary_hydro_effective"][overridden] = 0
+    # The production override also discards hydrodynamic translation for these
+    # fish.  Keep the historical ``rdot`` return unchanged and expose explicit
+    # effective components for source-resolved translational audits.
+    u_direct_effective = u_direct.copy()
+    u_bem_effective = u_bem.copy()
+    u_direct_effective[:, overridden] = 0
+    u_bem_effective[:, overridden] = 0
+    rdot_effective = e+u_direct_effective+u_bem_effective
     observed_increment = state_next[2]-state[2]
     noise_increment = observed_increment-total*p.dt
     return dict(terms=terms, deterministic_total=total,
                 observed_increment=observed_increment, noise_increment=noise_increment,
                 noise_z=noise_increment/(p.In*np.sqrt(p.dt)), overridden=overridden,
-                wall_distance=wall_distance, visible=vn, rdot=rdot)
+                wall_distance=wall_distance, visible=vn, rdot=rdot,
+                rdot_effective=rdot_effective,
+                direct_velocity=u_direct,
+                boundary_velocity=u_bem,
+                direct_velocity_effective=u_direct_effective,
+                boundary_velocity_effective=u_bem_effective)

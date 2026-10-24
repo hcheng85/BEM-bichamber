@@ -277,11 +277,15 @@ def main():
     ap.add_argument("--seeds", type=int, nargs="*", default=list(range(20)))
     ap.add_argument("--offsets", type=float, nargs="*", default=list(OFFSETS))
     ap.add_argument("--force", action="store_true")
-    ap.add_argument("--counterfactual-gate-velocity", action="store_true",
-                    help="use each trial heading's replayed rdot in tangent-angle velocity")
+    gate_group = ap.add_mutually_exclusive_group()
+    gate_group.add_argument("--counterfactual-gate-velocity", action="store_true",
+                            help="deprecated compatibility flag; this is now the default")
+    gate_group.add_argument("--legacy-observed-gate-velocity", action="store_true",
+                            help="reproduce the legacy observed-trajectory tangent velocity")
     args = ap.parse_args()
     out = args.out.resolve()
-    checkpoint_name = ("corrected_by_seed" if args.counterfactual_gate_velocity else "by_seed")
+    use_counterfactual = not args.legacy_observed_gate_velocity
+    checkpoint_name = ("corrected_by_seed" if use_counterfactual else "legacy_observed_by_seed")
     (out/"tables"/checkpoint_name).mkdir(parents=True, exist_ok=True)
     p = Parameters()
     geom = analytic_geometry(p)
@@ -305,15 +309,15 @@ def main():
             seedrisk = [r for r in risk if int(r["seed"]) == seed]
             raw = args.raw_dir/f"If1e-02_Ip40_In05_R50_num100_wid50_n{seed}_BEM.mat"
             rows, candidates = analyze_seed(seed, seedrisk, raw, boundary, lu, piv, p, geom,
-                                            tuple(args.offsets), args.counterfactual_gate_velocity)
+                                            tuple(args.offsets), use_counterfactual)
             write_csv(target, rows)
             write_csv(ctarget, candidates)
         all_rows.extend(rows)
         all_candidates.extend(candidates)
-    table_name = ("tangent_snapshot_replay_corrected.csv" if args.counterfactual_gate_velocity
-                  else "tangent_snapshot_replay.csv")
+    table_name = ("tangent_snapshot_replay_corrected.csv" if use_counterfactual
+                  else "tangent_snapshot_replay_legacy_observed_velocity.csv")
     write_csv(out/"tables"/table_name, all_rows)
-    if not args.counterfactual_gate_velocity:
+    if use_counterfactual:
         write_csv(out/"tables"/"geometry_candidates.csv", all_candidates)
         ident = planar_identity(p, geom)
         write_csv(out/"tables"/"planar_wall_identity.csv", ident)

@@ -1,0 +1,19 @@
+tip,side,n,q_directed_wall_mean,q_directed_wall_median,q_directed_wall_q05,q_directed_wall_q95,expected_local_torque_sign,out_branch,in_branch,frequency
+upper,out,2506,-0.4549465680262021,-0.23131822195775825,-1.5496109126476405,-0.11105406587167302,negative,,,
+upper,in,2506,-0.12381026696157911,-0.11613972837958302,-0.1948597158835728,-0.07657155939558268,negative,,,
+upper,jump_out_minus_in,2506,-0.33113630106462305,-0.10278698527065463,-1.3837647264660395,-0.030828321982349076,toward corridor when negative,,,
+lower,out,2506,-0.4457483248692861,-0.229477299317502,-1.5489328317704483,-0.11399564245156354,positive,,,
+lower,in,2506,-0.12333972535854223,-0.11580367511678333,-0.19344638265468095,-0.07613376732631141,positive,,,
+lower,jump_out_minus_in,2506,-0.3224085995107438,-0.10158252517073858,-1.416096987298212,-0.031978530372327604,toward corridor when negative,,,
+upper,branch_pair,1658,,,,,,upper_tip,outer_circle,0.6616121308858739
+lower,branch_pair,1647,,,,,,lower_tip,outer_circle,0.6572226656025538
+lower,branch_pair,437,,,,,,lower_tip,lower_right_smooth,0.17438148443735035
+upper,branch_pair,454,,,,,,upper_tip,upper_left_smooth,0.18116520351157223
+upper,branch_pair,388,,,,,,upper_tip,upper_right_smooth,0.15482841181165202
+lower,branch_pair,415,,,,,,lower_tip,lower_left_smooth,0.1656025538707103
+lower,branch_pair,3,,,,,,lower_tip,upper_left_smooth,0.0011971268954509178
+lower,branch_pair,3,,,,,,lower_tip,upper_right_smooth,0.0011971268954509178
+upper,branch_pair,4,,,,,,upper_tip,lower_left_smooth,0.0015961691939345571
+upper,branch_pair,1,,,,,,upper_tip,lower_tip,0.0003990422984836393
+lower,branch_pair,1,,,,,,lower_tip,upper_tip,0.0003990422984836393
+upper,branch_pair,1,,,,,,upper_tip,lower_right_smooth,0.0003990422984836393

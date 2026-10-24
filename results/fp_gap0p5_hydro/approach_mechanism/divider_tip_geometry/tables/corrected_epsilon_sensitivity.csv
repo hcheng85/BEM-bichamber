@@ -1,0 +1,10 @@
+class_epsilon_1e3,class_epsilon_5e3,n,frequency
+deflection,deflection,2271,0.41502192982456143
+deflection,pinning,5,0.0009137426900584795
+invalid,invalid,460,0.08406432748538012
+pinning,deflection,1,0.0001827485380116959
+pinning,pinning,92,0.016812865497076022
+pinning,repelling,1,0.0001827485380116959
+pinning,transmission,2,0.0003654970760233918
+transmission,pinning,7,0.0012792397660818713
+transmission,transmission,2633,0.48117690058479534
