@@ -1,0 +1,83 @@
+{
+  "train_seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+  ],
+  "test_seeds": [
+    15,
+    16,
+    17,
+    18,
+    19
+  ],
+  "burn_time": 200,
+  "dt": 0.01,
+  "lags": [
+    0.1,
+    0.5,
+    1.0
+  ],
+  "dominance_threshold": 0.4,
+  "past_dm_lag": 0.1,
+  "state_discretization": {
+    "mixed_m_edges": [
+      -1.000001,
+      -0.75,
+      -0.4,
+      -0.2,
+      0.0,
+      0.2,
+      0.4,
+      0.75,
+      1.000001
+    ],
+    "boundary_left_P_tertiles": [
+      0.7843024134635925,
+      0.9146282076835632
+    ],
+    "boundary_right_P_tertiles": [
+      0.769025981426239,
+      0.9148906469345093
+    ],
+    "mixed_PL_medians": [
+      0.8665146827697754,
+      0.8836821913719177,
+      0.8947893977165222,
+      0.901325523853302,
+      0.9063552021980286,
+      0.9159704446792603,
+      0.9327331781387329,
+      0.9762791395187378
+    ],
+    "mixed_PR_medians": [
+      0.9740206003189087,
+      0.9354622960090637,
+      0.9200642108917236,
+      0.9113317131996155,
+      0.9003827571868896,
+      0.8928099870681763,
+      0.8785130977630615,
+      0.8646278381347656
+    ],
+    "n_z_states": 38,
+    "n_m_states": 10
+  },
+  "empty_chamber_polarization": "undefined NaN; boundary strata use occupied group only",
+  "decision_scope": "nucleation separate from recruitment; no fitted potential",
+  "censored_corridor_excursions": 2,
+  "completed_corridor_excursions": 478,
+  "raw_parameter_points": 1
+}

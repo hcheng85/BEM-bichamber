@@ -1,0 +1,7 @@
+split,heading_class,n_frames,exit_within_0p5
+train,all,73315,0.02479710836800109
+train,toward_gap,40098,0.038879744625667116
+train,away_from_gap,33217,0.0077972122708251795
+heldout,all,24126,0.023999005222581447
+heldout,toward_gap,13049,0.0395432600199249
+heldout,away_from_gap,11077,0.005687460503746502
