@@ -1,0 +1,12 @@
+metric,value
+source_file,BEM_circular_parallel_instance.py
+production_dt,0.001
+smooth_orbit_minimum_Iw_from_positional_safety,0.48432210483785254
+smooth_local_max_abs_radius_error,0.0002495917224955013
+smooth_local_max_abs_frequency_error,0.0009996833021799212
+Iw_0p25_mean_freeze_fraction,0.3051171875
+valid_noise_angular_ratio_median,1.0071858149822799
+valid_noise_radial_ratio_median,1.0011024586306696
+valid_noise_max_abs_covariance,8.288653325690666e-07
+stability_valid_median_normalized_rmse,0.07838631603216512
+n_regime_cells,28

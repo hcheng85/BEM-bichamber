@@ -1,0 +1,46 @@
+{
+  "model": "source-exact N=1 wall-only circular Euler-Maruyama update",
+  "radius": 1.0,
+  "safe_distance": 0.1,
+  "high_order": 6,
+  "production_dt": 0.001,
+  "wall_component_clip": "pi/0.001",
+  "total_angular_clip": "pi/dt",
+  "deterministic": {
+    "Iw": [0.25, 0.94, 2.0],
+    "In": 0.0,
+    "dt": [0.002, 0.001, 0.0005],
+    "duration": 80.0,
+    "initial_conditions_per_Iw": 8,
+    "measurement_window": [60.0, 80.0]
+  },
+  "linear_stability": {
+    "dt": 0.0005,
+    "duration": 12.0,
+    "radial_perturbation": 0.01,
+    "angular_perturbation": 0.01
+  },
+  "weak_noise": {
+    "Iw": [0.25, 0.94, 2.0],
+    "In": [0.03, 0.05, 0.1],
+    "dt": 0.001,
+    "burn_time": 100.0,
+    "sample_time": 300.0,
+    "trajectories_per_chirality": 48,
+    "seed_formula": "710000 + int(Iw*1000) + int(In*10000)"
+  },
+  "noise_dt_check": {
+    "Iw": 0.94,
+    "In": 0.05,
+    "dt": [0.002, 0.0005]
+  },
+  "validity_grid": {
+    "Iw": [0.08, 0.15, 0.25, 0.5, 0.94, 2.0, 4.0],
+    "In": [0.03, 0.1, 0.2, 0.3],
+    "dt": 0.001,
+    "burn_time": 50.0,
+    "sample_time": 100.0,
+    "trajectories_per_chirality": 16,
+    "seed_formula": "990000 + int(Iw*1000) + int(In*10000)"
+  }
+}
