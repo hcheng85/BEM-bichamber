@@ -1,0 +1,33 @@
+{
+  "data_pattern": "If1e-02_Ip40_In05_R50_num100_wid100_n*_BEM.mat",
+  "radius": 7.158910531638177,
+  "dt": 0.001,
+  "n_fish": 100,
+  "uniform_sample_stride_steps": 100,
+  "uniform_sample_dt": 0.1,
+  "formation_transient": 20.0,
+  "seed9_window": [
+    280.0,
+    340.0
+  ],
+  "seed9_dt": 0.01,
+  "chirality_threshold": 0.2,
+  "chirality_sensitivity": [
+    0.1,
+    0.2,
+    0.3
+  ],
+  "com_radial_exclusion": "r_com <= 1e-8 R",
+  "orbital_radial_exclusion": "r <= 0.01 R at any point in differencing interval",
+  "orbital_velocity_index": "rdot[:,:,step+1] advances state[:,:,step]",
+  "orbital_lag_steps": [
+    1,
+    2,
+    5,
+    10
+  ],
+  "orbital_samples_per_seed": 300,
+  "bootstrap_units": "independent seed/state intervals",
+  "bootstrap_replicates": 20000,
+  "random_seed": 20261104
+}

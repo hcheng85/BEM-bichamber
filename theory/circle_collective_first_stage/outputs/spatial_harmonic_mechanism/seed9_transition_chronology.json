@@ -1,0 +1,11 @@
+{
+  "baseline": "seed 9, t in [280,300)",
+  "transition_reference_time": 312.41,
+  "rule": "first 1 s window with at least 70 of 100 samples beyond 3 baseline SD",
+  "P": 311.81,
+  "abs_M": 306.57,
+  "abs_A1": 321.67,
+  "abs_A2": null,
+  "abs_H1": 306.08,
+  "com_radius": 322.32
+}

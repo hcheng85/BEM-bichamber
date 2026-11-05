@@ -1,0 +1,24 @@
+{
+  "n_sampled_frames": 98000,
+  "max_identity_residual": 9.738155769225236e-15,
+  "rms_identity_residual": 1.282697597247712e-15,
+  "chirality_threshold": 0.2,
+  "ambiguous_fraction": 0.0013775510204081633,
+  "threshold_sensitivity": {
+    "0.1": {
+      "eligible_fraction": 0.9996020408163265,
+      "mean_H1_over_P": 0.9539668088249359,
+      "corr_P_abs_A1": 0.9040498202611892
+    },
+    "0.2": {
+      "eligible_fraction": 0.9986224489795918,
+      "mean_H1_over_P": 0.9524798471240383,
+      "corr_P_abs_A1": 0.9048297811267235
+    },
+    "0.3": {
+      "eligible_fraction": 0.9973265306122449,
+      "mean_H1_over_P": 0.9506496718803585,
+      "corr_P_abs_A1": 0.9059438312771285
+    }
+  }
+}
