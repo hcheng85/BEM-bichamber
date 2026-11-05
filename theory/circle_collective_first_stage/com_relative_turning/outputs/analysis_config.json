@@ -1,0 +1,41 @@
+{
+  "radius": 7.158910531638177,
+  "dt": 0.001,
+  "N": 100,
+  "In": 0.5,
+  "data_pattern": "If1e-02_Ip40_In05_R50_num100_wid100_n*_BEM.mat",
+  "stream_stride_steps": 100,
+  "stream_dt": 0.1,
+  "stationary_school_snapshots_per_seed": 100,
+  "stationary_milling_snapshots_per_seed": 200,
+  "seed9_pre_snapshots": 150,
+  "seed9_post_snapshots": 200,
+  "transition_window": [
+    300,
+    330
+  ],
+  "transition_stride_steps": 100,
+  "transition_dt": 0.1,
+  "schooling_control_windows": {
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "starts": [
+      100,
+      500,
+      900
+    ],
+    "duration": 5.5,
+    "dt": 0.1
+  },
+  "uncertainty": "10 contiguous time blocks with Student-t 95% interval",
+  "com_singular_cutoff": 7.158910531638176e-08,
+  "com_singular_cutoff_over_R": 1e-08,
+  "source_sha256": "2a415d26ad83cf42a2f3cb0f4ba156b8dd6c11b32972ce8305499eebced22da4"
+}
