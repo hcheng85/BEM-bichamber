@@ -1,0 +1,105 @@
+{
+  "baseline_interval": [
+    300,
+    308
+  ],
+  "detection_rule": "7 of 10 consecutive 0.1-time samples beyond 3 baseline SD",
+  "chronology": {
+    "radial_mean": {
+      "baseline_mean": 0.6413274546801586,
+      "baseline_sd": 0.05161772915861657,
+      "direction": "down",
+      "first_sustained_3sd_time": 308.1
+    },
+    "M": {
+      "baseline_mean": 0.9036732291004973,
+      "baseline_sd": 0.04875667239299689,
+      "direction": "down",
+      "first_sustained_3sd_time": 308.6
+    },
+    "Q": {
+      "baseline_mean": 0.8265429727545325,
+      "baseline_sd": 0.027874004627193003,
+      "direction": "down",
+      "first_sustained_3sd_time": 311.6
+    },
+    "P": {
+      "baseline_mean": 0.9090152413407081,
+      "baseline_sd": 0.015305677535694694,
+      "direction": "down",
+      "first_sustained_3sd_time": 311.6
+    },
+    "radial_std": {
+      "baseline_mean": 0.12012300205234411,
+      "baseline_sd": 0.02037199764786321,
+      "direction": "up",
+      "first_sustained_3sd_time": 311.40000000000003
+    },
+    "Pi": {
+      "baseline_mean": 0.599678837442746,
+      "baseline_sd": 0.03099821218110725,
+      "direction": "up",
+      "first_sustained_3sd_time": 312.2
+    },
+    "neighbor_heading_cos": {
+      "baseline_mean": 0.912599748249628,
+      "baseline_sd": 0.014166358848138787,
+      "direction": "down",
+      "first_sustained_3sd_time": 313.6
+    },
+    "bQ_total": {
+      "baseline_mean": 0.022364720959774768,
+      "baseline_sd": 0.4741661789270987,
+      "direction": "down",
+      "first_sustained_3sd_time": null
+    }
+  },
+  "schooling_control_seeds": [
+    0,
+    1,
+    4
+  ],
+  "control_stats": {
+    "Q": {
+      "q025": 0.6934405062706647,
+      "median": 0.8332749262722619,
+      "q975": 0.8975946122913541
+    },
+    "abs_M": {
+      "q025": 0.8276488015803791,
+      "median": 0.9139492916590194,
+      "q975": 0.9533029004576593
+    },
+    "radial_mean": {
+      "q025": 0.3464345392423151,
+      "median": 0.49931679342956364,
+      "q975": 0.6928017081261402
+    },
+    "radial_std": {
+      "q025": 0.07618176431376143,
+      "median": 0.11021173803772802,
+      "q975": 0.1553702448389714
+    },
+    "bQ_alignment": {
+      "q025": 0.4380197023350152,
+      "median": 0.6008981099592551,
+      "q975": 0.8081572192747183
+    },
+    "bQ_direct_hydro": {
+      "q025": -1.473804025618357,
+      "median": -0.3107896542302724,
+      "q975": 0.6794935747392937
+    },
+    "bQ_total": {
+      "q025": -1.0030633619411842,
+      "median": 0.017915674872004128,
+      "q975": 1.0210861119939973
+    },
+    "neighbor_heading_cos": {
+      "q025": 0.8142350174314535,
+      "median": 0.9050286719419345,
+      "q975": 0.9376690733586561
+    }
+  },
+  "interpretation": "Loss of signed circulation and inward geometry change precede the Q collapse; no sustained bQ_total excursion is detected, and the torque fluctuations overlap schooling controls."
+}

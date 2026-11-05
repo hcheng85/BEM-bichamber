@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "milling_continuous_checks": [
+    true,
+    true
+  ],
+  "exact_finite_step_checks": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+  ],
+  "note": "Seed 9 intervals remain separate; exact finite-step consistency is required for every interval."
+}

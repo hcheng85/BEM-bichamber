@@ -1,0 +1,66 @@
+{
+  "model": "F(p) = a p + b J p, zero intercept, rotationally equivariant",
+  "training_seeds": [
+    7,
+    8
+  ],
+  "a": 0.13152261968948906,
+  "b": 0.0793485927167366,
+  "a_block_bootstrap_95pct": [
+    0.05211860024917478,
+    0.22104499284132176
+  ],
+  "noise_decay_threshold": 0.125,
+  "a_minus_noise_threshold": 0.0065226196894890565,
+  "eigenvalues_real_part": 0.13152261968948906,
+  "heldout_tests": [
+    {
+      "train": "seed7",
+      "test": "seed8",
+      "a": 0.11276633413558095,
+      "b": -0.5627492728983725,
+      "n": 400,
+      "rmse": 0.366120436964708,
+      "r2_against_zero": -0.2325344445207127,
+      "r2_centered": -0.23914542822753826
+    },
+    {
+      "train": "seed8",
+      "test": "seed7",
+      "a": 0.14668037344960871,
+      "b": 0.5982552445118939,
+      "n": 400,
+      "rmse": 0.3706662644877041,
+      "r2_against_zero": -0.18542953869611267,
+      "r2_centered": -0.1861106184747816
+    },
+    {
+      "train": "seed7+seed8",
+      "test": "seed7+seed8",
+      "a": 0.13152261968948906,
+      "b": 0.0793485927167366,
+      "n": 800,
+      "rmse": 0.33432328030759506,
+      "r2_against_zero": 0.0049526775142541,
+      "r2_centered": 0.00286186084101947
+    },
+    {
+      "train": "seed7+seed8",
+      "test": "seed9_post",
+      "a": 0.13152261968948906,
+      "b": 0.0793485927167366,
+      "n": 400,
+      "rmse": 0.351024453546437,
+      "r2_against_zero": -0.02226589667057488,
+      "r2_centered": -0.027369958693585383
+    }
+  ],
+  "residual_magnitude_correlations": {
+    "radial_mean": 0.01377348344852367,
+    "radial_std": -0.010446252977482124,
+    "com_radius": 0.02024064251909904,
+    "M": -0.0634493616837877,
+    "neighbor_heading_cos": -0.13679673061124104
+  },
+  "verdict": "not_closed"
+}

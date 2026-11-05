@@ -1,0 +1,94 @@
+{
+  "phase": "Phase 1",
+  "passed": true,
+  "source": "/Users/hao/Library/CloudStorage/Dropbox/code/bichamber/archive/archive_one_R_60/BEM_circular_parallel_instance.py",
+  "source_sha256": "2a415d26ad83cf42a2f3cb0f4ba156b8dd6c11b32972ce8305499eebced22da4",
+  "theta_update": "theta_next = theta + clip(w_direct + w_BEM + w_wall + w_social, +/-pi/dt)*dt + In*sqrt(dt)*Normal(0,1); collision/extreme velocity overrides replace angular drift by clip(w_wall+w_social)",
+  "operation_order": [
+    "direct hydrodynamics",
+    "BEM hydrodynamics",
+    "Delaunay social torque",
+    "Gaussian noise draw",
+    "forward-ray wall torque",
+    "sum and angular clip",
+    "translation/collision override",
+    "Euler deterministic update plus angular noise",
+    "positional safety retry (translation only)"
+  ],
+  "noise_distribution": "independent Gaussian per fish and step",
+  "noise_sigma": 0.5,
+  "noise_variance_per_step": 0.00025,
+  "dt": 0.001,
+  "n_sampled_steps": 1050,
+  "n_fish_increments": 105000,
+  "residual_mean": 3.3765620480800575e-05,
+  "residual_standard_error": 4.8795003647426656e-05,
+  "residual_variance_over_dt": 0.24910551922456958,
+  "expected_variance_over_dt": 0.25,
+  "standardized_skew": -0.0023241036840834046,
+  "standardized_excess_kurtosis": 0.011929466354417162,
+  "normal_ks_statistic": 0.0028804906880309233,
+  "normal_ks_pvalue": 0.34765630182902874,
+  "temporal_correlations_lag_1_to_10_native_steps": [
+    -0.0026496352967276594,
+    0.0056306879154557465,
+    -0.0008901930836684695,
+    0.0031810741639620513,
+    -0.007597722922142225,
+    0.006494988866038849,
+    -0.0021394516180034454,
+    0.005468834738844326,
+    0.013387849947970121,
+    -0.0009907641780856373
+  ],
+  "wall_distance_bins": [
+    {
+      "bin": 0,
+      "d_min": 1.5595770351656784,
+      "d_max": 6.423672677486808,
+      "n": 26250,
+      "residual_mean": 3.1667003646563175e-05,
+      "variance_over_dt": 0.24528790514689902
+    },
+    {
+      "bin": 1,
+      "d_min": 6.423672677486808,
+      "d_max": 6.997461927434923,
+      "n": 26250,
+      "residual_mean": 7.573421814108635e-05,
+      "variance_over_dt": 0.25244493214092933
+    },
+    {
+      "bin": 2,
+      "d_min": 6.997461927434923,
+      "d_max": 7.582660534437101,
+      "n": 26250,
+      "residual_mean": -2.4320230486917994e-05,
+      "variance_over_dt": 0.24594515703724812
+    },
+    {
+      "bin": 3,
+      "d_min": 7.582660534437101,
+      "d_max": 11.12168588321916,
+      "n": 26250,
+      "residual_mean": 5.198149062247079e-05,
+      "variance_over_dt": 0.2527670811001435
+    }
+  ],
+  "override_counts": {
+    "n_angular_clip": 0,
+    "n_collision_override": 0,
+    "n_extreme_override": 0,
+    "n_sticky_override": 0
+  },
+  "maximum_social_split_error": 1.3811174426336947e-13,
+  "maximum_velocity_replay_error": 8.881784197001252e-16,
+  "checks": {
+    "mean_within_5se": true,
+    "variance_relative_error_below_2pct": true,
+    "maximum_lag1_to_10_correlation_below_0p02": true,
+    "wall_bin_variance_within_5pct": true,
+    "social_split_error_below_1e_10": true,
+    "velocity_replay_error_below_1e_10": true
+  }
+}
