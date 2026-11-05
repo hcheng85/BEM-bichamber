@@ -1,0 +1,14 @@
+{
+  "source": "/Users/hao/Library/CloudStorage/Dropbox/code/bichamber/archive/archive_one_R_60/BEM_circular_parallel_instance.py",
+  "source_sha256": "2a415d26ad83cf42a2f3cb0f4ba156b8dd6c11b32972ce8305499eebced22da4",
+  "n_torque_snapshots": 2658,
+  "cutoff_over_R": 0.005,
+  "excluded_fish_snapshots": 73,
+  "minimum_r_com_over_R": 0.0005434403275283554,
+  "max_velocity_replay_error": 3.552713678800501e-15,
+  "max_social_split_error": 2.232575235794343e-12,
+  "max_native_V2_identity_residual_branch_safe": 0.00010653124750375882,
+  "native_V2_branch_crossings": 60,
+  "co_rotation": "psi(t)=integral mean_i omega_i^C dt; tilde Z_m=Z_m exp(+i m psi)",
+  "exact_V2_drift": "mean[(Omega-omega_C)exp(-2i phi_C) - 2i v omega_C exp(-2i phi_C)]"
+}
