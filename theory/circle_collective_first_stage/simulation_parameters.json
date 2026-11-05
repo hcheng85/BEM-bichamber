@@ -1,0 +1,17 @@
+{
+  "files": "If1e-02_Ip40_In05_R50_num100_wid100_n{0..9}_BEM.mat",
+  "seeds": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+  "number_of_fish": 100,
+  "radius_nondimensional": 7.158910531638177,
+  "radius_ratio_filename": 50,
+  "Ip": 4.0,
+  "In": 0.5,
+  "Iw": 0.94,
+  "If": 0.01,
+  "dt": 0.001,
+  "duration": 1000.0,
+  "source": "BEM_circular_parallel_instance.py",
+  "source_sha256": "2a415d26ad83cf42a2f3cb0f4ba156b8dd6c11b32972ce8305499eebced22da4",
+  "geometry": "geo_data/BEM_geometry_R50_circle.mat",
+  "lu_factor": "LU_py/lu_R7.159_circle.npy"
+}

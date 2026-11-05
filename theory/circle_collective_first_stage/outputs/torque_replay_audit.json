@@ -1,0 +1,25 @@
+{
+  "n_snapshots": 170,
+  "n_fish_rows": 17000,
+  "maximum_social_split_error": 5.395683899678261e-14,
+  "maximum_velocity_replay_error": 3.552713678800501e-15,
+  "snapshots_with_collision_override": 0,
+  "snapshots_with_extreme_override": 0,
+  "snapshots_with_sticky_override": 0,
+  "eligible_closure_snapshots": 152,
+  "fixed_Q_edges": [
+    0.0,
+    0.1,
+    0.3,
+    0.6,
+    0.8,
+    1.000001
+  ],
+  "fixed_M_edges": [
+    -1.0,
+    -0.5,
+    0.0,
+    0.5,
+    1.000001
+  ]
+}

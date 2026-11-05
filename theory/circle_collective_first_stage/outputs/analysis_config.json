@@ -1,0 +1,10 @@
+{
+  "metric_dt": 0.01,
+  "smooth_s": 1.0,
+  "schooling_P_min": 0.7,
+  "schooling_Pi_max": 0.75,
+  "milling_P_max": 0.5,
+  "milling_Pi_min": 0.75,
+  "persistence_s": 20,
+  "formation_transient_s": 20
+}

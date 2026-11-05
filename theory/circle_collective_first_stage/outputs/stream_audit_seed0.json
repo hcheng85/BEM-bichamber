@@ -1,0 +1,20 @@
+{
+  "seed": 0,
+  "file": "/Volumes/data/BEM_bichamber/archive_one_R_60/BEM_data/If1e-02_Ip40_In05_R50_num100_wid100_n0_BEM.mat",
+  "file_bytes": 4000009536,
+  "state_shape": "3x100x1000002",
+  "rdot_shape": "2x100x1000002",
+  "state_data_offset": 200,
+  "rdot_data_offset": 2400005064,
+  "metric_stride": 10,
+  "metric_dt": 0.01,
+  "distribution_stride": 100,
+  "n_metric_samples": 100001,
+  "ray_layer_count": 1,
+  "sticky_zero_velocity_count": 697,
+  "outside_count": 0,
+  "min_ray_distance": 0.09724461903815218,
+  "max_radius": 7.092289461936631,
+  "first_ray_layer_step": 639779,
+  "first_sticky_step": 5251
+}
