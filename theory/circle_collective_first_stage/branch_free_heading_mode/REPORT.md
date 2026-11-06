@@ -1,5 +1,7 @@
 # Branch-free heading mode and exact power budget
 
+> **Follow-up qualification:** The [connected-circulation audit](../connected_circulation/REPORT.md) resamples the same `t=100–160` mill blocks much more densely and tests native-step conditional balance. It shows substantial grid sensitivity in the mean expected power. The historical tables below are preserved, but “damped mode” must not be read as a measured restoring eigenvalue: negative mean deterministic power can balance stochastic injection, and does not establish linear stability. Use the follow-up for the corrected stationarity interpretation.
+
 ## Scientific verdict
 
 The branch-free result is decisive for the proposed modal mechanism:

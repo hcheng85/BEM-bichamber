@@ -1,0 +1,14 @@
+{
+  "n_snapshots": 18920,
+  "max_velocity_error": 5.329070518200751e-15,
+  "max_position_error": 4.440892098500626e-16,
+  "max_social_error": 9.282308255365024e-11,
+  "max_MC_drift_replay_error": 1.7363888105137448e-13,
+  "min_replay_rho_R": 0.00043376980908161293,
+  "clipped_fish_snapshots": 15.0,
+  "clipping_snapshots": 8,
+  "sticky_fish_snapshots": 0.0,
+  "collision_fish_snapshots": 0.0,
+  "max_C_step_identity_residual": 5.421010862427522e-20,
+  "max_H2_step_identity_residual": 1.3552527156068805e-20
+}

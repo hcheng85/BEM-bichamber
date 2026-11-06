@@ -1,0 +1,17 @@
+{
+  "N": 100,
+  "R": 7.158910531638177,
+  "In": 0.5,
+  "dt": 0.001,
+  "raw_file_pattern": "If1e-02_Ip40_In05_R50_num100_wid100_n*_BEM.mat",
+  "raw_directory": "/Volumes/data/BEM_bichamber/archive_one_R_60/BEM_data",
+  "geometry_stride": 50,
+  "seed9_fine_stride": 10,
+  "bootstrap_seed": 68031,
+  "bootstrap_draws": 10000,
+  "noise_redraw_seed": 56029,
+  "production_source_sha256": "2a415d26ad83cf42a2f3cb0f4ba156b8dd6c11b32972ce8305499eebced22da4",
+  "replay_source": "theory/circle_collective_first_stage/com_relative_turning/analyze_com_relative_turning.py",
+  "snapshot_schedule": "See replay_grid: fixed 18920 distinct archived states; no simulated trajectories",
+  "controls": "Seven independent seed-level stable-window contrasts; one transition; no population CI for transitions"
+}
