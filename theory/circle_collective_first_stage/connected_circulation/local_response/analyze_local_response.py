@@ -16,7 +16,7 @@ SRC=('alignment','attraction','wall','direct_hydro','bem_hydro','clip_residual',
 
 def save(path,rows):
     with path.open('w',newline='') as f:
-        w=csv.DictWriter(f,fieldnames=list(rows[0]));w.writeheader();w.writerows(rows)
+        w=csv.DictWriter(f,fieldnames=list(rows[0]),lineterminator='\n');w.writeheader();w.writerows(rows)
 
 def quantities(st):
     theta=st[2];pos=st[:2]-st[:2].mean(axis=1)[:,None]
