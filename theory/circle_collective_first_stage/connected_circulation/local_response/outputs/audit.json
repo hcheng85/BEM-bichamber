@@ -1,0 +1,19 @@
+{
+  "production_sha256": "2a415d26ad83cf42a2f3cb0f4ba156b8dd6c11b32972ce8305499eebced22da4",
+  "max_velocity_error": 4.440892098500626e-16,
+  "max_component_error": 0.0,
+  "snapshots": 40,
+  "trial_rhs_calls": 240,
+  "epsilons": [
+    0.0005,
+    0.001,
+    0.002
+  ],
+  "controls": "Inherited seven seed-level matched windows; no rematching",
+  "data_dir": "/Volumes/data/BEM_bichamber/archive_one_R_60/BEM_data",
+  "dt": 0.001,
+  "In": 0.5,
+  "Ip": 4.0,
+  "bootstrap_seed": 11062026,
+  "bootstrap_draws": 10000
+}
