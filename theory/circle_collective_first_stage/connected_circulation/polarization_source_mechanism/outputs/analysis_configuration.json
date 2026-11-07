@@ -1,0 +1,34 @@
+{
+  "source_sha256": "2a415d26ad83cf42a2f3cb0f4ba156b8dd6c11b32972ce8305499eebced22da4",
+  "extracted_step_sha256": "7cbb9193b21ea42819d86cef9744bfdc82be82a7ba4a684568c0f4f07783688e",
+  "dt": 0.001,
+  "steps": 1000,
+  "initial_times": [
+    309.0,
+    310.0
+  ],
+  "replicates": 4,
+  "branches": [
+    "baseline",
+    "baseline_duplicate",
+    "plus_d0",
+    "plus_d1",
+    "plus_d2",
+    "minus_d0",
+    "minus_d1",
+    "minus_d2"
+  ],
+  "sources": [
+    "alignment",
+    "attraction",
+    "wall",
+    "direct_hydro",
+    "bem_hydro",
+    "effective_update_residual",
+    "finite_step_curvature",
+    "angular_diffusion",
+    "realized_stochastic"
+  ],
+  "noise_seeds": "identical to stochastic_branching_transport",
+  "scope": "source accounting of the existing branch ensemble; no new interventions"
+}
