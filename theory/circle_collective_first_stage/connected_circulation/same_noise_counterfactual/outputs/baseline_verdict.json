@@ -1,0 +1,17 @@
+{
+  "passed": false,
+  "failure": {
+    "step": 314148,
+    "time": 314.148,
+    "position_error": 1.855022656921556e-07,
+    "heading_error": 1.0089010658020925e-06
+  },
+  "baseline_steps": 5148,
+  "max_position_error": 1.855022656921556e-07,
+  "max_heading_error": 1.0089010658020925e-06,
+  "baseline_seconds": 210.0788132501766,
+  "total_this_run_seconds": 663.0705827921629,
+  "position_tolerance": 7.158910531638176e-06,
+  "heading_tolerance": 1e-06,
+  "counterfactuals_run": false
+}

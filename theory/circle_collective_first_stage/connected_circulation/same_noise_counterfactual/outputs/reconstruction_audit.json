@@ -1,0 +1,14 @@
+{
+  "source_sha256": "2a415d26ad83cf42a2f3cb0f4ba156b8dd6c11b32972ce8305499eebced22da4",
+  "step_sha256": "75db436b0154d288f2eaf432bb0a17cd692a62ce9c746bb7533bb72ddbf116f6",
+  "steps": 11000,
+  "max_anchored_position_error": 8.881784197001252e-16,
+  "max_anchored_velocity_error": 1.4210854715202004e-14,
+  "max_heading_roundtrip_error": 0.0,
+  "noise_mean": -7.122353649123067e-06,
+  "noise_std": 0.015812461837153815,
+  "expected_noise_std": 0.015811388300841896,
+  "reconstruction_seconds": 452.99118762556463,
+  "position_tolerance": 7.158910531638176e-06,
+  "heading_tolerance": 1e-06
+}
