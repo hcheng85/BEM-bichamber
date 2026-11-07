@@ -1,0 +1,18 @@
+[
+  {
+    "time": 309.0,
+    "state_max": 0.0,
+    "velocity_max": 0.0,
+    "turning_max": 0.0,
+    "memory_max": 0.0,
+    "flags_equal": true
+  },
+  {
+    "time": 310.0,
+    "state_max": 0.0,
+    "velocity_max": 0.0,
+    "turning_max": 0.0,
+    "memory_max": 0.0,
+    "flags_equal": true
+  }
+]

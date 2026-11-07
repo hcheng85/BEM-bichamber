@@ -1,0 +1,25 @@
+{
+  "source_sha256": "2a415d26ad83cf42a2f3cb0f4ba156b8dd6c11b32972ce8305499eebced22da4",
+  "step_sha256": "e804e6198d84f17b4f2707c53dc8625cfa599f1c886f893279be6a78970656eb",
+  "dt": 0.001,
+  "steps": 1000,
+  "replicates": 4,
+  "directions_per_sign": 3,
+  "rms_factor": 1.5,
+  "initial_times": [
+    309.0,
+    310.0
+  ],
+  "branches": [
+    "baseline",
+    "baseline_duplicate",
+    "plus_d0",
+    "plus_d1",
+    "plus_d2",
+    "minus_d0",
+    "minus_d1",
+    "minus_d2"
+  ],
+  "noise": "fresh PCG64 Gaussian; identical across branches within each block",
+  "scope": "one-time-unit same-K sufficiency and exact COM transport decomposition"
+}

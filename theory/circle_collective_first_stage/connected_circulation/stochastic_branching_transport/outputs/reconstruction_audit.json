@@ -1,0 +1,11 @@
+{
+  "max_vector_residual": 2.445507308692946e-15,
+  "max_radial_residual": 1.124100812432971e-15,
+  "duplicate_max": 0.0,
+  "nonduplicate_flag_totals": {
+    "wall_clip": 0,
+    "angular_clip": 4,
+    "collision": 0,
+    "safety_candidates": 0
+  }
+}
