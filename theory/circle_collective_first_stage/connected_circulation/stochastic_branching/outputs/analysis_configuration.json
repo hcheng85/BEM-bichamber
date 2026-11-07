@@ -1,0 +1,21 @@
+{
+  "source_sha256": "2a415d26ad83cf42a2f3cb0f4ba156b8dd6c11b32972ce8305499eebced22da4",
+  "step_sha256": "75db436b0154d288f2eaf432bb0a17cd692a62ce9c746bb7533bb72ddbf116f6",
+  "dt": 0.001,
+  "steps": 1000,
+  "replicates": 4,
+  "initial_times": [
+    309.0,
+    310.0
+  ],
+  "branches": [
+    "baseline",
+    "baseline_duplicate",
+    "plusK",
+    "minusK",
+    "control_plus",
+    "control_minus"
+  ],
+  "noise": "fresh PCG64 Gaussian increments; shared across branches within replicate",
+  "interpretation": "bounded one-time-unit branching; not archived-transition replay or transition probability"
+}
