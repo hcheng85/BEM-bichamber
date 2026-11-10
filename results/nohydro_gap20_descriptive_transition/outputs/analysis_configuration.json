@@ -1,0 +1,13 @@
+{
+  "gaps": [
+    10,
+    20
+  ],
+  "hydrodynamics": false,
+  "noise": 0.5,
+  "population": 100,
+  "transient_time": 200.0,
+  "dominance_threshold": 0.6,
+  "event_definition": "archived GetTransitEvent marker; 5-time-unit persistence check and 2-time-unit merge rule",
+  "warning": "Processed files contain occupancy only; no position, heading, polarization, or cluster identity."
+}
