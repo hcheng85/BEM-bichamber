@@ -1,5 +1,11 @@
 # First descriptive analysis: no-hydrodynamics collective bichamber crossings
 
+> **Raw-trajectory extension (10 November 2026).**  The gap-20 raw trajectories
+> subsequently became available.  The initiation/propagation analysis is in
+> [`outputs/initiation_propagation/REPORT.md`](outputs/initiation_propagation/REPORT.md).
+> It supersedes only the data-access statement below; the first-stage processed
+> occupancy results are retained unchanged for provenance.
+
 ## Scope
 
 This is the bichamber analysis, not the circular schooling--milling analysis.
