@@ -1,0 +1,30 @@
+{
+  "raw_dir": "/Volumes/storage2/BEM_bichamber/archive_one_R_60/BEM_data",
+  "previous": "results/nohydro_gap20_descriptive_transition/outputs/initiation_propagation",
+  "N": 100,
+  "dt": 0.001,
+  "ell": 2.8635642126552705,
+  "width": 2.8635642126552705,
+  "window_duration": 0.2,
+  "q_bins": [
+    0.0,
+    0.25,
+    0.5,
+    0.75,
+    0.9,
+    1.000001
+  ],
+  "Ja_bins": [
+    -0.15,
+    -0.05,
+    0.0,
+    0.025,
+    0.05,
+    0.1,
+    0.2,
+    1.0
+  ],
+  "train_seeds": "0--29",
+  "heldout_seeds": "30--39",
+  "direction_assignment": "current majority chamber; current mean heading tie-break; never eventual direction"
+}

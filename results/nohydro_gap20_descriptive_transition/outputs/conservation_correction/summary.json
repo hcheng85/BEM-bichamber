@@ -1,0 +1,278 @@
+{
+  "n_intervals": 145,
+  "n_windows": 1061,
+  "n_raw_seeds": 38,
+  "direction_rule": "majority chamber toward gap; instantaneous mean heading only when q=0",
+  "maximum_absolute_conservative_closure": 6.039613253960852e-14,
+  "rms_conservative_closure": 1.0920535815193973e-14,
+  "phase_summary": {
+    "pre_crossing": {
+      "n_windows": 370,
+      "n_trajectory_seeds": 37,
+      "neck_flux": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "plug_flux": {
+        "estimate": 1.6841252201202,
+        "ci95": [
+          1.1956703124675387,
+          2.2261632733119354
+        ]
+      },
+      "total_correction": {
+        "estimate": 1.6841252201201997,
+        "ci95": [
+          1.1956703124675387,
+          2.226163273311936
+        ]
+      },
+      "weighted_accumulation": {
+        "estimate": 8.975057237713605,
+        "ci95": [
+          6.86046140815026,
+          11.154711549836795
+        ],
+        "seed_fraction_positive": 0.9459459459459459,
+        "seed_mean_absolute": 8.980342062541105
+      },
+      "weighted_lateral_flux": {
+        "estimate": -7.290489185749364,
+        "ci95": [
+          -9.465916129642668,
+          -5.233869071377705
+        ],
+        "seed_fraction_positive": 0.08108108108108109,
+        "seed_mean_absolute": 7.600838627479431
+      },
+      "path_discretization_correction": {
+        "estimate": 0.0004428318440438225,
+        "ci95": [
+          0.0002872276118796273,
+          0.0006092233569878907
+        ]
+      },
+      "seed_correlation_accumulation_lateral": -0.9703348454572649,
+      "online_event_direction_agreement": 0.7567567567567568
+    },
+    "sustained_crossing": {
+      "n_windows": 136,
+      "n_trajectory_seeds": 34,
+      "neck_flux": {
+        "estimate": 4.117647058823529,
+        "ci95": [
+          1.6544117647058822,
+          6.654411764705882
+        ]
+      },
+      "plug_flux": {
+        "estimate": 2.977028746489328,
+        "ci95": [
+          2.1090214581300772,
+          3.8590534862686834
+        ]
+      },
+      "total_correction": {
+        "estimate": -1.140618312334199,
+        "ci95": [
+          -3.039817750555597,
+          0.704406131789053
+        ]
+      },
+      "weighted_accumulation": {
+        "estimate": -4.27514508181689,
+        "ci95": [
+          -7.384072225669807,
+          -1.2374777038693392
+        ],
+        "seed_fraction_positive": 0.35294117647058826,
+        "seed_mean_absolute": 7.922026956117903
+      },
+      "weighted_lateral_flux": {
+        "estimate": 3.1341210303503964,
+        "ci95": [
+          0.4519484925327472,
+          6.009464866531785
+        ],
+        "seed_fraction_positive": 0.5,
+        "seed_mean_absolute": 6.3678164984267696
+      },
+      "path_discretization_correction": {
+        "estimate": -0.0004057391322942344,
+        "ci95": [
+          -0.0006933103295895043,
+          -0.00012841165405569338
+        ]
+      },
+      "seed_correlation_accumulation_lateral": -0.7885155327073246,
+      "online_event_direction_agreement": 0.7941176470588235
+    },
+    "termination_or_reversal": {
+      "n_windows": 185,
+      "n_trajectory_seeds": 37,
+      "neck_flux": {
+        "estimate": 0.2972972972972973,
+        "ci95": [
+          -0.3783783783783784,
+          1.0
+        ]
+      },
+      "plug_flux": {
+        "estimate": 0.8414040120277723,
+        "ci95": [
+          0.38898101570953086,
+          1.309688458252776
+        ]
+      },
+      "total_correction": {
+        "estimate": 0.5441067147304752,
+        "ci95": [
+          -0.07067533438342503,
+          1.0980077197505975
+        ]
+      },
+      "weighted_accumulation": {
+        "estimate": -7.123517977942865,
+        "ci95": [
+          -9.311957486976523,
+          -5.2563334666807755
+        ],
+        "seed_fraction_positive": 0.10810810810810811,
+        "seed_mean_absolute": 7.278057075967721
+      },
+      "weighted_lateral_flux": {
+        "estimate": 7.667404835846137,
+        "ci95": [
+          5.6869523660770165,
+          9.874729526171162
+        ],
+        "seed_fraction_positive": 0.8648648648648649,
+        "seed_mean_absolute": 7.702070471378775
+      },
+      "path_discretization_correction": {
+        "estimate": -0.00021985682720497866,
+        "ci95": [
+          -0.00043008592618991645,
+          2.5860875081635397e-06
+        ]
+      },
+      "seed_correlation_accumulation_lateral": -0.9606505975527344,
+      "online_event_direction_agreement": 0.7081081081081081
+    },
+    "matched_non_crossing": {
+      "n_windows": 370,
+      "n_trajectory_seeds": 19,
+      "neck_flux": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "plug_flux": {
+        "estimate": 0.07111690304892447,
+        "ci95": [
+          0.004899651911560019,
+          0.14461807971012441
+        ]
+      },
+      "total_correction": {
+        "estimate": 0.07111690304892453,
+        "ci95": [
+          0.004899651911560029,
+          0.14461807971012447
+        ]
+      },
+      "weighted_accumulation": {
+        "estimate": -0.09118389174683135,
+        "ci95": [
+          -0.7375269335030008,
+          0.5383619576210146
+        ],
+        "seed_fraction_positive": 0.21052631578947367,
+        "seed_mean_absolute": 0.7968613159333101
+      },
+      "weighted_lateral_flux": {
+        "estimate": 0.16228328494914845,
+        "ci95": [
+          -0.49395205389527946,
+          0.8380854377751852
+        ],
+        "seed_fraction_positive": 0.3157894736842105,
+        "seed_mean_absolute": 0.8256419096289782
+      },
+      "path_discretization_correction": {
+        "estimate": -1.7509846607404245e-05,
+        "ci95": [
+          -5.6316700425910544e-05,
+          1.695358327918138e-05
+        ]
+      },
+      "seed_correlation_accumulation_lateral": -0.9959764285852651,
+      "online_event_direction_agreement": 0.7567567567567568
+    }
+  },
+  "conditional_closure": {
+    "q_edges": [
+      0.0,
+      0.25,
+      0.5,
+      0.75,
+      0.9,
+      1.000001
+    ],
+    "Ja_edges": [
+      -0.15,
+      -0.05,
+      0.0,
+      0.025,
+      0.05,
+      0.1,
+      0.2,
+      1.0
+    ],
+    "minimum_train_seeds_per_cell": 3,
+    "n_train": 721,
+    "n_test": 340,
+    "n_evaluated": 308,
+    "heldout_coverage": 0.9058823529411765,
+    "n_supported_cells": 21,
+    "cell_mean_spearman": 0.4623376623376624,
+    "component_transfer": {
+      "total_correction": {
+        "cell_mean_spearman": 0.4623376623376624,
+        "heldout_residual_rms": 2.516028582272293,
+        "heldout_residual_mean": 0.0006488971964802084
+      },
+      "weighted_accumulation": {
+        "cell_mean_spearman": 0.16753246753246753,
+        "heldout_residual_rms": 8.916826559341212,
+        "heldout_residual_mean": -0.7168010400760153
+      },
+      "weighted_lateral_flux": {
+        "cell_mean_spearman": 0.1961038961038961,
+        "heldout_residual_rms": 8.28411947507592,
+        "heldout_residual_mean": 0.7176248405629515
+      },
+      "path_discretization_correction": {
+        "cell_mean_spearman": 0.425974025974026,
+        "heldout_residual_rms": 0.0007351909133426945,
+        "heldout_residual_mean": 0.0001749032904566907
+      }
+    },
+    "seed_mean_mae_improvement": 0.05329299363364211,
+    "seed_mean_mae_improvement_ci95": [
+      -0.15513772149859617,
+      0.24310720254608117
+    ],
+    "plug_seed_mean_mae": 1.3626647110162615,
+    "conditional_seed_mean_mae": 1.3093717173826191,
+    "plug_seed_mean_bias": 0.6764944661983908,
+    "conditional_seed_mean_bias": -0.03663059172869346,
+    "plug_seed_median_spearman": 0.42920581751700937,
+    "conditional_seed_median_spearman": 0.38686693716718334
+  }
+}
