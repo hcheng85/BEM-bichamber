@@ -1,0 +1,60 @@
+{
+  "n_pairs": 8,
+  "pair_event_seeds": [
+    0,
+    5,
+    11,
+    16,
+    23,
+    29,
+    34,
+    39
+  ],
+  "max_visibility_graph_disagreement": 0,
+  "max_abs_step_closure": 9.394611824586896e-17,
+  "max_abs_full_closure": 7.731886149126704e-17,
+  "pooled_noise_mean": -0.00034778090066760794,
+  "pooled_noise_variance": 0.999601784584875,
+  "paired_difference_seed_bootstrap": {
+    "measured_delta_Ja": {
+      "estimate": 0.04989531746968991,
+      "ci95_low": 0.01008933341910423,
+      "ci95_high": 0.09429332270678345
+    },
+    "boundary": {
+      "estimate": 0.03961178494421091,
+      "ci95_low": 0.004865032572702282,
+      "ci95_high": 0.0806312421780046
+    },
+    "wall": {
+      "estimate": -0.03616026349943614,
+      "ci95_low": -0.0568862509414727,
+      "ci95_high": -0.01563612426957074
+    },
+    "social": {
+      "estimate": 0.041776137345321346,
+      "ci95_low": 0.016883535445346484,
+      "ci95_high": 0.06420396996510297
+    },
+    "clip": {
+      "estimate": 0.0,
+      "ci95_low": 0.0,
+      "ci95_high": 0.0
+    },
+    "noise_relaxation": {
+      "estimate": -0.01297293722379931,
+      "ci95_low": -0.022870400029910247,
+      "ci95_high": -0.004361743782899826
+    },
+    "realized_noise": {
+      "estimate": 0.018864494892662197,
+      "ci95_low": -0.013503900986613249,
+      "ci95_high": 0.05983809673451976
+    },
+    "collision_override": {
+      "estimate": -0.0012238989892690876,
+      "ci95_low": -0.003671696967807272,
+      "ci95_high": 1.0408340855860843e-17
+    }
+  }
+}

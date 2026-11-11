@@ -1,0 +1,58 @@
+{
+  "q_edges": [
+    -1.0,
+    -0.8600000000000001,
+    -0.3999999999999999,
+    0.42000000000000004,
+    1.0
+  ],
+  "Ja_edges": [
+    -0.07090315463264386,
+    0.0,
+    0.015037341222997274,
+    0.06451119704483527,
+    0.265532840433381
+  ],
+  "n_samples": 1258,
+  "n_seed_pairs": 37,
+  "history_effect": -0.004929950366463482,
+  "history_effect_ci95": [
+    -0.023000884833747712,
+    0.011273684631900042
+  ],
+  "history_effect_n_seeds": 32,
+  "split_half_common_cells": 13,
+  "split_half_drift_correlation": 0.5471915210647922,
+  "split_half_drift_rmse": 0.02196654365733135,
+  "pooled_future_drift_sd": 0.0637038569778968,
+  "event_control_effect": 0.030358029097207848,
+  "event_control_effect_ci95": [
+    0.0074299672356996785,
+    0.05228788048132077
+  ],
+  "event_control_effect_n_seeds": 25,
+  "residual_history_spearman": 0.15536876387141726,
+  "residual_history_spearman_ci95": [
+    0.06442137622267201,
+    0.243976020101535
+  ],
+  "residual_history_n_seeds": 37,
+  "kind_specific_residual_history": {
+    "event": {
+      "estimate": 0.04752834447443688,
+      "ci95": [
+        -0.04628962462888315,
+        0.13948483876335574
+      ],
+      "n_seeds": 37
+    },
+    "control": {
+      "estimate": 0.26624088880622254,
+      "ci95": [
+        0.01114281966018728,
+        0.49477928258737935
+      ],
+      "n_seeds": 14
+    }
+  }
+}

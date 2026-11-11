@@ -1,0 +1,17 @@
+{
+  "raw_dir": "/Volumes/storage2/BEM_bichamber/archive_one_R_60/BEM_data",
+  "production_source": "/Users/hao/Library/CloudStorage/Dropbox/code/bichamber/archive/archive_one_R_60/BEM_bichamber_parallel_instance_no_hydro.py",
+  "source_sha256": "5e57b9dca2cb962e2c35f540f3982d5f4018eb719067223e6b319866b4482284",
+  "geometry_override": "in-memory parameters_list [50,5,20] -> [50,20,20]; production file unchanged",
+  "N": 100,
+  "dt": 0.001,
+  "In": 0.5,
+  "approach_length": 2.8635642126552705,
+  "approach_width": 2.8635642126552705,
+  "n_all_pairs": 37,
+  "n_native_exact_pairs": 8,
+  "native_balance_interval": "event A-2 to A; same-q control t to t+2",
+  "closure_sampling_dt": 0.1,
+  "heldout_plug_seeds": "30--39",
+  "plug_evaluation_window": 0.2
+}
