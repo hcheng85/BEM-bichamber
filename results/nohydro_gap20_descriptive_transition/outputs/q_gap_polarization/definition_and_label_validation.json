@@ -1,0 +1,15 @@
+{
+  "n_definition_checks": 228,
+  "max_abs_q_error": 1.1102230246251565e-16,
+  "max_abs_a_projection_error": 1.2212453270876722e-15,
+  "majority_count_mismatches": 0,
+  "majority_com_side_mismatches": 0,
+  "max_gap_direction_norm_error": 2.220446049250313e-16,
+  "native_event_records": 658,
+  "native_event_valid_changes": 658,
+  "native_event_direction_matches": 658,
+  "max_event_time_error": 0.0,
+  "native_audit_windows": 40,
+  "native_audit_past_crossings": 0,
+  "native_audit_label_matches": 40
+}
