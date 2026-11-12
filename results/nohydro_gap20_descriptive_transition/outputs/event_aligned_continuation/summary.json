@@ -1,0 +1,193 @@
+{
+  "input_event_rows": 658,
+  "primary_events": 388,
+  "valid_independent_seeds": 37,
+  "primary_successes": 187,
+  "excluded_population_ties": 9,
+  "first_events_opposite_majority": 261,
+  "prelead_endpoint_occupancy_mismatches": 0,
+  "first_step_multiple_net_events": 1,
+  "additional_net_fish_min": -1.0,
+  "additional_net_fish_max": 66.0,
+  "current_lead": 1.0,
+  "transfer_window_after_first": 5.0,
+  "threshold_additional_net_fish": 4,
+  "max_lead_time_error": 0.0,
+  "max_additional_count_identity_error": 0.0,
+  "heldout": {
+    "available": true,
+    "train_n": 244,
+    "heldout_n": 144,
+    "heldout_successes": 75,
+    "train_cell_counts": [
+      [
+        53,
+        57,
+        37
+      ],
+      [
+        21,
+        33,
+        12
+      ],
+      [
+        6,
+        9,
+        16
+      ]
+    ],
+    "train_cell_positive": [
+      [
+        4,
+        27,
+        32
+      ],
+      [
+        1,
+        19,
+        12
+      ],
+      [
+        2,
+        3,
+        12
+      ]
+    ],
+    "train_seeds_per_cell": [
+      [
+        13,
+        16,
+        13
+      ],
+      [
+        10,
+        13,
+        10
+      ],
+      [
+        5,
+        8,
+        13
+      ]
+    ],
+    "min_train_cell": 10,
+    "min_train_cell_seeds": 3,
+    "seed_results": [
+      {
+        "seed": 30,
+        "n": 11,
+        "successes": 6,
+        "supported": 11,
+        "brier_q": 0.2441093894387395,
+        "brier_qa": 0.07816934358610766,
+        "auc_q": 0.6666666666666666,
+        "auc_qa": 1.0
+      },
+      {
+        "seed": 31,
+        "n": 15,
+        "successes": 9,
+        "supported": 15,
+        "brier_q": 0.2685811083709588,
+        "brier_qa": 0.1742425316056303,
+        "auc_q": 0.4722222222222222,
+        "auc_qa": 0.8703703703703703
+      },
+      {
+        "seed": 32,
+        "n": 12,
+        "successes": 7,
+        "supported": 10,
+        "brier_q": 0.246191701787272,
+        "brier_qa": 0.18594277096433806,
+        "auc_q": 0.6571428571428571,
+        "auc_qa": 0.8142857142857143
+      },
+      {
+        "seed": 33,
+        "n": 5,
+        "successes": 1,
+        "supported": 1,
+        "brier_q": 0.2675672912257741,
+        "brier_qa": 0.28629500973183386,
+        "auc_q": 0.625,
+        "auc_qa": 0.375
+      },
+      {
+        "seed": 34,
+        "n": 17,
+        "successes": 7,
+        "supported": 17,
+        "brier_q": 0.24495985980645224,
+        "brier_qa": 0.19904256795494368,
+        "auc_q": 0.4714285714285714,
+        "auc_qa": 0.7357142857142858
+      },
+      {
+        "seed": 35,
+        "n": 24,
+        "successes": 11,
+        "supported": 24,
+        "brier_q": 0.2407573991342713,
+        "brier_qa": 0.14748075325978818,
+        "auc_q": 0.6118881118881119,
+        "auc_qa": 0.8671328671328671
+      },
+      {
+        "seed": 36,
+        "n": 15,
+        "successes": 7,
+        "supported": 12,
+        "brier_q": 0.2374481050266784,
+        "brier_qa": 0.15964977457970414,
+        "auc_q": 0.6428571428571429,
+        "auc_qa": 0.8571428571428571
+      },
+      {
+        "seed": 37,
+        "n": 6,
+        "successes": 4,
+        "supported": 4,
+        "brier_q": 0.25602360059891816,
+        "brier_qa": 0.22696796662797847,
+        "auc_q": 0.4375,
+        "auc_qa": 0.5
+      },
+      {
+        "seed": 38,
+        "n": 23,
+        "successes": 12,
+        "supported": 22,
+        "brier_q": 0.24897221603688044,
+        "brier_qa": 0.17262996166183567,
+        "auc_q": 0.5833333333333334,
+        "auc_qa": 0.8598484848484849
+      },
+      {
+        "seed": 39,
+        "n": 16,
+        "successes": 11,
+        "supported": 16,
+        "brier_q": 0.2664931023411274,
+        "brier_qa": 0.1548301697065735,
+        "auc_q": 0.6363636363636364,
+        "auc_qa": 0.8454545454545455
+      }
+    ],
+    "pooled_auc_q": 0.5641545893719807,
+    "pooled_auc_qa": 0.813719806763285,
+    "pooled_brier_q": 0.2502546233902696,
+    "pooled_brier_qa": 0.16849914610571284,
+    "seed_mean_brier_gain": 0.07358529240883388,
+    "seed_bootstrap_ci95": [
+      0.043635163643980436,
+      0.10245605618814457
+    ],
+    "seed_mean_auc_gain": 0.1920546583046583,
+    "auc_seed_bootstrap_ci95": [
+      0.07669922901172901,
+      0.2837814696877196
+    ],
+    "auc_informative_seeds": 10
+  }
+}
