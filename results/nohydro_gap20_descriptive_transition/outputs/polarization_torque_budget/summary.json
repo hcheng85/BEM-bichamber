@@ -1,0 +1,124 @@
+{
+  "observational": {
+    "n_pairs": 37,
+    "n_reference_majority_consistent": 37,
+    "event_minus_control_delta_a": {
+      "mean": -0.3124489306902925,
+      "ci95": [
+        -0.4438209909962501,
+        -0.1898250616967678
+      ],
+      "n": 37
+    },
+    "event_minus_control_start_a": {
+      "mean": 0.5863129853792493,
+      "ci95": [
+        0.3773108459188384,
+        0.7982535991385529
+      ],
+      "n": 37
+    },
+    "event_minus_control_end_a": {
+      "mean": 0.2738640546889567,
+      "ci95": [
+        0.020789218363015862,
+        0.5212014946406899
+      ],
+      "n": 37
+    },
+    "screening_supported": false,
+    "endpoint_split": {
+      "event": {
+        "endpoint_heading_change": {
+          "mean": 0.09207540520952731,
+          "ci95": [
+            0.06208125762893842,
+            0.12247469125284019
+          ],
+          "n": 37
+        },
+        "endpoint_membership_change": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "n": 37
+        },
+        "endpoint_gap_geometry_change": {
+          "mean": -0.4287600829778284,
+          "ci95": [
+            -0.5002565257377002,
+            -0.35936509016295903
+          ],
+          "n": 37
+        }
+      },
+      "control": {
+        "endpoint_heading_change": {
+          "mean": 0.239347626077496,
+          "ci95": [
+            0.1673327587024551,
+            0.31985631060492664
+          ],
+          "n": 37
+        },
+        "endpoint_membership_change": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "n": 37
+        },
+        "endpoint_gap_geometry_change": {
+          "mean": -0.26358337315550473,
+          "ci95": [
+            -0.3194082922121012,
+            -0.2106888824539846
+          ],
+          "n": 37
+        }
+      },
+      "difference": {
+        "endpoint_heading_change": {
+          "mean": -0.14727222086796868,
+          "ci95": [
+            -0.23262609565580633,
+            -0.0693654712319354
+          ],
+          "n": 37
+        },
+        "endpoint_membership_change": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "n": 37
+        },
+        "endpoint_gap_geometry_change": {
+          "mean": -0.16517670982232374,
+          "ci95": [
+            -0.25193482189941807,
+            -0.08088097727999863
+          ],
+          "n": 37
+        }
+      },
+      "geometry_minus_heading_in_difference": {
+        "mean": -0.01790448895435508,
+        "ci95": [
+          -0.12380739791549812,
+          0.09262804297314618
+        ],
+        "n": 37
+      },
+      "max_abs_identity_residual": 6.661338147750939e-16
+    }
+  },
+  "exact": {
+    "available": false,
+    "reason": "not run because the preregistered positive screening condition failed"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "raw_dir": "/Volumes/storage2/BEM_bichamber/archive_one_R_60/BEM_data",
+  "archived_source": null,
+  "event_dir": "results/nohydro_gap20_descriptive_transition/outputs/initiation_propagation",
+  "duration": 2.0,
+  "stride": 100,
+  "n_exact": 8,
+  "n_all_eligible_pairs": 37,
+  "fixed_reference_direction": "majority at interval start",
+  "last_event_frame": "first crossing native frame minus one",
+  "microscopic_replay_gate": "run only if event-minus-control delta_a is supported as positive",
+  "microscopic_replay_gate_passed": false,
+  "exact_budget": "wall+social+clip+Gaussian_relaxation+realized_noise+membership+gap_direction_rotation",
+  "caution": "Matched controls are quiet by construction; event minus control is descriptive, not causal"
+}
