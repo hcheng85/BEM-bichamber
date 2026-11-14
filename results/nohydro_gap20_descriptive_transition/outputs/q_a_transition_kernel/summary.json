@@ -1,0 +1,633 @@
+{
+  "coordinates": {
+    "q": "(NR-NL)/N",
+    "a": "majority P dot (-majority COM)/|majority COM|"
+  },
+  "train_seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29
+  ],
+  "heldout_seeds": [
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39
+  ],
+  "sample_by_horizon": {
+    "1": {
+      "training_origins": 23780,
+      "training_transfer5": 142,
+      "training_nonzero_transfer": 1124,
+      "training_delta_class_counts": {
+        "<=-10": 18,
+        "-9..-5": 92,
+        "-4..-1": 417,
+        "0": 22656,
+        "1..4": 455,
+        "5..9": 94,
+        ">=10": 48
+      },
+      "heldout_origins": 7917,
+      "heldout_transfer5": 103,
+      "heldout_nonzero_transfer": 691,
+      "heldout_delta_class_counts": {
+        "<=-10": 14,
+        "-9..-5": 62,
+        "-4..-1": 241,
+        "0": 7226,
+        "1..4": 271,
+        "5..9": 72,
+        ">=10": 31
+      },
+      "eligible": 31697,
+      "ties": 263,
+      "invalid_a": 0,
+      "sign_flip": 63,
+      "n_seed": 40,
+      "max_abs_conservation_error": 1.1102230246251565e-16
+    },
+    "5": {
+      "training_origins": 4731,
+      "training_transfer5": 118,
+      "training_nonzero_transfer": 469,
+      "training_delta_class_counts": {
+        "<=-10": 45,
+        "-9..-5": 33,
+        "-4..-1": 121,
+        "0": 4262,
+        "1..4": 152,
+        "5..9": 47,
+        ">=10": 71
+      },
+      "heldout_origins": 1577,
+      "heldout_transfer5": 83,
+      "heldout_nonzero_transfer": 295,
+      "heldout_delta_class_counts": {
+        "<=-10": 20,
+        "-9..-5": 29,
+        "-4..-1": 72,
+        "0": 1282,
+        "1..4": 91,
+        "5..9": 31,
+        ">=10": 52
+      },
+      "eligible": 6308,
+      "ties": 52,
+      "invalid_a": 0,
+      "sign_flip": 80,
+      "n_seed": 40,
+      "max_abs_conservation_error": 1.1102230246251565e-16
+    },
+    "10": {
+      "training_origins": 2351,
+      "training_transfer5": 116,
+      "training_nonzero_transfer": 372,
+      "training_delta_class_counts": {
+        "<=-10": 44,
+        "-9..-5": 30,
+        "-4..-1": 72,
+        "0": 1979,
+        "1..4": 110,
+        "5..9": 45,
+        ">=10": 71
+      },
+      "heldout_origins": 783,
+      "heldout_transfer5": 80,
+      "heldout_nonzero_transfer": 247,
+      "heldout_delta_class_counts": {
+        "<=-10": 21,
+        "-9..-5": 26,
+        "-4..-1": 55,
+        "0": 536,
+        "1..4": 65,
+        "5..9": 29,
+        ">=10": 51
+      },
+      "eligible": 3134,
+      "ties": 26,
+      "invalid_a": 0,
+      "sign_flip": 77,
+      "n_seed": 40,
+      "max_abs_conservation_error": 1.1102230246251565e-16
+    }
+  },
+  "archived_com_parity": {
+    "n_prior_origins_matched": 5792,
+    "n_prior_origins_not_on_sample_grid": 0,
+    "max_abs_q_error": 1.1102230246251565e-16,
+    "max_abs_a_com_error": 8.881784197001252e-16
+  },
+  "horizons": {
+    "1": {
+      "horizon": 1.0,
+      "n": 7917,
+      "positives": 103,
+      "seed_count": 10,
+      "n_nonzero": 691,
+      "observed_transfer_rate": 0.013009978527219907,
+      "metrics": {
+        "q": {
+          "qnext_log": 0.26851127226557664,
+          "qnext_brier": 0.10001662042509071,
+          "delta_log": 0.4212366216768479,
+          "delta_brier": 0.16471874510525447,
+          "transfer_brier": 0.012838394520814334,
+          "transfer_auc": 0.6090375502272496,
+          "mean_transfer_probability": 0.012351103485876156
+        },
+        "qa": {
+          "qnext_log": 0.25568191702503257,
+          "qnext_brier": 0.0919750329975729,
+          "delta_log": 0.42594593033295675,
+          "delta_brier": 0.16396268161813196,
+          "transfer_brier": 0.012902613638227515,
+          "transfer_auc": 0.6533375494817616,
+          "mean_transfer_probability": 0.01251928649283261
+        },
+        "qa_history": {
+          "qnext_log": 0.24169275411647229,
+          "qnext_brier": 0.08605827813100482,
+          "delta_log": 0.40561908015955,
+          "delta_brier": 0.15437953927774198,
+          "transfer_brier": 0.012503553682633018,
+          "transfer_auc": 0.7450338078778195,
+          "mean_transfer_probability": 0.009840246870310947
+        }
+      },
+      "seed_bootstrap_gains": {
+        "qa_vs_q": {
+          "qnext_log": {
+            "mean": 0.012743988500919678,
+            "ci95": [
+              0.005125749409146518,
+              0.019878564903956262
+            ],
+            "n_seeds": 10
+          },
+          "qnext_brier": {
+            "mean": 0.008012885683072147,
+            "ci95": [
+              0.004792941123534072,
+              0.01206561579391338
+            ],
+            "n_seeds": 10
+          },
+          "delta_log": {
+            "mean": -0.004730514987211739,
+            "ci95": [
+              -0.01043078147359632,
+              0.0005392420104060233
+            ],
+            "n_seeds": 10
+          },
+          "delta_brier": {
+            "mean": 0.0007608568468247159,
+            "ci95": [
+              -0.00039196044567806114,
+              0.0017013411654741495
+            ],
+            "n_seeds": 10
+          },
+          "transfer_brier": {
+            "mean": -6.406437617630521e-05,
+            "ci95": [
+              -0.00015021353657750368,
+              1.4067167311836876e-05
+            ],
+            "n_seeds": 10
+          },
+          "transfer_auc": {
+            "mean": 0.045261145271396054,
+            "ci95": [
+              0.019582483747024898,
+              0.07224390970325724
+            ],
+            "n_seeds": 10
+          }
+        },
+        "qa_history_vs_qa": {
+          "qnext_log": {
+            "mean": 0.01399041877913959,
+            "ci95": [
+              0.01025783764884811,
+              0.0185254153258582
+            ],
+            "n_seeds": 10
+          },
+          "qnext_brier": {
+            "mean": 0.005917964617790485,
+            "ci95": [
+              0.004607085200852024,
+              0.007300298445182505
+            ],
+            "n_seeds": 10
+          },
+          "delta_log": {
+            "mean": 0.020406305997942072,
+            "ci95": [
+              0.012907565732680334,
+              0.027733799950219806
+            ],
+            "n_seeds": 10
+          },
+          "delta_brier": {
+            "mean": 0.00960815759721903,
+            "ci95": [
+              0.006472097674490179,
+              0.012575712104531065
+            ],
+            "n_seeds": 10
+          },
+          "transfer_brier": {
+            "mean": 0.0004004722376407822,
+            "ci95": [
+              0.00022043094661129583,
+              0.0005794242906128866
+            ],
+            "n_seeds": 10
+          },
+          "transfer_auc": {
+            "mean": 0.09327788078913492,
+            "ci95": [
+              0.06634613357076731,
+              0.1277141170408396
+            ],
+            "n_seeds": 10
+          }
+        }
+      },
+      "left_majority": {
+        "n": 5538,
+        "positive": 66,
+        "q_transfer_brier": 0.01179162224236745,
+        "qa_transfer_brier": 0.01184292946919979
+      },
+      "right_majority": {
+        "n": 2379,
+        "positive": 37,
+        "q_transfer_brier": 0.015275143103428397,
+        "qa_transfer_brier": 0.015369419408751065
+      },
+      "data_diagnostic": {
+        "eligible": 31697,
+        "ties": 263,
+        "invalid_a": 0,
+        "sign_flip": 63,
+        "n_seed": 40,
+        "max_abs_conservation_error": 1.1102230246251565e-16
+      }
+    },
+    "5": {
+      "horizon": 5.0,
+      "n": 1577,
+      "positives": 83,
+      "seed_count": 10,
+      "n_nonzero": 295,
+      "observed_transfer_rate": 0.05263157894736842,
+      "metrics": {
+        "q": {
+          "qnext_log": 0.7715436144250016,
+          "qnext_brier": 0.29303757628546645,
+          "delta_log": 0.7970189375011223,
+          "delta_brier": 0.3280222971068909,
+          "transfer_brier": 0.0496160737809838,
+          "transfer_auc": 0.6208730504346704,
+          "mean_transfer_probability": 0.04289389007771596
+        },
+        "qa": {
+          "qnext_log": 0.7450157170503107,
+          "qnext_brier": 0.2743657492560168,
+          "delta_log": 0.7954377147841005,
+          "delta_brier": 0.3256631676753523,
+          "transfer_brier": 0.04833932745030543,
+          "transfer_auc": 0.7069885969581136,
+          "mean_transfer_probability": 0.043481117342199414
+        },
+        "qa_history": {
+          "qnext_log": 0.7422543596790377,
+          "qnext_brier": 0.2680718477372204,
+          "delta_log": 0.7963584273379198,
+          "delta_brier": 0.32256463153619225,
+          "transfer_brier": 0.04808537401253697,
+          "transfer_auc": 0.7106417638425186,
+          "mean_transfer_probability": 0.043483211177855675
+        }
+      },
+      "seed_bootstrap_gains": {
+        "qa_vs_q": {
+          "qnext_log": {
+            "mean": 0.026464168414103168,
+            "ci95": [
+              0.015203035380992257,
+              0.03850588644378316
+            ],
+            "n_seeds": 10
+          },
+          "qnext_brier": {
+            "mean": 0.018633142195286986,
+            "ci95": [
+              0.014161132914149959,
+              0.02275001217221387
+            ],
+            "n_seeds": 10
+          },
+          "delta_log": {
+            "mean": 0.0014819068928264233,
+            "ci95": [
+              -0.011573633735290398,
+              0.013742938476951702
+            ],
+            "n_seeds": 10
+          },
+          "delta_brier": {
+            "mean": 0.002358037737705404,
+            "ci95": [
+              0.0009441179332716432,
+              0.0035511911124392263
+            ],
+            "n_seeds": 10
+          },
+          "transfer_brier": {
+            "mean": 0.0012731610385263994,
+            "ci95": [
+              0.0005323349510075118,
+              0.0019732459575927054
+            ],
+            "n_seeds": 10
+          },
+          "transfer_auc": {
+            "mean": 0.10901494224694042,
+            "ci95": [
+              0.06375821048096354,
+              0.16127863532965253
+            ],
+            "n_seeds": 10
+          }
+        },
+        "qa_history_vs_qa": {
+          "qnext_log": {
+            "mean": 0.0027670583437419626,
+            "ci95": [
+              -0.0033567948360293176,
+              0.008807954505142527
+            ],
+            "n_seeds": 10
+          },
+          "qnext_brier": {
+            "mean": 0.0062882025351622085,
+            "ci95": [
+              0.004419556725104791,
+              0.008131562529394272
+            ],
+            "n_seeds": 10
+          },
+          "delta_log": {
+            "mean": -0.0009245949878850301,
+            "ci95": [
+              -0.00572139343654568,
+              0.003953098137731243
+            ],
+            "n_seeds": 10
+          },
+          "delta_brier": {
+            "mean": 0.003098919356423352,
+            "ci95": [
+              0.001881650081325645,
+              0.004335958849654091
+            ],
+            "n_seeds": 10
+          },
+          "transfer_brier": {
+            "mean": 0.00025292529372375054,
+            "ci95": [
+              -8.759782796135412e-05,
+              0.0006012548444841259
+            ],
+            "n_seeds": 10
+          },
+          "transfer_auc": {
+            "mean": -0.0004419892933566094,
+            "ci95": [
+              -0.01897170384909007,
+              0.01825631591741336
+            ],
+            "n_seeds": 10
+          }
+        }
+      },
+      "left_majority": {
+        "n": 1100,
+        "positive": 54,
+        "q_transfer_brier": 0.04662418416022852,
+        "qa_transfer_brier": 0.04567087210122198
+      },
+      "right_majority": {
+        "n": 477,
+        "positive": 29,
+        "q_transfer_brier": 0.056515609594046334,
+        "qa_transfer_brier": 0.05449299806664041
+      },
+      "data_diagnostic": {
+        "eligible": 6308,
+        "ties": 52,
+        "invalid_a": 0,
+        "sign_flip": 80,
+        "n_seed": 40,
+        "max_abs_conservation_error": 1.1102230246251565e-16
+      }
+    },
+    "10": {
+      "horizon": 10.0,
+      "n": 783,
+      "positives": 80,
+      "seed_count": 10,
+      "n_nonzero": 247,
+      "observed_transfer_rate": 0.10217113665389528,
+      "metrics": {
+        "q": {
+          "qnext_log": 1.2000325673085668,
+          "qnext_brier": 0.4605030937443426,
+          "delta_log": 1.1571165264535885,
+          "delta_brier": 0.4996915911906678,
+          "transfer_brier": 0.0904886654342585,
+          "transfer_auc": 0.6366376244665718,
+          "mean_transfer_probability": 0.0808768264698864
+        },
+        "qa": {
+          "qnext_log": 1.1941866608631448,
+          "qnext_brier": 0.44791318953216847,
+          "delta_log": 1.1723832504210683,
+          "delta_brier": 0.5011079681397138,
+          "transfer_brier": 0.08941000235116517,
+          "transfer_auc": 0.6585970839260313,
+          "mean_transfer_probability": 0.08062836597266212
+        },
+        "qa_history": {
+          "qnext_log": 1.2042059015172717,
+          "qnext_brier": 0.4455377758779549,
+          "delta_log": 1.188284647148565,
+          "delta_brier": 0.5038821244829829,
+          "transfer_brier": 0.0893714262049615,
+          "transfer_auc": 0.6627400426742532,
+          "mean_transfer_probability": 0.08017683712282635
+        }
+      },
+      "seed_bootstrap_gains": {
+        "qa_vs_q": {
+          "qnext_log": {
+            "mean": 0.005788935938029571,
+            "ci95": [
+              -0.013114745132453243,
+              0.02481603113730956
+            ],
+            "n_seeds": 10
+          },
+          "qnext_brier": {
+            "mean": 0.012558839413039504,
+            "ci95": [
+              0.007213087744589493,
+              0.017862710401120672
+            ],
+            "n_seeds": 10
+          },
+          "delta_log": {
+            "mean": -0.015389067796175304,
+            "ci95": [
+              -0.030102681417127675,
+              -0.00025420505737273685
+            ],
+            "n_seeds": 10
+          },
+          "delta_brier": {
+            "mean": -0.0014386331578198214,
+            "ci95": [
+              -0.004594818623750937,
+              0.0014347620855836593
+            ],
+            "n_seeds": 10
+          },
+          "transfer_brier": {
+            "mean": 0.0010716770213063677,
+            "ci95": [
+              0.00013820732362762158,
+              0.002021029780481466
+            ],
+            "n_seeds": 10
+          },
+          "transfer_auc": {
+            "mean": 0.06129267117868849,
+            "ci95": [
+              0.008563274855275606,
+              0.11923286805749497
+            ],
+            "n_seeds": 10
+          }
+        },
+        "qa_history_vs_qa": {
+          "qnext_log": {
+            "mean": -0.010061096908255096,
+            "ci95": [
+              -0.020579834978481718,
+              0.0008521229804614212
+            ],
+            "n_seeds": 10
+          },
+          "qnext_brier": {
+            "mean": 0.002349251628569132,
+            "ci95": [
+              -7.87102214009419e-05,
+              0.005003562574308371
+            ],
+            "n_seeds": 10
+          },
+          "delta_log": {
+            "mean": -0.016005735962914325,
+            "ci95": [
+              -0.024805388223352466,
+              -0.007242060118252936
+            ],
+            "n_seeds": 10
+          },
+          "delta_brier": {
+            "mean": -0.0028050155987645125,
+            "ci95": [
+              -0.006050993909555349,
+              -5.718250637688061e-05
+            ],
+            "n_seeds": 10
+          },
+          "transfer_brier": {
+            "mean": 3.3980239754652367e-05,
+            "ci95": [
+              -0.0007569992043720143,
+              0.0009327352887728406
+            ],
+            "n_seeds": 10
+          },
+          "transfer_auc": {
+            "mean": 7.299584087618327e-05,
+            "ci95": [
+              -0.014524319545369186,
+              0.01693298943117161
+            ],
+            "n_seeds": 10
+          }
+        }
+      },
+      "left_majority": {
+        "n": 546,
+        "positive": 53,
+        "q_transfer_brier": 0.08634738993548703,
+        "qa_transfer_brier": 0.0854603314194239
+      },
+      "right_majority": {
+        "n": 237,
+        "positive": 27,
+        "q_transfer_brier": 0.10002932544408641,
+        "qa_transfer_brier": 0.09850924424454383
+      },
+      "data_diagnostic": {
+        "eligible": 3134,
+        "ties": 26,
+        "invalid_a": 0,
+        "sign_flip": 77,
+        "n_seed": 40,
+        "max_abs_conservation_error": 1.1102230246251565e-16
+      }
+    }
+  }
+}
