@@ -1,0 +1,12 @@
+{
+  "source_sha256": "5e57b9dca2cb962e2c35f540f3982d5f4018eb719067223e6b319866b4482284",
+  "adapter_sha256": "60184cdd370bc06c5040a379ca526fe9128ba5d5053d01d16577edc1a43ebcd2",
+  "horizon_steps": 5000,
+  "horizon_time": 5.0,
+  "clones": 8,
+  "pre_samples": 14,
+  "post_samples": 14,
+  "paired_noise": "explicit PCG64 array shared by all arms of each sample/clone",
+  "crossgap_arm_run": true,
+  "rows": 560
+}

@@ -1,0 +1,182 @@
+{
+  "pre": {
+    "n_trials": 112,
+    "n_samples": 14,
+    "n_seeds": 14,
+    "baseline_success": {
+      "available": true,
+      "mean": 0.13392857142857142,
+      "ci95": [
+        0.03571428571428571,
+        0.25022321428571104
+      ],
+      "n_seeds": 14,
+      "n_samples": 14,
+      "n_positive_seed_means": 5,
+      "n_negative_seed_means": 0
+    },
+    "baseline_additional_net": {
+      "available": true,
+      "mean": 1.0625,
+      "ci95": [
+        0.14285714285714285,
+        2.2232142857142856
+      ],
+      "n_seeds": 14,
+      "n_samples": 14,
+      "n_positive_seed_means": 5,
+      "n_negative_seed_means": 1
+    },
+    "toward": {
+      "success_difference": {
+        "available": true,
+        "mean": 0.0625,
+        "ci95": [
+          0.017857142857142856,
+          0.125
+        ],
+        "n_seeds": 14,
+        "n_samples": 14,
+        "n_positive_seed_means": 5,
+        "n_negative_seed_means": 0
+      },
+      "additional_net_difference": {
+        "available": true,
+        "mean": 0.36607142857142855,
+        "ci95": [
+          0.09821428571428571,
+          0.6964285714285714
+        ],
+        "n_seeds": 14,
+        "n_samples": 14,
+        "n_positive_seed_means": 6,
+        "n_negative_seed_means": 0
+      },
+      "polarization_change": {
+        "available": true,
+        "mean": 0.08045724671126374,
+        "ci95": [
+          0.06355192969162586,
+          0.09727908278885862
+        ],
+        "n_seeds": 14,
+        "n_samples": 14,
+        "n_positive_seed_means": 14,
+        "n_negative_seed_means": 0
+      }
+    },
+    "away": {
+      "success_difference": {
+        "available": true,
+        "mean": -0.026785714285714284,
+        "ci95": [
+          -0.05357142857142857,
+          0.0
+        ],
+        "n_seeds": 14,
+        "n_samples": 14,
+        "n_positive_seed_means": 0,
+        "n_negative_seed_means": 3
+      },
+      "additional_net_difference": {
+        "available": true,
+        "mean": -0.49107142857142855,
+        "ci95": [
+          -1.0089285714285714,
+          -0.05357142857142857
+        ],
+        "n_seeds": 14,
+        "n_samples": 14,
+        "n_positive_seed_means": 0,
+        "n_negative_seed_means": 4
+      },
+      "polarization_change": {
+        "available": true,
+        "mean": -0.08575015000383306,
+        "ci95": [
+          -0.10297674893204763,
+          -0.06831924143678568
+        ],
+        "n_seeds": 14,
+        "n_samples": 14,
+        "n_positive_seed_means": 0,
+        "n_negative_seed_means": 14
+      }
+    }
+  },
+  "post": {
+    "n_trials": 112,
+    "n_samples": 14,
+    "n_seeds": 14,
+    "baseline_success": {
+      "available": true,
+      "mean": 0.6071428571428571,
+      "ci95": [
+        0.3482142857142857,
+        0.8303571428571429
+      ],
+      "n_seeds": 14,
+      "n_samples": 14,
+      "n_positive_seed_means": 9,
+      "n_negative_seed_means": 0
+    },
+    "baseline_additional_net": {
+      "available": true,
+      "mean": 9.821428571428571,
+      "ci95": [
+        4.874776785714285,
+        15.142857142857142
+      ],
+      "n_seeds": 14,
+      "n_samples": 14,
+      "n_positive_seed_means": 11,
+      "n_negative_seed_means": 3
+    },
+    "crossgap_off": {
+      "success_difference": {
+        "available": true,
+        "mean": -0.008928571428571428,
+        "ci95": [
+          -0.026785714285714284,
+          0.0
+        ],
+        "n_seeds": 14,
+        "n_samples": 14,
+        "n_positive_seed_means": 0,
+        "n_negative_seed_means": 1
+      },
+      "additional_net_difference": {
+        "available": true,
+        "mean": -1.4553571428571428,
+        "ci95": [
+          -2.6607142857142856,
+          -0.4375
+        ],
+        "n_seeds": 14,
+        "n_samples": 14,
+        "n_positive_seed_means": 2,
+        "n_negative_seed_means": 12
+      },
+      "polarization_change": {
+        "available": true,
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "n_seeds": 14,
+        "n_samples": 14,
+        "n_positive_seed_means": 0,
+        "n_negative_seed_means": 0
+      }
+    }
+  },
+  "definitions": {
+    "pre_success": "At least one original-majority to minority first crossing within pre horizon; based on native crossing log, NOT net count",
+    "post_success": "At least four ADDITIONAL net fish move from the pre-entry source into target after first crossing within post horizon",
+    "post_delta_n": "-source_sign*(nrightT-nright0), where nright0 is AFTER the initial first-crossing step",
+    "independent_unit": "Original trajectory seed; paired clones and microscopic snapshots are nested, NOT independent seeds",
+    "causal_claim_requirements": "Correct simulator restart from exactly frozen state, same noise increments across arms, only registered intervention changed",
+    "complete_relocation": "Not assessed; short propagation success is not a whole-school committor"
+  }
+}
