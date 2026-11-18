@@ -1,0 +1,16 @@
+{
+  "raw_dir": "/Volumes/storage2/BEM_bichamber/archive_one_R_60/BEM_data",
+  "risk_file": "results/nohydro_gap20_descriptive_transition/outputs/q_gap_polarization/prospective_q_a_windows.csv",
+  "transfer_file": "results/nohydro_gap20_descriptive_transition/outputs/collective_qab_pathway/prospective_qab.csv",
+  "event_outcomes": "results/nohydro_gap20_descriptive_transition/outputs/collective_qab_pathway/event_outcomes.csv",
+  "matched_pairs": "results/nohydro_gap20_descriptive_transition/outputs/initiation_propagation/matched_precursor_pairs.csv",
+  "dt": 0.001,
+  "N": 100,
+  "ell": 2.8635642126552705,
+  "train_seeds": "0--29 (q-a-b storage cuts only)",
+  "heldout_seeds": "30--39",
+  "production_source": "/Users/hao/Library/CloudStorage/Dropbox/code/bichamber/archive/archive_one_R_60/BEM_bichamber_parallel_instance_no_hydro.py",
+  "production_source_sha256": "5e57b9dca2cb962e2c35f540f3982d5f4018eb719067223e6b319866b4482284",
+  "simulations_run": 0,
+  "fitted_physical_coefficients": 0
+}

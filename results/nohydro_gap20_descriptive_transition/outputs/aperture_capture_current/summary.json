@@ -1,0 +1,183 @@
+{
+  "geometry": {
+    "ell": 2.8635642126552705,
+    "half_width": 1.4317821063276353,
+    "condition": "inside approach, u=s*cos(theta)>0, abs(y-z*sin(theta)/u)<=ell/2",
+    "current": "Jcap=N^-1 sum captured max(s*cos(theta),0)"
+  },
+  "cohorts": {
+    "initiation": 5792,
+    "initiation_positive": 343,
+    "transfer": 6308,
+    "transfer_positive": 225,
+    "events": 337,
+    "matched_pairs": 658
+  },
+  "heldout_auc_comparisons": {
+    "initiation_overall": {
+      "auc_difference_Jcap_minus_Ja": 0.04994097033525102,
+      "ci95": [
+        0.025005517557648304,
+        0.07278536767391329
+      ]
+    },
+    "initiation_conditional_qab": {
+      "auc_difference_Jcap_minus_Ja": 0.04529914529914536,
+      "ci95": [
+        0.025837353498068823,
+        0.06242279838222679
+      ]
+    },
+    "transfer_overall": {
+      "auc_difference_Jcap_minus_Ja": 0.030092825067072226,
+      "ci95": [
+        0.011688825726901015,
+        0.047393744463768046
+      ]
+    },
+    "transfer_conditional_qab": {
+      "auc_difference_Jcap_minus_Ja": 0.022334147334147292,
+      "ci95": [
+        0.006385125458676968,
+        0.039502625417623186
+      ]
+    },
+    "initiation_Jcap_minus_a": {
+      "first": "Jcap",
+      "second": "a",
+      "auc_difference": -0.08014916702584196,
+      "ci95": [
+        -0.10723922938923121,
+        -0.047509142581255666
+      ]
+    },
+    "initiation_Jcap_minus_b": {
+      "first": "Jcap",
+      "second": "b",
+      "auc_difference": 0.033037872683319924,
+      "ci95": [
+        0.013678377047865576,
+        0.055672893442037366
+      ]
+    },
+    "transfer_Jcap_minus_a": {
+      "first": "Jcap",
+      "second": "a",
+      "auc_difference": -0.009131863244429828,
+      "ci95": [
+        -0.061396773445616754,
+        0.0468466681673356
+      ]
+    },
+    "transfer_Jcap_minus_b": {
+      "first": "Jcap",
+      "second": "b",
+      "auc_difference": 0.06061606002783315,
+      "ci95": [
+        0.04427385467930124,
+        0.08091812755816796
+      ]
+    }
+  },
+  "persistence": [
+    {
+      "tau_low": 0.0,
+      "tau_high": 0.25,
+      "n": 28,
+      "n_seeds": 11,
+      "median_abs_heading_change": 0.16170570745255186,
+      "median_noise_rms_angle": 0.1921982454705826,
+      "mean_heading_retention": 0.9024636257160548,
+      "median_endpoint_error": 0.014091527193360607,
+      "target_fraction_by_eta": 0.5714285714285714
+    },
+    {
+      "tau_low": 0.25,
+      "tau_high": 0.5,
+      "n": 27,
+      "n_seeds": 14,
+      "median_abs_heading_change": 0.1168597287620079,
+      "median_noise_rms_angle": 0.29809264674346664,
+      "mean_heading_retention": 0.9823647791637161,
+      "median_endpoint_error": 0.03618021802173702,
+      "target_fraction_by_eta": 0.4074074074074074
+    },
+    {
+      "tau_low": 0.5,
+      "tau_high": 1.0,
+      "n": 153,
+      "n_seeds": 24,
+      "median_abs_heading_change": 0.189813633563773,
+      "median_noise_rms_angle": 0.4421777290547406,
+      "mean_heading_retention": 0.9636334194934308,
+      "median_endpoint_error": 0.09326671538841239,
+      "target_fraction_by_eta": 0.24836601307189543
+    },
+    {
+      "tau_low": 1.0,
+      "tau_high": 2.0,
+      "n": 383,
+      "n_seeds": 31,
+      "median_abs_heading_change": 0.25348959339693256,
+      "median_noise_rms_angle": 0.616285754145279,
+      "mean_heading_retention": 0.9106106615927994,
+      "median_endpoint_error": 0.19367323151069202,
+      "target_fraction_by_eta": 0.360313315926893
+    },
+    {
+      "tau_low": 2.0,
+      "tau_high": 4.1,
+      "n": 194,
+      "n_seeds": 32,
+      "median_abs_heading_change": 0.48545230542512197,
+      "median_noise_rms_angle": 0.7746947503034662,
+      "mean_heading_retention": 0.8191089770923747,
+      "median_endpoint_error": 0.724168099424128,
+      "target_fraction_by_eta": 0.23711340206185566
+    }
+  ],
+  "first_fish_recall": [
+    {
+      "lead_low": 0,
+      "lead_high": 0.25,
+      "n": 16,
+      "n_seeds": 10,
+      "first_fish_capture_recall": 1.0
+    },
+    {
+      "lead_low": 0.25,
+      "lead_high": 0.5,
+      "n": 15,
+      "n_seeds": 13,
+      "first_fish_capture_recall": 1.0
+    },
+    {
+      "lead_low": 0.5,
+      "lead_high": 1,
+      "n": 40,
+      "n_seeds": 20,
+      "first_fish_capture_recall": 0.85
+    },
+    {
+      "lead_low": 1,
+      "lead_high": 2,
+      "n": 58,
+      "n_seeds": 21,
+      "first_fish_capture_recall": 0.6896551724137931
+    },
+    {
+      "lead_low": 2,
+      "lead_high": 5.0001,
+      "n": 214,
+      "n_seeds": 35,
+      "first_fish_capture_recall": 0.0794392523364486
+    }
+  ],
+  "finite_persistence_formula": {
+    "microscopic_law": "dtheta=clip(omega_wall+omega_social)dt+In*dW; In=0.5",
+    "mean_shift": "omega*tau^2/(2u)",
+    "transverse_sigma": "In*sqrt(tau^3/(3u^2))",
+    "capture_probability": "Phi((h-mu)/sigma)-Phi((-h-mu)/sigma)",
+    "fitted_coefficients": 0
+  }
+}
