@@ -1,0 +1,12 @@
+{
+  "n_snapshots": 28,
+  "n_cross_directed": 276,
+  "n_central_directed": 246,
+  "n_other_directed": 30,
+  "offcentral_examples": [
+    "pre_s12_k240000",
+    "pre_s1_k985000"
+  ],
+  "native_predicates_consistent": true,
+  "independent_physical_wall_check": "REQUIRES source-grounded local review; off-central is not synonymous with obstructed"
+}

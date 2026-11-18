@@ -1,0 +1,23 @@
+{
+  "source_sha256": "5e57b9dca2cb962e2c35f540f3982d5f4018eb719067223e6b319866b4482284",
+  "status": "inconsistent",
+  "explanation": "The earlier abs(y)<=gap/2 rule was not itself a wall test, but exact reconstruction of the production boundary shows that all 15 unique off-central native-visible links cross both rounded upper wall-transition arcs. Those arcs are part of x_coord/y_coord and are used by wall distance and wall avoidance through circle_center1 and circle_center2. Native CheckVoronoi checks four straight segments and only the two central tip circles circle_center5 and circle_center6; it omits the upper transition arcs (and the other curved boundary components). Thus its three predicates all return false for these links even though the sightlines leave one chamber, pass through exterior space, and enter the other chamber. All 658 indexed first-crossing frames are central and directionally consistent, so the crossing index is not the source of the discrepancy. Because the stated physical model has one opening and no through-wall vision, native visibility is not consistent with the production boundary for these exceptional configurations; directional branching is stopped.",
+  "evidence": {
+    "audited_snapshots": 28,
+    "native_cross_links_directed": 276,
+    "offcentral_links_directed": 30,
+    "offcentral_links_unique": 15,
+    "unique_links_intersecting_both_upper_boundary_arcs": 15,
+    "exceptional_snapshots": [
+      "pre_s1_k985000",
+      "pre_s12_k240000"
+    ],
+    "indexed_first_crossing_frames": 658,
+    "indexed_particle_crossings": 659,
+    "indexed_offcentral_particle_crossings": 0,
+    "indexed_direction_mismatches": 0,
+    "maximum_indexed_abs_y": 1.406735310290563,
+    "nominal_gap_half_width": 1.4317821063276353
+  },
+  "decision": "stop_before_branching"
+}

@@ -1,0 +1,9 @@
+{
+  "n_indexed_events": 658,
+  "n_forward_events": 658,
+  "n_offcentral_particle_crossings": 0,
+  "n_total_particle_crossings": 659,
+  "max_q_pre_error": 1.1102230246251565e-16,
+  "n_direction_mismatches": 0,
+  "scope": "indexed first-crossing frames only, not exhaustive trajectory audit"
+}
