@@ -1,0 +1,21 @@
+{
+  "structural": {
+    "n_frames": 28,
+    "cross_directed": 276,
+    "cross_unique": 138,
+    "opening_directed": 246,
+    "solid_directed": 30,
+    "worst_solid_excess": 5.578548184968435,
+    "solid_examples": [
+      "pre_s1_k985000",
+      "pre_s12_k240000"
+    ],
+    "all_cross_links_pass_through_gap": false
+  },
+  "hash_gate_passed": true,
+  "pilot_parity": {},
+  "results": null,
+  "source_sha256": "5e57b9dca2cb962e2c35f540f3982d5f4018eb719067223e6b319866b4482284",
+  "adapter_sha256": "60184cdd370bc06c5040a379ca526fe9128ba5d5053d01d16577edc1a43ebcd2",
+  "analysis": "same 14 post-entry states and same 8 noise streams as previous pilot"
+}
