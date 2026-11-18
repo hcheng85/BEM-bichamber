@@ -1,0 +1,28 @@
+{
+  "n_events": 337,
+  "n_continued": 185,
+  "n_failed": 152,
+  "n_original_seeds": 37,
+  "q_edges": [
+    0.0,
+    0.5,
+    0.8,
+    1.000001
+  ],
+  "q_standardization_weights": [
+    0.6231454005934718,
+    0.2433234421364985,
+    0.13353115727002968
+  ],
+  "window_duration": 0.2,
+  "time_range": [
+    -3.0,
+    2.0
+  ],
+  "first_crossing_assignment": "segment is in (-0.2,0] bin",
+  "identity": "neck_flux = plug_flux - weighted_accumulation - weighted_lateral_flux + path_discretization_correction",
+  "maximum_absolute_closure_residual": 7.815970093361102e-14,
+  "rms_closure_residual": 9.482129298570727e-15,
+  "maximum_absolute_path_correction": 0.009703473665132911,
+  "mean_absolute_path_correction": 0.0007875715960839303
+}

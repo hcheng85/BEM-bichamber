@@ -1,0 +1,10 @@
+{
+  "raw_dir": "/Volumes/storage2/BEM_bichamber/archive_one_R_60/BEM_data",
+  "cohort": "results/nohydro_gap20_descriptive_transition/outputs/collective_qab_pathway/event_outcomes.csv",
+  "dt": 0.001,
+  "ell": 2.8635642126552705,
+  "source_direction": "fixed from pre-event majority for every window",
+  "uncertainty": "cluster bootstrap over original seeds; seed-equal within outcome and q stratum",
+  "standardization": "direct standardization to pooled cohort frequencies in prior q-a-b |q_pre| strata",
+  "outcome": "at least four additional net fish over five time units"
+}
