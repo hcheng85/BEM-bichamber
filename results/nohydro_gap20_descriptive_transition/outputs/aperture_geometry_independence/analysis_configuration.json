@@ -1,0 +1,17 @@
+{
+  "raw_dir": "/Volumes/storage2/BEM_bichamber/archive_one_R_60/BEM_data",
+  "initiation_input": "results/nohydro_gap20_descriptive_transition/outputs/aperture_capture_current/prospective_initiation.csv",
+  "transfer_input": "results/nohydro_gap20_descriptive_transition/outputs/aperture_capture_current/prospective_transfer.csv",
+  "train_seeds": "0--29",
+  "heldout_seeds": "30--39",
+  "inward_supply_strata": "within-q-a-b training quartiles",
+  "supply_quantiles": [
+    0.25,
+    0.5,
+    0.75
+  ],
+  "bootstrap_unit": "original trajectory seed",
+  "bootstrap_draws": 2000,
+  "fitted_predictors": 0,
+  "new_simulations": 0
+}

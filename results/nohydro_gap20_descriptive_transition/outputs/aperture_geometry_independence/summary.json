@@ -1,0 +1,420 @@
+{
+  "initiation": {
+    "n_all": 5792,
+    "n_train": 4422,
+    "n_heldout": 1370,
+    "heldout_positives": 129,
+    "supply_balance": {
+      "pair_weighted_positive_minus_negative_Jin": 0.0016002656713617505,
+      "concordant_pairs": 10628
+    }
+  },
+  "transfer": {
+    "n_all": 6308,
+    "n_train": 4731,
+    "n_heldout": 1577,
+    "heldout_positives": 94,
+    "supply_balance": {
+      "pair_weighted_positive_minus_negative_Jin": 0.006296093563602603,
+      "concordant_pairs": 6790
+    }
+  },
+  "conditions": {
+    "unconditional": "direct heldout ranks",
+    "q_a_b": "pairs only within prior q-a-b cells",
+    "q_a_b_and_Jin": "pairs only within prior q-a-b cells and training-only Jin quartiles"
+  },
+  "metrics": {
+    "Ja": "signed stored-velocity approach current",
+    "Jin": "positive inward heading current over all approach fish",
+    "Jcap": "Jin restricted by exact straight-ray aperture condition"
+  },
+  "auc": [
+    {
+      "condition": "unconditional",
+      "metric": "Ja",
+      "auc": 0.6566534864981354,
+      "ci95": [
+        0.6335192911228337,
+        0.6816550140869937
+      ],
+      "heldout_n": 1370,
+      "heldout_seeds": 10,
+      "concordant_pairs": 160089,
+      "supported_cells": 1,
+      "cohort": "initiation"
+    },
+    {
+      "condition": "unconditional",
+      "metric": "Jin",
+      "auc": 0.6773388552617606,
+      "ci95": [
+        0.6371698885565444,
+        0.710196403998624
+      ],
+      "heldout_n": 1370,
+      "heldout_seeds": 10,
+      "concordant_pairs": 160089,
+      "supported_cells": 1,
+      "cohort": "initiation"
+    },
+    {
+      "condition": "unconditional",
+      "metric": "Jcap",
+      "auc": 0.7065944568333864,
+      "ci95": [
+        0.67940132635187,
+        0.7322837572528709
+      ],
+      "heldout_n": 1370,
+      "heldout_seeds": 10,
+      "concordant_pairs": 160089,
+      "supported_cells": 1,
+      "cohort": "initiation"
+    },
+    {
+      "condition": "q_a_b",
+      "metric": "Ja",
+      "auc": 0.5536603493125232,
+      "ci95": [
+        0.5438222610759401,
+        0.5602081676001924
+      ],
+      "heldout_n": 1370,
+      "heldout_seeds": 10,
+      "concordant_pairs": 13455,
+      "supported_cells": 9,
+      "cohort": "initiation"
+    },
+    {
+      "condition": "q_a_b",
+      "metric": "Jin",
+      "auc": 0.5602749907097733,
+      "ci95": [
+        0.5458254405756291,
+        0.5693091417734883
+      ],
+      "heldout_n": 1370,
+      "heldout_seeds": 10,
+      "concordant_pairs": 13455,
+      "supported_cells": 9,
+      "cohort": "initiation"
+    },
+    {
+      "condition": "q_a_b",
+      "metric": "Jcap",
+      "auc": 0.5989594946116685,
+      "ci95": [
+        0.578662632796248,
+        0.6136503587473415
+      ],
+      "heldout_n": 1370,
+      "heldout_seeds": 10,
+      "concordant_pairs": 13455,
+      "supported_cells": 9,
+      "cohort": "initiation"
+    },
+    {
+      "condition": "q_a_b_and_Jin",
+      "metric": "Ja",
+      "auc": 0.5064452389913436,
+      "ci95": [
+        0.49736984688234664,
+        0.513161157556923
+      ],
+      "heldout_n": 1370,
+      "heldout_seeds": 10,
+      "concordant_pairs": 10628,
+      "supported_cells": 19,
+      "cohort": "initiation"
+    },
+    {
+      "condition": "q_a_b_and_Jin",
+      "metric": "Jin",
+      "auc": 0.510114791117802,
+      "ci95": [
+        0.502072213850106,
+        0.5157102894081882
+      ],
+      "heldout_n": 1370,
+      "heldout_seeds": 10,
+      "concordant_pairs": 10628,
+      "supported_cells": 19,
+      "cohort": "initiation"
+    },
+    {
+      "condition": "q_a_b_and_Jin",
+      "metric": "Jcap",
+      "auc": 0.528744824990591,
+      "ci95": [
+        0.5197155366425037,
+        0.5338849976650701
+      ],
+      "heldout_n": 1370,
+      "heldout_seeds": 10,
+      "concordant_pairs": 10628,
+      "supported_cells": 19,
+      "cohort": "initiation"
+    },
+    {
+      "condition": "unconditional",
+      "metric": "Ja",
+      "auc": 0.7323926485990158,
+      "ci95": [
+        0.7009572876960104,
+        0.7687824208793446
+      ],
+      "heldout_n": 1577,
+      "heldout_seeds": 10,
+      "concordant_pairs": 139402,
+      "supported_cells": 1,
+      "cohort": "transfer"
+    },
+    {
+      "condition": "unconditional",
+      "metric": "Jin",
+      "auc": 0.7197350109754523,
+      "ci95": [
+        0.6811253069057507,
+        0.7523115285284069
+      ],
+      "heldout_n": 1577,
+      "heldout_seeds": 10,
+      "concordant_pairs": 139402,
+      "supported_cells": 1,
+      "cohort": "transfer"
+    },
+    {
+      "condition": "unconditional",
+      "metric": "Jcap",
+      "auc": 0.762485473666088,
+      "ci95": [
+        0.7293423487743393,
+        0.7955519026424615
+      ],
+      "heldout_n": 1577,
+      "heldout_seeds": 10,
+      "concordant_pairs": 139402,
+      "supported_cells": 1,
+      "cohort": "transfer"
+    },
+    {
+      "condition": "q_a_b",
+      "metric": "Ja",
+      "auc": 0.6446377696377696,
+      "ci95": [
+        0.620067454912373,
+        0.6708530709842255
+      ],
+      "heldout_n": 1577,
+      "heldout_seeds": 10,
+      "concordant_pairs": 9828,
+      "supported_cells": 11,
+      "cohort": "transfer"
+    },
+    {
+      "condition": "q_a_b",
+      "metric": "Jin",
+      "auc": 0.6434167684167684,
+      "ci95": [
+        0.6179022228162692,
+        0.6706159959224972
+      ],
+      "heldout_n": 1577,
+      "heldout_seeds": 10,
+      "concordant_pairs": 9828,
+      "supported_cells": 11,
+      "cohort": "transfer"
+    },
+    {
+      "condition": "q_a_b",
+      "metric": "Jcap",
+      "auc": 0.6669719169719169,
+      "ci95": [
+        0.6345826861595009,
+        0.7017360637693913
+      ],
+      "heldout_n": 1577,
+      "heldout_seeds": 10,
+      "concordant_pairs": 9828,
+      "supported_cells": 11,
+      "cohort": "transfer"
+    },
+    {
+      "condition": "q_a_b_and_Jin",
+      "metric": "Ja",
+      "auc": 0.5324742268041237,
+      "ci95": [
+        0.5167092301736369,
+        0.5478171082554995
+      ],
+      "heldout_n": 1577,
+      "heldout_seeds": 10,
+      "concordant_pairs": 6790,
+      "supported_cells": 18,
+      "cohort": "transfer"
+    },
+    {
+      "condition": "q_a_b_and_Jin",
+      "metric": "Jin",
+      "auc": 0.53379970544919,
+      "ci95": [
+        0.5202095774004077,
+        0.5498300571582697
+      ],
+      "heldout_n": 1577,
+      "heldout_seeds": 10,
+      "concordant_pairs": 6790,
+      "supported_cells": 18,
+      "cohort": "transfer"
+    },
+    {
+      "condition": "q_a_b_and_Jin",
+      "metric": "Jcap",
+      "auc": 0.5491163475699559,
+      "ci95": [
+        0.5331535811343076,
+        0.5668450205977864
+      ],
+      "heldout_n": 1577,
+      "heldout_seeds": 10,
+      "concordant_pairs": 6790,
+      "supported_cells": 18,
+      "cohort": "transfer"
+    }
+  ],
+  "contrasts": [
+    {
+      "condition": "unconditional",
+      "contrast": "Jin_minus_Ja",
+      "difference": 0.020685368763625256,
+      "ci95": [
+        -0.008490960884826563,
+        0.042436370530022395
+      ],
+      "bootstrap_draws": 2000,
+      "cohort": "initiation"
+    },
+    {
+      "condition": "unconditional",
+      "contrast": "Jcap_minus_Jin",
+      "difference": 0.029255601571625767,
+      "ci95": [
+        0.008085625554569684,
+        0.05320653828755377
+      ],
+      "bootstrap_draws": 2000,
+      "cohort": "initiation"
+    },
+    {
+      "condition": "q_a_b",
+      "contrast": "Jin_minus_Ja",
+      "difference": 0.006614641397250098,
+      "ci95": [
+        -0.0008141681889623969,
+        0.013420692529733451
+      ],
+      "bootstrap_draws": 2000,
+      "cohort": "initiation"
+    },
+    {
+      "condition": "q_a_b",
+      "contrast": "Jcap_minus_Jin",
+      "difference": 0.03868450390189526,
+      "ci95": [
+        0.019624728549073538,
+        0.05567376343150182
+      ],
+      "bootstrap_draws": 2000,
+      "cohort": "initiation"
+    },
+    {
+      "condition": "q_a_b_and_Jin",
+      "contrast": "Jin_minus_Ja",
+      "difference": 0.003669552126458364,
+      "ci95": [
+        -0.001038862963863557,
+        0.008785418855589457
+      ],
+      "bootstrap_draws": 2000,
+      "cohort": "initiation"
+    },
+    {
+      "condition": "q_a_b_and_Jin",
+      "contrast": "Jcap_minus_Jin",
+      "difference": 0.018630033872788943,
+      "ci95": [
+        0.009582584690333476,
+        0.028913242110574063
+      ],
+      "bootstrap_draws": 2000,
+      "cohort": "initiation"
+    },
+    {
+      "condition": "unconditional",
+      "contrast": "Jin_minus_Ja",
+      "difference": -0.012657637623563422,
+      "ci95": [
+        -0.03484898870708422,
+        0.005711974320843287
+      ],
+      "bootstrap_draws": 2000,
+      "cohort": "transfer"
+    },
+    {
+      "condition": "unconditional",
+      "contrast": "Jcap_minus_Jin",
+      "difference": 0.04275046269063565,
+      "ci95": [
+        0.02539895363877983,
+        0.06198610841747942
+      ],
+      "bootstrap_draws": 2000,
+      "cohort": "transfer"
+    },
+    {
+      "condition": "q_a_b",
+      "contrast": "Jin_minus_Ja",
+      "difference": -0.0012210012210012167,
+      "ci95": [
+        -0.008435530794618446,
+        0.005126413314734265
+      ],
+      "bootstrap_draws": 2000,
+      "cohort": "transfer"
+    },
+    {
+      "condition": "q_a_b",
+      "contrast": "Jcap_minus_Jin",
+      "difference": 0.02355514855514851,
+      "ci95": [
+        0.007130982123425287,
+        0.04615543529001141
+      ],
+      "bootstrap_draws": 2000,
+      "cohort": "transfer"
+    },
+    {
+      "condition": "q_a_b_and_Jin",
+      "contrast": "Jin_minus_Ja",
+      "difference": 0.0013254786450662692,
+      "ci95": [
+        -0.003508492242526623,
+        0.008713319046549166
+      ],
+      "bootstrap_draws": 2000,
+      "cohort": "transfer"
+    },
+    {
+      "condition": "q_a_b_and_Jin",
+      "contrast": "Jcap_minus_Jin",
+      "difference": 0.015316642120765889,
+      "ci95": [
+        0.009525590770456935,
+        0.024924713520583414
+      ],
+      "bootstrap_draws": 2000,
+      "cohort": "transfer"
+    }
+  ]
+}

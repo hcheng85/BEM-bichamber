@@ -68,9 +68,10 @@ def capture_geometry(state: np.ndarray,source_sign: int) -> dict:
     tau[inward]=-z[inward]/u[inward]
     y_hit[inward]=y[inward]+vy[inward]*tau[inward]
     captured=inward&(np.abs(y_hit)<=HALF_WIDTH)
+    j_inward=float(np.sum(u[inward])/N)
     j_capture=float(np.sum(u[captured])/N)
     return dict(mask=captured,inside=inside,u=u,tau=tau,y_hit=y_hit,
-                j_capture=j_capture,n_capture=int(captured.sum()),
+                j_inward=j_inward,j_capture=j_capture,n_capture=int(captured.sum()),
                 capture_weight=float(np.sum(u[captured])),
                 mean_capture_time=float(np.average(tau[captured],weights=u[captured])) if captured.any() else float("nan"))
 
@@ -80,7 +81,7 @@ def snapshot_metrics(state: np.ndarray,velocity: np.ndarray,source_sign: int) ->
     ja=float(np.sum(s*velocity[0]*cap["inside"])/N)
     f=features(state,source_sign)
     return dict(abs_q=abs(float(f["q"])),a=float(f["a"]),b=float(f["b"]),
-                Ja=ja,Jcap=cap["j_capture"],n_capture=cap["n_capture"],
+                Ja=ja,Jin=cap["j_inward"],Jcap=cap["j_capture"],n_capture=cap["n_capture"],
                 mean_capture_time=cap["mean_capture_time"]),cap
 
 
@@ -368,6 +369,7 @@ def self_test() -> None:
     st[0,1]=ELL/2;st[1,1]=HALF_WIDTH*.9;st[2,1]=np.pi/2+.2
     cap=capture_geometry(st,1)
     assert cap["mask"][0] and not cap["mask"][1] and np.isclose(cap["tau"][0],ELL/2)
+    assert cap["j_capture"]<=cap["j_inward"] and cap["j_inward"]>0
     corr=finite_persistence_intercept(-1,0,0,0)
     assert corr["tau"]==1 and corr["mean_y_hit"]==0 and np.isclose(corr["sigma_y_hit"],IN_NOISE/math.sqrt(3))
     print("PASS: aperture ray condition and finite-persistence limit")
