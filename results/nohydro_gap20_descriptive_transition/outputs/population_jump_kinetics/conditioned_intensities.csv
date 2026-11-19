@@ -1,0 +1,170 @@
+model,cell,n_train,crossing_intensity
+q,[0],31691,0.029724527468366412
+q,[4],31860,0.025549278091650973
+q,[1],9024,0.20500886524822695
+q,[3],8855,0.15900621118012423
+q,[2],14630,0.18263841421736157
+q+px,"[0, 2]",9176,0.05187445510026155
+q+px,"[4, 1]",9236,0.04244261585101776
+q+px,"[0, 1]",6285,0.0035003977724741447
+q+px,"[4, 2]",6322,0.04334071496361911
+q+px,"[0, 0]",8362,0.0
+q+px,"[4, 3]",8395,0.008814770696843359
+q+px,"[0, 3]",7868,0.05643111337061515
+q+px,"[4, 0]",7907,0.009358796003541166
+q+px,"[1, 3]",779,0.7779204107830552
+q+px,"[3, 0]",740,0.02702702702702703
+q+px,"[1, 2]",4245,0.26713780918727914
+q+px,"[3, 1]",4185,0.13906810035842293
+q+px,"[1, 1]",3009,0.035227650382186775
+q+px,"[3, 2]",2972,0.2335127860026918
+q+px,"[1, 0]",991,0.004036326942482341
+q+px,"[3, 3]",958,0.11691022964509394
+q+px,"[2, 2]",6702,0.27006863622799165
+q+px,"[2, 1]",6702,0.08833184124142048
+q+px,"[2, 0]",613,0.009787928221859706
+q+px,"[2, 3]",613,0.43066884176182707
+q+source_storage,"[0, 0]",25214,0.0037280875703973983
+q+source_storage,"[4, 0]",31502,0.005269506697987429
+q+source_storage,"[0, 1]",2784,0.032327586206896554
+q+source_storage,"[0, 2]",2139,0.06077606358111267
+q+source_storage,"[0, 3]",1554,0.4041184041184041
+q+source_storage,"[4, 1]",260,1.1153846153846154
+q+source_storage,"[4, 2]",96,3.6041666666666665
+q+source_storage,"[1, 3]",332,3.397590361445783
+q+source_storage,"[3, 2]",302,1.6490066225165563
+q+source_storage,"[1, 2]",561,0.5597147950089126
+q+source_storage,"[3, 1]",665,0.3669172932330827
+q+source_storage,"[1, 1]",915,0.1901639344262295
+q+source_storage,"[3, 0]",7811,0.03405453847138651
+q+source_storage,"[1, 0]",7216,0.03242793791574279
+q+source_storage,"[2, 2]",774,0.9147286821705426
+q+source_storage,"[2, 1]",1273,0.2812254516889238
+q+source_storage,"[2, 0]",12278,0.04072324482814791
+q+source_storage,"[2, 3]",305,3.6262295081967215
+q+source_storage,"[3, 3]",77,5.194805194805195
+q+px+source_storage,"[0, 2, 0]",5132,0.011691348402182385
+q+px+source_storage,"[4, 1, 0]",9050,0.010828729281767955
+q+px+source_storage,"[0, 1, 0]",4378,0.0
+q+px+source_storage,"[4, 2, 0]",6239,0.00384677031575573
+q+px+source_storage,"[0, 0, 0]",8211,0.0
+q+px+source_storage,"[4, 3, 0]",8385,0.0007155635062611807
+q+px+source_storage,"[0, 2, 1]",1529,0.01962066710268149
+q+px+source_storage,"[0, 2, 2]",1334,0.05247376311844078
+q+px+source_storage,"[0, 2, 3]",1181,0.26756985605419137
+q+px+source_storage,"[0, 1, 2]",672,0.008928571428571428
+q+px+source_storage,"[0, 3, 0]",7493,0.004537568397170693
+q+px+source_storage,"[4, 0, 0]",7828,0.0048543689320388345
+q+px+source_storage,"[0, 1, 1]",909,0.0044004400440044
+q+px+source_storage,"[0, 3, 1]",240,0.23333333333333334
+q+px+source_storage,"[0, 1, 3]",326,0.03680981595092025
+q+px+source_storage,"[0, 3, 2]",89,0.6067415730337079
+q+px+source_storage,"[0, 0, 1]",106,0.0
+q+px+source_storage,"[4, 1, 1]",140,1.0857142857142856
+q+px+source_storage,"[1, 2, 1]",568,0.2147887323943662
+q+px+source_storage,"[3, 1, 0]",3603,0.05717457674160422
+q+px+source_storage,"[1, 3, 0]",669,0.03587443946188341
+q+px+source_storage,"[3, 0, 0]",652,0.02147239263803681
+q+px+source_storage,"[1, 2, 0]",3100,0.06193548387096774
+q+px+source_storage,"[1, 1, 0]",2482,0.0056406124093473006
+q+px+source_storage,"[3, 2, 0]",2647,0.017378163959199094
+q+px+source_storage,"[1, 0, 0]",965,0.004145077720207254
+q+px+source_storage,"[3, 3, 0]",909,0.0
+q+px+source_storage,"[1, 1, 1]",299,0.07357859531772576
+q+px+source_storage,"[1, 1, 2]",150,0.14666666666666667
+q+px+source_storage,"[1, 2, 2]",374,0.49732620320855614
+q+px+source_storage,"[3, 2, 1]",179,0.547486033519553
+q+px+source_storage,"[3, 1, 1]",411,0.31143552311435524
+q+px+source_storage,"[1, 2, 3]",203,3.123152709359606
+q+px+source_storage,"[3, 1, 2]",146,0.9041095890410958
+q+px+source_storage,"[2, 2, 2]",369,1.3658536585365855
+q+px+source_storage,"[2, 1, 2]",362,0.3149171270718232
+q+px+source_storage,"[2, 1, 1]",629,0.14308426073131955
+q+px+source_storage,"[2, 2, 1]",584,0.3904109589041096
+q+px+source_storage,"[2, 1, 0]",5586,0.03544575725026853
+q+px+source_storage,"[2, 2, 0]",5592,0.04899856938483548
+q+px+source_storage,"[2, 1, 3]",125,1.52
+q+px+source_storage,"[2, 0, 0]",571,0.0035026269702276708
+q+px+source_storage,"[2, 3, 0]",529,0.04914933837429111
+q+px+source_storage,"[2, 2, 3]",157,5.1210191082802545
+q+px+source_storage,"[1, 1, 3]",78,0.6153846153846154
+q+px+source_storage,"[3, 2, 2]",110,2.8181818181818183
+q+px+source_storage,"[4, 0, 1]",61,0.5245901639344263
+q+px+source_storage,"[4, 2, 1]",53,1.5471698113207548
+q+px+source+target_storage,"[0, 2, 0, 0]",5080,0.011023622047244094
+q+px+source+target_storage,"[4, 1, 0, 0]",5119,0.006251220941590154
+q+px+source+target_storage,"[0, 1, 0, 0]",4351,0.0
+q+px+source+target_storage,"[4, 2, 0, 0]",4381,0.0009130335539831089
+q+px+source+target_storage,"[0, 0, 0, 0]",8207,0.0
+q+px+source+target_storage,"[4, 3, 0, 0]",8239,0.0007282437188979245
+q+px+source+target_storage,"[0, 2, 1, 0]",1485,0.018855218855218854
+q+px+source+target_storage,"[4, 1, 0, 1]",1491,0.025486250838363516
+q+px+source+target_storage,"[0, 2, 2, 0]",1291,0.043377226955848176
+q+px+source+target_storage,"[4, 1, 0, 2]",1297,0.009252120277563608
+q+px+source+target_storage,"[0, 2, 3, 0]",1139,0.16154521510096576
+q+px+source+target_storage,"[4, 1, 0, 3]",1143,0.01399825021872266
+q+px+source+target_storage,"[0, 1, 2, 0]",651,0.009216589861751152
+q+px+source+target_storage,"[4, 2, 0, 2]",652,0.015337423312883436
+q+px+source+target_storage,"[0, 3, 0, 0]",7467,0.004017677782241864
+q+px+source+target_storage,"[4, 0, 0, 0]",7494,0.0029356818788364024
+q+px+source+target_storage,"[0, 1, 1, 0]",888,0.0045045045045045045
+q+px+source+target_storage,"[4, 2, 0, 1]",889,0.008998875140607425
+q+px+source+target_storage,"[0, 3, 1, 0]",225,0.1511111111111111
+q+px+source+target_storage,"[4, 0, 0, 1]",227,0.05286343612334802
+q+px+source+target_storage,"[0, 1, 3, 0]",314,0.03821656050955414
+q+px+source+target_storage,"[4, 2, 0, 3]",317,0.006309148264984227
+q+px+source+target_storage,"[0, 3, 2, 0]",81,0.345679012345679
+q+px+source+target_storage,"[4, 0, 0, 2]",81,0.04938271604938271
+q+px+source+target_storage,"[0, 0, 1, 0]",105,0.0
+q+px+source+target_storage,"[4, 3, 0, 1]",105,0.0
+q+px+source+target_storage,"[1, 2, 1, 0]",378,0.15343915343915343
+q+px+source+target_storage,"[3, 1, 0, 1]",372,0.0913978494623656
+q+px+source+target_storage,"[1, 3, 0, 0]",631,0.03169572107765452
+q+px+source+target_storage,"[3, 0, 0, 0]",604,0.023178807947019868
+q+px+source+target_storage,"[1, 2, 0, 0]",2904,0.05853994490358127
+q+px+source+target_storage,"[3, 1, 0, 0]",2865,0.05514834205933682
+q+px+source+target_storage,"[1, 1, 0, 0]",2355,0.0059447983014862
+q+px+source+target_storage,"[3, 2, 0, 0]",2325,0.011182795698924731
+q+px+source+target_storage,"[1, 0, 0, 0]",928,0.004310344827586207
+q+px+source+target_storage,"[3, 3, 0, 0]",896,0.0
+q+px+source+target_storage,"[1, 1, 1, 0]",191,0.07329842931937172
+q+px+source+target_storage,"[3, 2, 0, 1]",190,0.10526315789473684
+q+px+source+target_storage,"[1, 1, 2, 0]",85,0.11764705882352941
+q+px+source+target_storage,"[3, 2, 0, 2]",84,0.0
+q+px+source+target_storage,"[1, 2, 2, 0]",252,0.3968253968253968
+q+px+source+target_storage,"[3, 1, 0, 2]",246,0.056910569105691054
+q+px+source+target_storage,"[1, 1, 0, 1]",84,0.0
+q+px+source+target_storage,"[3, 2, 1, 0]",84,0.30952380952380953
+q+px+source+target_storage,"[1, 2, 1, 1]",137,0.4233576642335766
+q+px+source+target_storage,"[3, 1, 1, 1]",136,0.4117647058823529
+q+px+source+target_storage,"[1, 2, 3, 0]",124,2.2903225806451615
+q+px+source+target_storage,"[3, 1, 0, 3]",120,0.0
+q+px+source+target_storage,"[1, 2, 2, 1]",89,0.9438202247191011
+q+px+source+target_storage,"[3, 1, 1, 2]",88,0.3181818181818182
+q+px+source+target_storage,"[1, 2, 0, 1]",142,0.14084507042253522
+q+px+source+target_storage,"[3, 1, 1, 0]",142,0.30985915492957744
+q+px+source+target_storage,"[2, 2, 2, 2]",71,1.943661971830986
+q+px+source+target_storage,"[2, 1, 2, 2]",71,0.19718309859154928
+q+px+source+target_storage,"[2, 2, 2, 1]",106,1.9811320754716981
+q+px+source+target_storage,"[2, 1, 1, 2]",106,0.03773584905660377
+q+px+source+target_storage,"[2, 2, 1, 0]",304,0.3092105263157895
+q+px+source+target_storage,"[2, 1, 0, 1]",304,0.03289473684210526
+q+px+source+target_storage,"[2, 2, 0, 0]",5060,0.039525691699604744
+q+px+source+target_storage,"[2, 1, 0, 0]",5060,0.036758893280632414
+q+px+source+target_storage,"[2, 1, 1, 0]",332,0.16265060240963855
+q+px+source+target_storage,"[2, 2, 0, 1]",332,0.19879518072289157
+q+px+source+target_storage,"[2, 1, 1, 1]",153,0.20915032679738563
+q+px+source+target_storage,"[2, 2, 1, 1]",153,0.6274509803921569
+q+px+source+target_storage,"[2, 0, 0, 0]",517,0.0038684719535783366
+q+px+source+target_storage,"[2, 3, 0, 0]",517,0.030947775628626693
+q+px+source+target_storage,"[2, 2, 1, 2]",92,0.41304347826086957
+q+px+source+target_storage,"[2, 1, 2, 1]",92,0.45652173913043476
+q+px+source+target_storage,"[2, 1, 0, 2]",159,0.012578616352201259
+q+px+source+target_storage,"[2, 2, 2, 0]",159,0.8427672955974843
+q+px+source+target_storage,"[2, 2, 0, 2]",156,0.038461538461538464
+q+px+source+target_storage,"[2, 1, 2, 0]",156,0.3717948717948718
+q+px+source+target_storage,"[1, 1, 3, 0]",51,0.5490196078431373
+q+px+source+target_storage,"[2, 2, 3, 0]",63,4.063492063492063
+q+px+source+target_storage,"[2, 1, 0, 3]",63,0.0
+q+px+source+target_storage,"[3, 1, 2, 0]",50,0.64
+q+px+source+target_storage,"[1, 2, 0, 2]",50,0.04

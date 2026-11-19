@@ -1,0 +1,8 @@
+{
+  "raw_dir": "/Volumes/storage2/BEM_bichamber/archive_one_R_60/BEM_data",
+  "processed_dir": "../Processed_data",
+  "cache_dir": "results/nohydro_gap20_descriptive_transition/outputs/initiation_propagation/cache",
+  "common_population_resolution": 0.1,
+  "reflection_symmetry": "(q,px,b_left,b_right) -> (-q,-px,b_right,b_left)",
+  "new_simulations": 0
+}
