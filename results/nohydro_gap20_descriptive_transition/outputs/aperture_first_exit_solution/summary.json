@@ -1,0 +1,741 @@
+{
+  "grid": {
+    "final_shape": [
+      31,
+      19,
+      36
+    ],
+    "omega_nodes": [
+      -3.0,
+      -2.0,
+      -1.0,
+      0.0,
+      1.0,
+      2.0,
+      3.0
+    ],
+    "noise_levels": [
+      0.5,
+      0.25,
+      0.125,
+      0.0625,
+      0.0
+    ]
+  },
+  "attempts": {
+    "n": 6115,
+    "n_seeds": 10,
+    "uncensored": 6115,
+    "captured": 427,
+    "censored": 0,
+    "omega_clip_fraction": 0.0004905968928863451
+  },
+  "validation": [
+    {
+      "model": "zero",
+      "metric": "mean_probability",
+      "estimate": 0.12224419506848436,
+      "ci95": [
+        0.10000778377732784,
+        0.14475515379494353
+      ]
+    },
+    {
+      "model": "zero",
+      "metric": "observed_capture",
+      "estimate": 0.06982829108748978,
+      "ci95": [
+        0.04524020654438553,
+        0.09475148550408348
+      ]
+    },
+    {
+      "model": "zero",
+      "metric": "calibration_bias",
+      "estimate": 0.05241590398099458,
+      "ci95": [
+        0.04529331452999666,
+        0.059399137671919705
+      ]
+    },
+    {
+      "model": "zero",
+      "metric": "brier",
+      "estimate": 0.039103576065981444,
+      "ci95": [
+        0.02804824307555137,
+        0.0498642048895178
+      ]
+    },
+    {
+      "model": "zero",
+      "metric": "exit_time_bias",
+      "estimate": 0.1226497851198416,
+      "ci95": [
+        0.10987551762526367,
+        0.13214388172538502
+      ]
+    },
+    {
+      "model": "zero",
+      "metric": "exit_time_mae",
+      "estimate": 0.19313317046535225,
+      "ci95": [
+        0.17987712280465867,
+        0.2085716186115724
+      ]
+    },
+    {
+      "model": "zero",
+      "metric": "capture_time_bias",
+      "estimate": -0.0754090576429293,
+      "ci95": [
+        -0.11095490275516397,
+        -0.04297455106082659
+      ]
+    },
+    {
+      "model": "frozen",
+      "metric": "mean_probability",
+      "estimate": 0.10665918725510636,
+      "ci95": [
+        0.08676939823812595,
+        0.12705827212361456
+      ]
+    },
+    {
+      "model": "frozen",
+      "metric": "observed_capture",
+      "estimate": 0.06982829108748978,
+      "ci95": [
+        0.04524020654438553,
+        0.09475148550408348
+      ]
+    },
+    {
+      "model": "frozen",
+      "metric": "calibration_bias",
+      "estimate": 0.036830896167616575,
+      "ci95": [
+        0.02712896557516727,
+        0.045287112494562506
+      ]
+    },
+    {
+      "model": "frozen",
+      "metric": "brier",
+      "estimate": 0.039207949350694715,
+      "ci95": [
+        0.02688552772499826,
+        0.05145493621072665
+      ]
+    },
+    {
+      "model": "frozen",
+      "metric": "exit_time_bias",
+      "estimate": 0.4390718003605835,
+      "ci95": [
+        0.41611829084910024,
+        0.46492207009844017
+      ]
+    },
+    {
+      "model": "frozen",
+      "metric": "exit_time_mae",
+      "estimate": 0.5655475995729986,
+      "ci95": [
+        0.5395251096556669,
+        0.5951720826255228
+      ]
+    },
+    {
+      "model": "frozen",
+      "metric": "capture_time_bias",
+      "estimate": 0.4863346443608449,
+      "ci95": [
+        0.32088202647481084,
+        0.6325398628732208
+      ]
+    }
+  ],
+  "zero_minus_frozen": {
+    "mean_probability": {
+      "zero_minus_frozen": 0.015585007813378002,
+      "ci95": [
+        0.010655220300473937,
+        0.02100355466478022
+      ]
+    },
+    "observed_capture": {
+      "zero_minus_frozen": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    "calibration_bias": {
+      "zero_minus_frozen": 0.015585007813378002,
+      "ci95": [
+        0.010655220300473937,
+        0.02100355466478022
+      ]
+    },
+    "brier": {
+      "zero_minus_frozen": -0.00010437328471327167,
+      "ci95": [
+        -0.003102610665136296,
+        0.002664655367804406
+      ]
+    },
+    "exit_time_bias": {
+      "zero_minus_frozen": -0.3164220152407419,
+      "ci95": [
+        -0.342416385000624,
+        -0.29528401254109216
+      ]
+    },
+    "exit_time_mae": {
+      "zero_minus_frozen": -0.3724144291076463,
+      "ci95": [
+        -0.39496704009276734,
+        -0.3507023035479696
+      ]
+    },
+    "capture_time_bias": {
+      "zero_minus_frozen": -0.5617437020037742,
+      "ci95": [
+        -0.7095179308241132,
+        -0.3941493915594636
+      ]
+    }
+  },
+  "noise_asymptotics": [
+    {
+      "noise": 0.5,
+      "rotational_diffusion": 0.125,
+      "l1": 0.11716850209880764,
+      "classification_error": 0.012167515563101302,
+      "interior_l1": 0.10830418940676696,
+      "short_flight_asymptotic_rmse": 0.09893120187865609,
+      "short_flight_asymptotic_to_ray_l1": 0.047578837584349845,
+      "short_flight_n": 2356
+    },
+    {
+      "noise": 0.25,
+      "rotational_diffusion": 0.03125,
+      "l1": 0.06995702590749857,
+      "classification_error": 0.004338803999245426,
+      "interior_l1": 0.058591293265795284,
+      "short_flight_asymptotic_rmse": 0.10004116809223165,
+      "short_flight_asymptotic_to_ray_l1": 0.023678897919648556,
+      "short_flight_n": 2356
+    },
+    {
+      "noise": 0.125,
+      "rotational_diffusion": 0.0078125,
+      "l1": 0.05037551229974709,
+      "classification_error": 0.0032069420863987926,
+      "interior_l1": 0.038067548817298485,
+      "short_flight_asymptotic_rmse": 0.11248128938144121,
+      "short_flight_asymptotic_to_ray_l1": 0.011911865320492812,
+      "short_flight_n": 2356
+    },
+    {
+      "noise": 0.0625,
+      "rotational_diffusion": 0.001953125,
+      "l1": 0.043896377815718535,
+      "classification_error": 0.0028296547821165816,
+      "interior_l1": 0.031348810047163514,
+      "short_flight_asymptotic_rmse": 0.12178379834714363,
+      "short_flight_asymptotic_to_ray_l1": 0.006540727563864663,
+      "short_flight_n": 2356
+    },
+    {
+      "noise": 0.0,
+      "rotational_diffusion": 0.0,
+      "l1": 0.041466481863835336,
+      "classification_error": 0.0026410111299754765,
+      "interior_l1": 0.028844674580385747,
+      "short_flight_asymptotic_rmse": 0.13723006712904587,
+      "short_flight_asymptotic_to_ray_l1": 0.0,
+      "short_flight_n": 2356
+    }
+  ],
+  "constant_turn_validation": [
+    {
+      "omega": -1.0,
+      "n": 4000,
+      "n_exiting": 3605,
+      "n_trapped": 395,
+      "trapped_fraction": 0.09875,
+      "capture_fraction_among_exiting": 0.2524271844660194,
+      "pde_classification_error_excluding_trapped": 0.031345353675450764,
+      "mean_pde_probability_on_trapped": 0.23846264451452734,
+      "arc_median_exit_time": 1.183891085464189
+    },
+    {
+      "omega": 1.0,
+      "n": 4000,
+      "n_exiting": 3644,
+      "n_trapped": 356,
+      "trapped_fraction": 0.089,
+      "capture_fraction_among_exiting": 0.23874862788144896,
+      "pde_classification_error_excluding_trapped": 0.02991218441273326,
+      "mean_pde_probability_on_trapped": 0.24674567099433342,
+      "arc_median_exit_time": 1.177498935683999
+    }
+  ],
+  "short_flight_validation": [
+    {
+      "ballistic_time_max": 0.25,
+      "model": "zero",
+      "n": 639,
+      "n_seeds": 10,
+      "metric": "observed_capture",
+      "estimate": 0.02034428794992175,
+      "ci95": "[0.0010586319218241057, 0.06193151022419305]"
+    },
+    {
+      "ballistic_time_max": 0.25,
+      "model": "zero",
+      "n": 639,
+      "n_seeds": 10,
+      "metric": "mean_probability",
+      "estimate": 0.02191444759487673,
+      "ci95": "[0.005121230216294036, 0.05725787211861064]"
+    },
+    {
+      "ballistic_time_max": 0.25,
+      "model": "zero",
+      "n": 639,
+      "n_seeds": 10,
+      "metric": "calibration_bias",
+      "estimate": 0.0015701596449549792,
+      "ci95": "[-0.005373483410120465, 0.0072267861579276916]"
+    },
+    {
+      "ballistic_time_max": 0.25,
+      "model": "zero",
+      "n": 639,
+      "n_seeds": 10,
+      "metric": "brier",
+      "estimate": 0.0028765032046164847,
+      "ci95": "[0.00047079766684319304, 0.0061324294542445205]"
+    },
+    {
+      "ballistic_time_max": 0.25,
+      "model": "zero",
+      "n": 639,
+      "n_seeds": 10,
+      "metric": "exit_time_mae",
+      "estimate": 0.10578232466811001,
+      "ci95": "[0.10239340628188025, 0.10927166058419961]"
+    },
+    {
+      "ballistic_time_max": 0.25,
+      "model": "frozen",
+      "n": 639,
+      "n_seeds": 10,
+      "metric": "observed_capture",
+      "estimate": 0.02034428794992175,
+      "ci95": "[0.0010586319218241057, 0.06193151022419305]"
+    },
+    {
+      "ballistic_time_max": 0.25,
+      "model": "frozen",
+      "n": 639,
+      "n_seeds": 10,
+      "metric": "mean_probability",
+      "estimate": 0.022659036157377632,
+      "ci95": "[0.0063579712202973355, 0.057149368043863606]"
+    },
+    {
+      "ballistic_time_max": 0.25,
+      "model": "frozen",
+      "n": 639,
+      "n_seeds": 10,
+      "metric": "calibration_bias",
+      "estimate": 0.0023147482074558825,
+      "ci95": "[-0.005177207521291789, 0.007357026815940668]"
+    },
+    {
+      "ballistic_time_max": 0.25,
+      "model": "frozen",
+      "n": 639,
+      "n_seeds": 10,
+      "metric": "brier",
+      "estimate": 0.0019511253489649652,
+      "ci95": "[0.00039630211572310055, 0.004150647007415174]"
+    },
+    {
+      "ballistic_time_max": 0.25,
+      "model": "frozen",
+      "n": 639,
+      "n_seeds": 10,
+      "metric": "exit_time_mae",
+      "estimate": 0.16174213583711713,
+      "ci95": "[0.15419327194525603, 0.17142276810041884]"
+    },
+    {
+      "ballistic_time_max": 0.5,
+      "model": "zero",
+      "n": 1318,
+      "n_seeds": 10,
+      "metric": "observed_capture",
+      "estimate": 0.01669195751138088,
+      "ci95": "[0.003930740414116112, 0.03951136783366677]"
+    },
+    {
+      "ballistic_time_max": 0.5,
+      "model": "zero",
+      "n": 1318,
+      "n_seeds": 10,
+      "metric": "mean_probability",
+      "estimate": 0.02124686616954803,
+      "ci95": "[0.01049358105862784, 0.04095743105869861]"
+    },
+    {
+      "ballistic_time_max": 0.5,
+      "model": "zero",
+      "n": 1318,
+      "n_seeds": 10,
+      "metric": "calibration_bias",
+      "estimate": 0.004554908658167154,
+      "ci95": "[0.0010620333884812916, 0.007661815713672099]"
+    },
+    {
+      "ballistic_time_max": 0.5,
+      "model": "zero",
+      "n": 1318,
+      "n_seeds": 10,
+      "metric": "brier",
+      "estimate": 0.0016919092508603459,
+      "ci95": "[0.0005088505745576229, 0.0031875202198112084]"
+    },
+    {
+      "ballistic_time_max": 0.5,
+      "model": "zero",
+      "n": 1318,
+      "n_seeds": 10,
+      "metric": "exit_time_mae",
+      "estimate": 0.11303748115529091,
+      "ci95": "[0.1095514411674741, 0.11709496206789076]"
+    },
+    {
+      "ballistic_time_max": 0.5,
+      "model": "frozen",
+      "n": 1318,
+      "n_seeds": 10,
+      "metric": "observed_capture",
+      "estimate": 0.01669195751138088,
+      "ci95": "[0.003930740414116112, 0.03951136783366677]"
+    },
+    {
+      "ballistic_time_max": 0.5,
+      "model": "frozen",
+      "n": 1318,
+      "n_seeds": 10,
+      "metric": "mean_probability",
+      "estimate": 0.023368486167387206,
+      "ci95": "[0.01275296951744115, 0.04267878922807343]"
+    },
+    {
+      "ballistic_time_max": 0.5,
+      "model": "frozen",
+      "n": 1318,
+      "n_seeds": 10,
+      "metric": "calibration_bias",
+      "estimate": 0.006676528656006325,
+      "ci95": "[0.0028701268806105187, 0.009708985604017091]"
+    },
+    {
+      "ballistic_time_max": 0.5,
+      "model": "frozen",
+      "n": 1318,
+      "n_seeds": 10,
+      "metric": "brier",
+      "estimate": 0.0015585914875434084,
+      "ci95": "[0.000767741710335825, 0.002533691080297235]"
+    },
+    {
+      "ballistic_time_max": 0.5,
+      "model": "frozen",
+      "n": 1318,
+      "n_seeds": 10,
+      "metric": "exit_time_mae",
+      "estimate": 0.22916669208957344,
+      "ci95": "[0.21113194113851094, 0.25685208635312484]"
+    },
+    {
+      "ballistic_time_max": 1.0,
+      "model": "zero",
+      "n": 2566,
+      "n_seeds": 10,
+      "metric": "observed_capture",
+      "estimate": 0.03078721745908028,
+      "ci95": "[0.017077184040011288, 0.049857648507232996]"
+    },
+    {
+      "ballistic_time_max": 1.0,
+      "model": "zero",
+      "n": 2566,
+      "n_seeds": 10,
+      "metric": "mean_probability",
+      "estimate": 0.04274456713286723,
+      "ci95": "[0.029906749918780867, 0.060358705675513824]"
+    },
+    {
+      "ballistic_time_max": 1.0,
+      "model": "zero",
+      "n": 2566,
+      "n_seeds": 10,
+      "metric": "calibration_bias",
+      "estimate": 0.011957349673786945,
+      "ci95": "[0.00842923564854875, 0.015908837635402625]"
+    },
+    {
+      "ballistic_time_max": 1.0,
+      "model": "zero",
+      "n": 2566,
+      "n_seeds": 10,
+      "metric": "brier",
+      "estimate": 0.0034864818029641436,
+      "ci95": "[0.0024192700973717962, 0.004735831469083591]"
+    },
+    {
+      "ballistic_time_max": 1.0,
+      "model": "zero",
+      "n": 2566,
+      "n_seeds": 10,
+      "metric": "exit_time_mae",
+      "estimate": 0.1407584048028537,
+      "ci95": "[0.13345175766478254, 0.14917154806471866]"
+    },
+    {
+      "ballistic_time_max": 1.0,
+      "model": "frozen",
+      "n": 2566,
+      "n_seeds": 10,
+      "metric": "observed_capture",
+      "estimate": 0.03078721745908028,
+      "ci95": "[0.017077184040011288, 0.049857648507232996]"
+    },
+    {
+      "ballistic_time_max": 1.0,
+      "model": "frozen",
+      "n": 2566,
+      "n_seeds": 10,
+      "metric": "mean_probability",
+      "estimate": 0.044948654560705,
+      "ci95": "[0.03281365553735759, 0.06087069367444619]"
+    },
+    {
+      "ballistic_time_max": 1.0,
+      "model": "frozen",
+      "n": 2566,
+      "n_seeds": 10,
+      "metric": "calibration_bias",
+      "estimate": 0.014161437101624725,
+      "ci95": "[0.008619265807706241, 0.019169423721713215]"
+    },
+    {
+      "ballistic_time_max": 1.0,
+      "model": "frozen",
+      "n": 2566,
+      "n_seeds": 10,
+      "metric": "brier",
+      "estimate": 0.007761246217229741,
+      "ci95": "[0.005070602320042296, 0.011373308715420886]"
+    },
+    {
+      "ballistic_time_max": 1.0,
+      "model": "frozen",
+      "n": 2566,
+      "n_seeds": 10,
+      "metric": "exit_time_mae",
+      "estimate": 0.4118522287038203,
+      "ci95": "[0.37578977726021423, 0.452925448791725]"
+    },
+    {
+      "ballistic_time_max": 2.0,
+      "model": "zero",
+      "n": 4581,
+      "n_seeds": 10,
+      "metric": "observed_capture",
+      "estimate": 0.05435494433529797,
+      "ci95": "[0.03378675128209384, 0.07799587539800704]"
+    },
+    {
+      "ballistic_time_max": 2.0,
+      "model": "zero",
+      "n": 4581,
+      "n_seeds": 10,
+      "metric": "mean_probability",
+      "estimate": 0.08625334333465744,
+      "ci95": "[0.06741960900558774, 0.10737069877693772]"
+    },
+    {
+      "ballistic_time_max": 2.0,
+      "model": "zero",
+      "n": 4581,
+      "n_seeds": 10,
+      "metric": "calibration_bias",
+      "estimate": 0.031898398999359465,
+      "ci95": "[0.0249756255112375, 0.038139851370510396]"
+    },
+    {
+      "ballistic_time_max": 2.0,
+      "model": "zero",
+      "n": 4581,
+      "n_seeds": 10,
+      "metric": "brier",
+      "estimate": 0.018695207141717594,
+      "ci95": "[0.01278455630943091, 0.025714726065534092]"
+    },
+    {
+      "ballistic_time_max": 2.0,
+      "model": "zero",
+      "n": 4581,
+      "n_seeds": 10,
+      "metric": "exit_time_mae",
+      "estimate": 0.18264142705651426,
+      "ci95": "[0.17029224742067176, 0.1956774520161786]"
+    },
+    {
+      "ballistic_time_max": 2.0,
+      "model": "frozen",
+      "n": 4581,
+      "n_seeds": 10,
+      "metric": "observed_capture",
+      "estimate": 0.05435494433529797,
+      "ci95": "[0.03378675128209384, 0.07799587539800704]"
+    },
+    {
+      "ballistic_time_max": 2.0,
+      "model": "frozen",
+      "n": 4581,
+      "n_seeds": 10,
+      "metric": "mean_probability",
+      "estimate": 0.08446292138083329,
+      "ci95": "[0.06720152815288756, 0.1045136111297711]"
+    },
+    {
+      "ballistic_time_max": 2.0,
+      "model": "frozen",
+      "n": 4581,
+      "n_seeds": 10,
+      "metric": "calibration_bias",
+      "estimate": 0.030107977045535327,
+      "ci95": "[0.020585410388390075, 0.037565464176354514]"
+    },
+    {
+      "ballistic_time_max": 2.0,
+      "model": "frozen",
+      "n": 4581,
+      "n_seeds": 10,
+      "metric": "brier",
+      "estimate": 0.02398318027959517,
+      "ci95": "[0.016547839241650333, 0.03238248991850407]"
+    },
+    {
+      "ballistic_time_max": 2.0,
+      "model": "frozen",
+      "n": 4581,
+      "n_seeds": 10,
+      "metric": "exit_time_mae",
+      "estimate": 0.581160942020446,
+      "ci95": "[0.5392009842525664, 0.6309842301786279]"
+    },
+    {
+      "ballistic_time_max": 5.0,
+      "model": "zero",
+      "n": 6115,
+      "n_seeds": 10,
+      "metric": "observed_capture",
+      "estimate": 0.06982829108748978,
+      "ci95": "[0.046326421332298466, 0.09425010603232598]"
+    },
+    {
+      "ballistic_time_max": 5.0,
+      "model": "zero",
+      "n": 6115,
+      "n_seeds": 10,
+      "metric": "mean_probability",
+      "estimate": 0.12224419506848436,
+      "ci95": "[0.10063385490366976, 0.1440676609001157]"
+    },
+    {
+      "ballistic_time_max": 5.0,
+      "model": "zero",
+      "n": 6115,
+      "n_seeds": 10,
+      "metric": "calibration_bias",
+      "estimate": 0.05241590398099458,
+      "ci95": "[0.04539192070769427, 0.059658406675340996]"
+    },
+    {
+      "ballistic_time_max": 5.0,
+      "model": "zero",
+      "n": 6115,
+      "n_seeds": 10,
+      "metric": "brier",
+      "estimate": 0.039103576065981444,
+      "ci95": "[0.028297257506481144, 0.05014892477327222]"
+    },
+    {
+      "ballistic_time_max": 5.0,
+      "model": "zero",
+      "n": 6115,
+      "n_seeds": 10,
+      "metric": "exit_time_mae",
+      "estimate": 0.19313317046535225,
+      "ci95": "[0.18026361217207976, 0.2080362378506073]"
+    },
+    {
+      "ballistic_time_max": 5.0,
+      "model": "frozen",
+      "n": 6115,
+      "n_seeds": 10,
+      "metric": "observed_capture",
+      "estimate": 0.06982829108748978,
+      "ci95": "[0.046326421332298466, 0.09425010603232598]"
+    },
+    {
+      "ballistic_time_max": 5.0,
+      "model": "frozen",
+      "n": 6115,
+      "n_seeds": 10,
+      "metric": "mean_probability",
+      "estimate": 0.10665918725510636,
+      "ci95": "[0.08686944493052678, 0.12623631319346262]"
+    },
+    {
+      "ballistic_time_max": 5.0,
+      "model": "frozen",
+      "n": 6115,
+      "n_seeds": 10,
+      "metric": "calibration_bias",
+      "estimate": 0.03683089616761658,
+      "ci95": "[0.02711528088730991, 0.04517204192472668]"
+    },
+    {
+      "ballistic_time_max": 5.0,
+      "model": "frozen",
+      "n": 6115,
+      "n_seeds": 10,
+      "metric": "brier",
+      "estimate": 0.039207949350694715,
+      "ci95": "[0.02730265886157301, 0.0516991951505675]"
+    },
+    {
+      "ballistic_time_max": 5.0,
+      "model": "frozen",
+      "n": 6115,
+      "n_seeds": 10,
+      "metric": "exit_time_mae",
+      "estimate": 0.5655475995729986,
+      "ci95": "[0.5403593160471517, 0.5955355566870705]"
+    }
+  ],
+  "interpretation": "one approach attempt; lateral/upstream exit is failure for this attempt but permits later renewal"
+}

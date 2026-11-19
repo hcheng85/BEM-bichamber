@@ -1,0 +1,13 @@
+{
+  "raw_dir": "/Volumes/storage2/BEM_bichamber/archive_one_R_60/BEM_data",
+  "risk_file": "results/nohydro_gap20_descriptive_transition/outputs/q_gap_polarization/prospective_q_a_windows.csv",
+  "production_source": "../BEM_bichamber_parallel_instance_no_hydro.py",
+  "heldout_seeds": "30--39",
+  "dt": 0.001,
+  "ell": 2.8635642126552705,
+  "half_width": 1.4317821063276353,
+  "angular_noise": 0.5,
+  "attempt_horizon": 5.0,
+  "fitted_coefficients": 0,
+  "new_microscopic_simulations": 0
+}
