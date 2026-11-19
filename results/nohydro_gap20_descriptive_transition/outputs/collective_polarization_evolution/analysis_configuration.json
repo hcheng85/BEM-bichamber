@@ -1,0 +1,16 @@
+{
+  "raw_dir": "/Volumes/storage2/BEM_bichamber/archive_one_R_60/BEM_data",
+  "cohort": "results/nohydro_gap20_descriptive_transition/outputs/collective_qab_pathway/event_outcomes.csv",
+  "source": "../BEM_bichamber_parallel_instance_no_hydro.py",
+  "transport_periods": "results/nohydro_gap20_descriptive_transition/outputs/event_transport_budget/period_contrasts.csv",
+  "window": [
+    -2.0,
+    1.0
+  ],
+  "snapshot_spacing": 0.1,
+  "n_events": 337,
+  "n_seeds": 37,
+  "new_simulations": 0,
+  "fitted_terms": 0,
+  "interpretation": "source identities exact; success/failure contrasts retrospective and q-standardized"
+}
