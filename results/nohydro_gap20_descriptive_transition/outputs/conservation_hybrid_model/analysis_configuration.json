@@ -1,0 +1,8 @@
+{
+  "raw_dir": "/Volumes/storage2/BEM_bichamber/archive_one_R_60/BEM_data",
+  "processed_dir": "../Processed_data",
+  "q_cache": "results/nohydro_gap20_descriptive_transition/outputs/initiation_propagation/cache",
+  "feature_cache": "results/nohydro_gap20_descriptive_transition/outputs/initiation_propagation/cache/population_kinetics_features_dt0p5.npz",
+  "feature_dt": 0.5,
+  "q_dt": 0.1
+}

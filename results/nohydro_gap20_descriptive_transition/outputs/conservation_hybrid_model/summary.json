@@ -1,0 +1,265 @@
+{
+  "configuration": {
+    "state": "(n_R,px,b_L,b_R)",
+    "population_lattice": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100
+    ],
+    "validation_bins": {
+      "q": [
+        -1.000001,
+        -0.6,
+        -0.2,
+        0.2,
+        0.6,
+        1.000001
+      ],
+      "px": [
+        -1.000001,
+        -0.25,
+        0.25,
+        1.000001
+      ],
+      "storage_threshold": 0.075,
+      "n_cells": 60
+    },
+    "train_seeds": "0-29",
+    "test_seeds": "30-39",
+    "new_simulations": 0
+  },
+  "exact_jump_audit": {
+    "n_processed_files": 20,
+    "n_seeds_with_crossings": 19,
+    "n_individual_crossings": 3211,
+    "n_step_count_mismatches": 0,
+    "n_crossings_outside_opening": 0,
+    "max_abs_jump_map_residual": 1.5956644888392925e-18,
+    "exact_jump_maps": {
+      "left_to_right": "(n_R+1, px, b_L-1/N, b_R+1/N)",
+      "right_to_left": "(n_R-1, px, b_L+1/N, b_R-1/N)"
+    }
+  },
+  "storage_conservation": {
+    "n_windows": 200,
+    "n_chamber_budgets": 400,
+    "n_seeds": 40,
+    "max_abs_residual": 5.898059818321144e-17,
+    "rms_residual": 6.643234855747419e-18,
+    "identity": "Delta b_c = longitudinal path contribution - weighted lateral outflux - net centerline outflux/N"
+  },
+  "continuous_time_rate_audit": {
+    "instantaneous_horizon": 0.1,
+    "n_rate_cells": 20,
+    "cell_definition": "oriented q regime, oriented px regime, low/high source storage"
+  },
+  "between_event_model": {
+    "n_supported_cells": 28,
+    "n_total_cells": 60,
+    "heldout_coverage": 0.990375,
+    "rho_px": {
+      "mean": 0.4745498720220443,
+      "ci95": [
+        0.44054859845592964,
+        0.5084428887066026
+      ]
+    },
+    "rho_b_left": {
+      "mean": 0.5507728335417675,
+      "ci95": [
+        0.5298586915688885,
+        0.5711175285504279
+      ]
+    },
+    "rho_b_right": {
+      "mean": 0.4660689051715935,
+      "ci95": [
+        0.4201871207477221,
+        0.5070317110402975
+      ]
+    }
+  },
+  "joint_operator": [
+    {
+      "tau": 0.5,
+      "ck_total_variation": 0.0,
+      "ck_sampling_null_ci95": "[0.005581698664440736, 0.008119261268781302]",
+      "ck_supported_states": 40,
+      "heldout_total_variation": 0.018611100629672986,
+      "heldout_supported_states": 28
+    },
+    {
+      "tau": 1.0,
+      "ck_total_variation": 0.024815084700698795,
+      "ck_sampling_null_ci95": "[0.008034781224004426, 0.011183536283996614]",
+      "ck_supported_states": 40,
+      "heldout_total_variation": 0.03948768933860258,
+      "heldout_supported_states": 28
+    },
+    {
+      "tau": 2.0,
+      "ck_total_variation": 0.11006587162898776,
+      "ck_sampling_null_ci95": "[0.010295949400505607, 0.013863553845612197]",
+      "ck_supported_states": 40,
+      "heldout_total_variation": 0.09589248660925245,
+      "heldout_supported_states": 28
+    },
+    {
+      "tau": 5.0,
+      "ck_total_variation": 0.22702740493677714,
+      "ck_sampling_null_ci95": "[0.012516484897914583, 0.015769650648342848]",
+      "ck_supported_states": 40,
+      "heldout_total_variation": 0.15201950349949556,
+      "heldout_supported_states": 28
+    }
+  ],
+  "stationary_prediction": {
+    "joint_stationary_tv": 0.28690529480065924,
+    "q_marginal_stationary_tv": 0.28565337981944866,
+    "predicted_q_marginal": [
+      0.3205593569928031,
+      0.08920873308881978,
+      0.18046381983677706,
+      0.08920873308881982,
+      0.3205593569928032
+    ],
+    "heldout_q_marginal": [
+      0.1777326670830731,
+      0.16292941911305434,
+      0.31867582760774515,
+      0.16292941911305436,
+      0.17773266708307306
+    ],
+    "power_iterations": 9753,
+    "stationary_converged": 1,
+    "stationary_residual": 9.96425164601078e-15,
+    "base_observed_states": 58,
+    "base_supported_states": 40
+  },
+  "partial_transfer_pathways": [
+    {
+      "time_after_partial_transfer": 0.5,
+      "n_test_events": 1042,
+      "joint_state_tv": 0.10243992750047419,
+      "q_regime_tv": 0.021704304686075336
+    },
+    {
+      "time_after_partial_transfer": 1.0,
+      "n_test_events": 1042,
+      "joint_state_tv": 0.1660658694774776,
+      "q_regime_tv": 0.03212960780481749
+    },
+    {
+      "time_after_partial_transfer": 2.0,
+      "n_test_events": 1042,
+      "joint_state_tv": 0.23373734371473684,
+      "q_regime_tv": 0.042010608153019866
+    },
+    {
+      "time_after_partial_transfer": 5.0,
+      "n_test_events": 1041,
+      "joint_state_tv": 0.211559767346878,
+      "q_regime_tv": 0.04596467082115461
+    }
+  ],
+  "dynamically_validated_landscape": false,
+  "landscape_policy": "construct joint stationary landscape and currents only if the joint CK and memory gates pass"
+}
