@@ -1,0 +1,268 @@
+{
+  "n_states": 14,
+  "n_clones": 8,
+  "n_paired_blocks": 112,
+  "arm_summary": {
+    "baseline": {
+      "net_transfer": {
+        "mean": 10.598214285714286,
+        "ci95": [
+          6.607142857142857,
+          14.580357142857142
+        ]
+      },
+      "success4": {
+        "mean": 0.6696428571428571,
+        "ci95": [
+          0.44642857142857145,
+          0.875
+        ]
+      },
+      "first_entry": {
+        "mean": 0.8392857142857143,
+        "ci95": [
+          0.6696428571428571,
+          0.9732142857142857
+        ]
+      },
+      "mean_Ja_1": {
+        "mean": 0.07847405800106545,
+        "ci95": [
+          0.05010486778413385,
+          0.11296613823486258
+        ]
+      },
+      "mean_b_1": {
+        "mean": 0.18044179461592602,
+        "ci95": [
+          0.14374846232207777,
+          0.21914077198272744
+        ]
+      },
+      "mean_polarization_1": {
+        "mean": 0.9724214505033995,
+        "ci95": [
+          0.9689620331701717,
+          0.9753511165552237
+        ]
+      },
+      "mean_gap_alignment_1": {
+        "mean": 0.45305043801362416,
+        "ci95": [
+          0.23977263704316687,
+          0.6261401129379686
+        ]
+      },
+      "turning_alignment_rate_1": {
+        "mean": 0.06521631524866557,
+        "ci95": [
+          0.04078766464727915,
+          0.09132535852952933
+        ]
+      }
+    },
+    "symmetric_internal_alignment": {
+      "net_transfer": {
+        "mean": 6.160714285714286,
+        "ci95": [
+          4.107142857142857,
+          8.232366071428569
+        ]
+      },
+      "success4": {
+        "mean": 0.6607142857142857,
+        "ci95": [
+          0.44642857142857145,
+          0.8482142857142857
+        ]
+      },
+      "first_entry": {
+        "mean": 0.875,
+        "ci95": [
+          0.7053571428571429,
+          1.0
+        ]
+      },
+      "mean_Ja_1": {
+        "mean": 0.06663563226190981,
+        "ci95": [
+          0.042689484594356855,
+          0.09693698808949465
+        ]
+      },
+      "mean_b_1": {
+        "mean": 0.17896968635746166,
+        "ci95": [
+          0.1427636306774819,
+          0.21742064090728555
+        ]
+      },
+      "mean_polarization_1": {
+        "mean": 0.9748948149126081,
+        "ci95": [
+          0.9723343043205632,
+          0.9769726166682805
+        ]
+      },
+      "mean_gap_alignment_1": {
+        "mean": 0.438441357484654,
+        "ci95": [
+          0.22589230258922724,
+          0.6098124563837464
+        ]
+      },
+      "turning_alignment_rate_1": {
+        "mean": 0.03667965824187912,
+        "ci95": [
+          0.020635302584631993,
+          0.052053951345765244
+        ]
+      }
+    }
+  },
+  "success_switches": {
+    "both_failed": 25,
+    "gained": 12,
+    "lost": 13,
+    "both_succeeded": 62,
+    "discordant_exact_p": 1.0
+  },
+  "effects": {
+    "turning_alignment_rate_1": {
+      "metric": "turning_alignment_rate_1",
+      "symmetric_minus_baseline": -0.028536657006786453,
+      "ci95_low": -0.04634151685325835,
+      "ci95_high": -0.009541651702131355,
+      "n_seeds": 14,
+      "n_pairs": 112
+    },
+    "turning_alignment_rate_5": {
+      "metric": "turning_alignment_rate_5",
+      "symmetric_minus_baseline": -0.006507698133786574,
+      "ci95_low": -0.01388167329655458,
+      "ci95_high": -0.00035104994192641537,
+      "n_seeds": 14,
+      "n_pairs": 112
+    },
+    "geometry_alignment_rate_1": {
+      "metric": "geometry_alignment_rate_1",
+      "symmetric_minus_baseline": -0.007110333993094145,
+      "ci95_low": -0.011499794438019269,
+      "ci95_high": -0.002316805085267532,
+      "n_seeds": 14,
+      "n_pairs": 112
+    },
+    "geometry_alignment_rate_5": {
+      "metric": "geometry_alignment_rate_5",
+      "symmetric_minus_baseline": -0.0016721872163838367,
+      "ci95_low": -0.003922249117384592,
+      "ci95_high": 0.0005526621025743552,
+      "n_seeds": 14,
+      "n_pairs": 112
+    },
+    "mean_Ja_1": {
+      "metric": "mean_Ja_1",
+      "symmetric_minus_baseline": -0.011838425739155639,
+      "ci95_low": -0.018669418028274373,
+      "ci95_high": -0.004946359148181958,
+      "n_seeds": 14,
+      "n_pairs": 112
+    },
+    "mean_Ja_5": {
+      "metric": "mean_Ja_5",
+      "symmetric_minus_baseline": -0.012243052186738055,
+      "ci95_low": -0.0217238752690173,
+      "ci95_high": -0.002936575848070853,
+      "n_seeds": 14,
+      "n_pairs": 112
+    },
+    "mean_b_1": {
+      "metric": "mean_b_1",
+      "symmetric_minus_baseline": -0.0014721082584643716,
+      "ci95_low": -0.002303563484741946,
+      "ci95_high": -0.0006839501172148738,
+      "n_seeds": 14,
+      "n_pairs": 112
+    },
+    "mean_b_5": {
+      "metric": "mean_b_5",
+      "symmetric_minus_baseline": -0.0010865656304757966,
+      "ci95_low": -0.003129815858486556,
+      "ci95_high": 0.0012419583668086054,
+      "n_seeds": 14,
+      "n_pairs": 112
+    },
+    "mean_polarization_1": {
+      "metric": "mean_polarization_1",
+      "symmetric_minus_baseline": 0.00247336440920876,
+      "ci95_low": 0.0010426380176471127,
+      "ci95_high": 0.00405136994277228,
+      "n_seeds": 14,
+      "n_pairs": 112
+    },
+    "mean_polarization_5": {
+      "metric": "mean_polarization_5",
+      "symmetric_minus_baseline": 0.004310118006380709,
+      "ci95_low": 0.0019211145747253355,
+      "ci95_high": 0.007138281207453806,
+      "n_seeds": 14,
+      "n_pairs": 112
+    },
+    "mean_gap_alignment_1": {
+      "metric": "mean_gap_alignment_1",
+      "symmetric_minus_baseline": -0.01460908052897004,
+      "ci95_low": -0.024660429752427823,
+      "ci95_high": -0.004305700742622548,
+      "n_seeds": 14,
+      "n_pairs": 112
+    },
+    "mean_gap_alignment_5": {
+      "metric": "mean_gap_alignment_5",
+      "symmetric_minus_baseline": -0.038124324143082915,
+      "ci95_low": -0.06543162830396637,
+      "ci95_high": -0.014191729477574563,
+      "n_seeds": 14,
+      "n_pairs": 112
+    },
+    "net_transfer": {
+      "metric": "net_transfer",
+      "symmetric_minus_baseline": -4.4375,
+      "ci95_low": -7.134151785714285,
+      "ci95_high": -1.7589285714285714,
+      "n_seeds": 14,
+      "n_pairs": 112
+    },
+    "success4": {
+      "metric": "success4",
+      "symmetric_minus_baseline": -0.008928571428571428,
+      "ci95_low": -0.16093749999999982,
+      "ci95_high": 0.16071428571428573,
+      "n_seeds": 14,
+      "n_pairs": 112
+    },
+    "first_entry": {
+      "metric": "first_entry",
+      "symmetric_minus_baseline": 0.03571428571428571,
+      "ci95_low": -0.008928571428571428,
+      "ci95_high": 0.09821428571428571,
+      "n_seeds": 14,
+      "n_pairs": 112
+    }
+  },
+  "instantaneous_audit": {
+    "exact_k_symmetry": "replace k_ij,k_ji by their mean; collective internal pair alignment cancels identically",
+    "microscopic_intervention": "replace alpha_ij=w_ij/Z_i and alpha_ji by their mean for current internal source pairs",
+    "unavoidable_difference": "microscopic alpha symmetry leaves residual proportional to alpha_bar*(c_i-c_j); exact k symmetry would require global c_i-dependent division and can be singular",
+    "max_abs_exact_collective_after_symmetry": 0.0,
+    "max_abs_delta_reconstruction": 1.249000902703301e-16,
+    "mean_abs_original": 0.05933117023655209,
+    "mean_abs_microscopic_residual": 0.003781185052298711,
+    "fixed_cohort_lead1": {
+      "n_snapshots": 337,
+      "max_abs_exact_collective_after_symmetry": 0.0,
+      "max_abs_delta_reconstruction": 2.0816681711721685e-16,
+      "mean_abs_original": 0.08815113580659474,
+      "mean_abs_microscopic_residual": 0.005663709246191801
+    }
+  }
+}

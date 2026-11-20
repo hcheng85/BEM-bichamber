@@ -1,0 +1,11 @@
+{
+  "source_sha256": "5e57b9dca2cb962e2c35f540f3982d5f4018eb719067223e6b319866b4482284",
+  "adapter_sha256": "1a3a0723b56805a94a6fd34287caffb64219c8151444f98f3d9eccbcb5f35004",
+  "n_states": 14,
+  "clones": 8,
+  "horizon_steps": 5000,
+  "horizon_time": 5.0,
+  "paired_noise": true,
+  "rows": 224,
+  "selection": "crossing-conditioned lead-1 states; archived continuation labels unused"
+}

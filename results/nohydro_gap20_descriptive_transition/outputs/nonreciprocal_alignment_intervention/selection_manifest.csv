@@ -1,0 +1,15 @@
+sample_id,seed,event_id,native_step,first_native,source_sign,success4_archived,selection_rule,nright0
+lead1_s0_e1,0,1,627823,628823,1,1,first fixed-cohort crossing per seed at lead 1; archived continuation label unused,100
+lead1_s1_e3,1,3,299162,300162,1,1,first fixed-cohort crossing per seed at lead 1; archived continuation label unused,66
+lead1_s2_e0,2,0,251192,252192,1,1,first fixed-cohort crossing per seed at lead 1; archived continuation label unused,62
+lead1_s3_e0,3,0,234929,235929,-1,0,first fixed-cohort crossing per seed at lead 1; archived continuation label unused,7
+lead1_s4_e0,4,0,223381,224381,-1,1,first fixed-cohort crossing per seed at lead 1; archived continuation label unused,30
+lead1_s5_e0,5,0,872566,873566,-1,1,first fixed-cohort crossing per seed at lead 1; archived continuation label unused,0
+lead1_s6_e0,6,0,348110,349110,1,0,first fixed-cohort crossing per seed at lead 1; archived continuation label unused,100
+lead1_s7_e0,7,0,211962,212962,1,0,first fixed-cohort crossing per seed at lead 1; archived continuation label unused,71
+lead1_s8_e1,8,1,232212,233212,1,0,first fixed-cohort crossing per seed at lead 1; archived continuation label unused,58
+lead1_s10_e0,10,0,853180,854180,1,0,first fixed-cohort crossing per seed at lead 1; archived continuation label unused,100
+lead1_s11_e1,11,1,218016,219016,-1,0,first fixed-cohort crossing per seed at lead 1; archived continuation label unused,15
+lead1_s12_e0,12,0,231488,232488,-1,1,first fixed-cohort crossing per seed at lead 1; archived continuation label unused,21
+lead1_s13_e2,13,2,312999,313999,-1,0,first fixed-cohort crossing per seed at lead 1; archived continuation label unused,22
+lead1_s14_e0,14,0,227837,228837,1,1,first fixed-cohort crossing per seed at lead 1; archived continuation label unused,62
