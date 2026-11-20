@@ -1,0 +1,2167 @@
+{
+  "configuration": {
+    "cohort_size": 337,
+    "leads": [
+      2.0,
+      1.0,
+      0.5,
+      0.2
+    ],
+    "train_seeds": "0-29",
+    "heldout_seeds": "30-39",
+    "new_simulations": 0,
+    "fitted_terms": 0,
+    "production_source": "../BEM_bichamber_parallel_instance_no_hydro.py",
+    "production_source_sha256": "5e57b9dca2cb962e2c35f540f3982d5f4018eb719067223e6b319866b4482284"
+  },
+  "audits": {
+    "max_abs_native_social_reconstruction": 1.980970942838667e-12,
+    "max_abs_collective_pair_reconstruction": 2.3814283878209608e-14,
+    "n_snapshots": 1348
+  },
+  "organization_diagnostics": [
+    {
+      "cohort": "train",
+      "metric": "internal_pair_cancellation",
+      "value": 0.3737797104230317,
+      "ci95_low": 0.37074456928506844,
+      "ci95_high": 0.3772212311425828,
+      "n": 832
+    },
+    {
+      "cohort": "train",
+      "metric": "leading_fraction",
+      "value": 0.4703917253802329,
+      "ci95_low": 0.4628288071691361,
+      "ci95_high": 0.47856614968992917,
+      "n": 832
+    },
+    {
+      "cohort": "train",
+      "metric": "hull_fraction",
+      "value": 0.1654205478263493,
+      "ci95_low": 0.15527922470048489,
+      "ci95_high": 0.17429008487061648,
+      "n": 832
+    },
+    {
+      "cohort": "train",
+      "metric": "approach_fraction",
+      "value": 0.47011570340866626,
+      "ci95_low": 0.43665105419100564,
+      "ci95_high": 0.5028627183618684,
+      "n": 832
+    },
+    {
+      "cohort": "train",
+      "metric": "coherent_spatial_approximation",
+      "value": 0.8091569660492559,
+      "rmse": 0.08814599460509001,
+      "actual_sd": 0.1337707481767966,
+      "n": 832
+    },
+    {
+      "cohort": "train",
+      "metric": "leading_receiver_absolute_share",
+      "value": 0.5662539451665751,
+      "population_fraction": 0.4703917253802329,
+      "enrichment": 1.2037923173687923,
+      "n": 832
+    },
+    {
+      "cohort": "train",
+      "metric": "hull_receiver_absolute_share",
+      "value": 0.33347350512433305,
+      "population_fraction": 0.1654205478263493,
+      "enrichment": 2.0159134370320055,
+      "n": 832
+    },
+    {
+      "cohort": "train",
+      "metric": "approach_receiver_absolute_share",
+      "value": 0.527429118014375,
+      "population_fraction": 0.47011570340866626,
+      "enrichment": 1.1219134229938428,
+      "n": 832
+    },
+    {
+      "cohort": "heldout",
+      "metric": "internal_pair_cancellation",
+      "value": 0.37357920925855204,
+      "ci95_low": 0.37100827952581067,
+      "ci95_high": 0.37643574624227666,
+      "n": 516
+    },
+    {
+      "cohort": "heldout",
+      "metric": "leading_fraction",
+      "value": 0.468918605719324,
+      "ci95_low": 0.46206212582589645,
+      "ci95_high": 0.47628862643857706,
+      "n": 516
+    },
+    {
+      "cohort": "heldout",
+      "metric": "hull_fraction",
+      "value": 0.17296125372313437,
+      "ci95_low": 0.16467000729081652,
+      "ci95_high": 0.17854754346936738,
+      "n": 516
+    },
+    {
+      "cohort": "heldout",
+      "metric": "approach_fraction",
+      "value": 0.4822486610532363,
+      "ci95_low": 0.4527702032999851,
+      "ci95_high": 0.5120723368607794,
+      "n": 516
+    },
+    {
+      "cohort": "heldout",
+      "metric": "coherent_spatial_approximation",
+      "value": 0.8203929317995851,
+      "rmse": 0.09250714526610598,
+      "actual_sd": 0.14148956742056623,
+      "n": 516
+    },
+    {
+      "cohort": "heldout",
+      "metric": "leading_receiver_absolute_share",
+      "value": 0.5306330980512745,
+      "population_fraction": 0.468918605719324,
+      "enrichment": 1.1316102444629599,
+      "n": 516
+    },
+    {
+      "cohort": "heldout",
+      "metric": "hull_receiver_absolute_share",
+      "value": 0.3200290238670556,
+      "population_fraction": 0.17296125372313437,
+      "enrichment": 1.850293155132526,
+      "n": 516
+    },
+    {
+      "cohort": "heldout",
+      "metric": "approach_receiver_absolute_share",
+      "value": 0.5274106977464542,
+      "population_fraction": 0.4822486610532363,
+      "enrichment": 1.09364885865019,
+      "n": 516
+    },
+    {
+      "cohort": "all",
+      "metric": "internal_pair_cancellation",
+      "value": 0.3737029607191211,
+      "ci95_low": 0.3715972885839715,
+      "ci95_high": 0.3762937530798431,
+      "n": 1348
+    },
+    {
+      "cohort": "all",
+      "metric": "leading_fraction",
+      "value": 0.4698278309106268,
+      "ci95_low": 0.46443062607816293,
+      "ci95_high": 0.47554732859184706,
+      "n": 1348
+    },
+    {
+      "cohort": "all",
+      "metric": "hull_fraction",
+      "value": 0.1683070494901038,
+      "ci95_low": 0.16129702934630966,
+      "ci95_high": 0.17392662092561378,
+      "n": 1348
+    },
+    {
+      "cohort": "all",
+      "metric": "approach_fraction",
+      "value": 0.47476006998477766,
+      "ci95_low": 0.4509500424244312,
+      "ci95_high": 0.4977813167489597,
+      "n": 1348
+    },
+    {
+      "cohort": "all",
+      "metric": "coherent_spatial_approximation",
+      "value": 0.8140450977099534,
+      "rmse": 0.08984040882123516,
+      "actual_sd": 0.13688354548290185,
+      "n": 1348
+    },
+    {
+      "cohort": "all",
+      "metric": "leading_receiver_absolute_share",
+      "value": 0.552618665410273,
+      "population_fraction": 0.4698278309106268,
+      "enrichment": 1.1762152623849036,
+      "n": 1348
+    },
+    {
+      "cohort": "all",
+      "metric": "hull_receiver_absolute_share",
+      "value": 0.3283271013196185,
+      "population_fraction": 0.1683070494901038,
+      "enrichment": 1.9507626229222421,
+      "n": 1348
+    },
+    {
+      "cohort": "all",
+      "metric": "approach_receiver_absolute_share",
+      "value": 0.5274220669325893,
+      "population_fraction": 0.47476006998477766,
+      "enrichment": 1.1109233911552423,
+      "n": 1348
+    }
+  ],
+  "component_contrasts": [
+    {
+      "lead": 2.0,
+      "cohort": "train",
+      "term": "alignment_internal_alignment_visual_asymmetry",
+      "continued_minus_failed": 0.004909151558876436,
+      "ci95_low": -0.018964883664099,
+      "ci95_high": 0.021126131201903174,
+      "n": 208,
+      "n_seeds": 27
+    },
+    {
+      "lead": 2.0,
+      "cohort": "train",
+      "term": "alignment_internal_alignment_normalization_asymmetry",
+      "continued_minus_failed": -0.0022285120434018726,
+      "ci95_low": -0.007586731539995056,
+      "ci95_high": 0.0040618638663483565,
+      "n": 208,
+      "n_seeds": 27
+    },
+    {
+      "lead": 2.0,
+      "cohort": "train",
+      "term": "alignment_internal_position_heading_mismatch",
+      "continued_minus_failed": 0.00029896309137322985,
+      "ci95_low": -0.0011463270650985697,
+      "ci95_high": 0.0014294000537744878,
+      "n": 208,
+      "n_seeds": 27
+    },
+    {
+      "lead": 2.0,
+      "cohort": "train",
+      "term": "alignment_internal_position_visibility_asymmetry",
+      "continued_minus_failed": -0.005242835580511509,
+      "ci95_low": -0.008488719079816092,
+      "ci95_high": -0.0019222202651825394,
+      "n": 208,
+      "n_seeds": 27
+    },
+    {
+      "lead": 2.0,
+      "cohort": "train",
+      "term": "alignment_external_alignment",
+      "continued_minus_failed": 0.01802062263742685,
+      "ci95_low": 0.0031461577906727236,
+      "ci95_high": 0.033448775787216896,
+      "n": 208,
+      "n_seeds": 27
+    },
+    {
+      "lead": 2.0,
+      "cohort": "train",
+      "term": "alignment_external_position",
+      "continued_minus_failed": -0.016690335552814302,
+      "ci95_low": -0.03343635135361975,
+      "ci95_high": -0.0013250280636736096,
+      "n": 208,
+      "n_seeds": 27
+    },
+    {
+      "lead": 2.0,
+      "cohort": "train",
+      "term": "alignment_leading_receiver",
+      "continued_minus_failed": 0.0035556299124246955,
+      "ci95_low": -0.013801960782508324,
+      "ci95_high": 0.019235282110443636,
+      "n": 208,
+      "n_seeds": 27
+    },
+    {
+      "lead": 2.0,
+      "cohort": "train",
+      "term": "alignment_trailing_receiver",
+      "continued_minus_failed": -0.004488575801475847,
+      "ci95_low": -0.02100212998605831,
+      "ci95_high": 0.010597164615026597,
+      "n": 208,
+      "n_seeds": 27
+    },
+    {
+      "lead": 2.0,
+      "cohort": "train",
+      "term": "alignment_hull_receiver",
+      "continued_minus_failed": -0.0018503329170716817,
+      "ci95_low": -0.011956214548703319,
+      "ci95_high": 0.00881562814533664,
+      "n": 208,
+      "n_seeds": 27
+    },
+    {
+      "lead": 2.0,
+      "cohort": "train",
+      "term": "alignment_interior_receiver",
+      "continued_minus_failed": 0.0009173870280205316,
+      "ci95_low": -0.018265527861490737,
+      "ci95_high": 0.014807033143202855,
+      "n": 208,
+      "n_seeds": 27
+    },
+    {
+      "lead": 2.0,
+      "cohort": "train",
+      "term": "alignment_approach_receiver",
+      "continued_minus_failed": 0.006817098506987329,
+      "ci95_low": -0.006966486833805173,
+      "ci95_high": 0.02135454253827936,
+      "n": 208,
+      "n_seeds": 27
+    },
+    {
+      "lead": 2.0,
+      "cohort": "train",
+      "term": "alignment_nonapproach_receiver",
+      "continued_minus_failed": -0.00775004439603849,
+      "ci95_low": -0.025891747342303508,
+      "ci95_high": 0.007529945705441976,
+      "n": 208,
+      "n_seeds": 27
+    },
+    {
+      "lead": 2.0,
+      "cohort": "train",
+      "term": "alignment_social_total",
+      "continued_minus_failed": -0.0009329458890513549,
+      "ci95_low": -0.026553770827370364,
+      "ci95_high": 0.019050484326367426,
+      "n": 208,
+      "n_seeds": 27
+    },
+    {
+      "lead": 2.0,
+      "cohort": "train",
+      "term": "alignment_coherent_spatial_approximation",
+      "continued_minus_failed": -0.0024121121355376845,
+      "ci95_low": -0.011295532606434044,
+      "ci95_high": 0.005863422586045044,
+      "n": 208,
+      "n_seeds": 27
+    },
+    {
+      "lead": 2.0,
+      "cohort": "train",
+      "term": "Ja",
+      "continued_minus_failed": -0.018882707537394922,
+      "ci95_low": -0.03136062437086086,
+      "ci95_high": -0.0048063993072137495,
+      "n": 208,
+      "n_seeds": 27
+    },
+    {
+      "lead": 2.0,
+      "cohort": "train",
+      "term": "b",
+      "continued_minus_failed": -0.028003414273199755,
+      "ci95_low": -0.036125205880579596,
+      "ci95_high": -0.017820298779745353,
+      "n": 208,
+      "n_seeds": 27
+    },
+    {
+      "lead": 2.0,
+      "cohort": "heldout",
+      "term": "alignment_internal_alignment_visual_asymmetry",
+      "continued_minus_failed": 0.0400808623786591,
+      "ci95_low": 0.00046443056800947826,
+      "ci95_high": 0.07593096730205164,
+      "n": 129,
+      "n_seeds": 10
+    },
+    {
+      "lead": 2.0,
+      "cohort": "heldout",
+      "term": "alignment_internal_alignment_normalization_asymmetry",
+      "continued_minus_failed": -0.00036590186745217337,
+      "ci95_low": -0.01207188907457859,
+      "ci95_high": 0.010088647994472427,
+      "n": 129,
+      "n_seeds": 10
+    },
+    {
+      "lead": 2.0,
+      "cohort": "heldout",
+      "term": "alignment_internal_position_heading_mismatch",
+      "continued_minus_failed": 0.0024072684316609225,
+      "ci95_low": 0.00045295514365889956,
+      "ci95_high": 0.003828443534442597,
+      "n": 129,
+      "n_seeds": 10
+    },
+    {
+      "lead": 2.0,
+      "cohort": "heldout",
+      "term": "alignment_internal_position_visibility_asymmetry",
+      "continued_minus_failed": -0.0012192987853981703,
+      "ci95_low": -0.004413637648987884,
+      "ci95_high": 0.005137658502524458,
+      "n": 129,
+      "n_seeds": 10
+    },
+    {
+      "lead": 2.0,
+      "cohort": "heldout",
+      "term": "alignment_external_alignment",
+      "continued_minus_failed": 0.009931774803783862,
+      "ci95_low": -0.012568090942930432,
+      "ci95_high": 0.027412062539917438,
+      "n": 129,
+      "n_seeds": 10
+    },
+    {
+      "lead": 2.0,
+      "cohort": "heldout",
+      "term": "alignment_external_position",
+      "continued_minus_failed": -0.007514446535884847,
+      "ci95_low": -0.027412922555847177,
+      "ci95_high": 0.01857718266265755,
+      "n": 129,
+      "n_seeds": 10
+    },
+    {
+      "lead": 2.0,
+      "cohort": "heldout",
+      "term": "alignment_leading_receiver",
+      "continued_minus_failed": 0.03122117384039577,
+      "ci95_low": 0.00014849988261735487,
+      "ci95_high": 0.07412919132321413,
+      "n": 129,
+      "n_seeds": 10
+    },
+    {
+      "lead": 2.0,
+      "cohort": "heldout",
+      "term": "alignment_trailing_receiver",
+      "continued_minus_failed": 0.012099084584972924,
+      "ci95_low": -0.011187591110015356,
+      "ci95_high": 0.024329275673963254,
+      "n": 129,
+      "n_seeds": 10
+    },
+    {
+      "lead": 2.0,
+      "cohort": "heldout",
+      "term": "alignment_hull_receiver",
+      "continued_minus_failed": 0.008939373479501429,
+      "ci95_low": -0.0033115873859151652,
+      "ci95_high": 0.019656056921488377,
+      "n": 129,
+      "n_seeds": 10
+    },
+    {
+      "lead": 2.0,
+      "cohort": "heldout",
+      "term": "alignment_interior_receiver",
+      "continued_minus_failed": 0.034380884945867274,
+      "ci95_low": -0.0037554758437221875,
+      "ci95_high": 0.07157993490635067,
+      "n": 129,
+      "n_seeds": 10
+    },
+    {
+      "lead": 2.0,
+      "cohort": "heldout",
+      "term": "alignment_approach_receiver",
+      "continued_minus_failed": 0.021596600865684382,
+      "ci95_low": -0.0018301194412317263,
+      "ci95_high": 0.05191523611782173,
+      "n": 129,
+      "n_seeds": 10
+    },
+    {
+      "lead": 2.0,
+      "cohort": "heldout",
+      "term": "alignment_nonapproach_receiver",
+      "continued_minus_failed": 0.021723657559684317,
+      "ci95_low": -0.002241104483149724,
+      "ci95_high": 0.03981829282607617,
+      "n": 129,
+      "n_seeds": 10
+    },
+    {
+      "lead": 2.0,
+      "cohort": "heldout",
+      "term": "alignment_social_total",
+      "continued_minus_failed": 0.0433202584253687,
+      "ci95_low": 1.982461119759358e-05,
+      "ci95_high": 0.08374080502341323,
+      "n": 129,
+      "n_seeds": 10
+    },
+    {
+      "lead": 2.0,
+      "cohort": "heldout",
+      "term": "alignment_coherent_spatial_approximation",
+      "continued_minus_failed": 0.007328872145901735,
+      "ci95_low": -0.001570655312103527,
+      "ci95_high": 0.025711086740323356,
+      "n": 129,
+      "n_seeds": 10
+    },
+    {
+      "lead": 2.0,
+      "cohort": "heldout",
+      "term": "Ja",
+      "continued_minus_failed": 0.005122119679400436,
+      "ci95_low": -0.01964305536030093,
+      "ci95_high": 0.023956122606376393,
+      "n": 129,
+      "n_seeds": 10
+    },
+    {
+      "lead": 2.0,
+      "cohort": "heldout",
+      "term": "b",
+      "continued_minus_failed": -0.021060597967497246,
+      "ci95_low": -0.030908874425969478,
+      "ci95_high": -0.012119815767232815,
+      "n": 129,
+      "n_seeds": 10
+    },
+    {
+      "lead": 2.0,
+      "cohort": "all",
+      "term": "alignment_internal_alignment_visual_asymmetry",
+      "continued_minus_failed": 0.01680578425515601,
+      "ci95_low": -0.0031889348176538748,
+      "ci95_high": 0.03452822693221263,
+      "n": 337,
+      "n_seeds": 37
+    },
+    {
+      "lead": 2.0,
+      "cohort": "all",
+      "term": "alignment_internal_alignment_normalization_asymmetry",
+      "continued_minus_failed": -0.0002034822281485475,
+      "ci95_low": -0.0047759911430957005,
+      "ci95_high": 0.00471987709029274,
+      "n": 337,
+      "n_seeds": 37
+    },
+    {
+      "lead": 2.0,
+      "cohort": "all",
+      "term": "alignment_internal_position_heading_mismatch",
+      "continued_minus_failed": 0.0010117155742222985,
+      "ci95_low": -0.00014515568567973223,
+      "ci95_high": 0.0019772361849278467,
+      "n": 337,
+      "n_seeds": 37
+    },
+    {
+      "lead": 2.0,
+      "cohort": "all",
+      "term": "alignment_internal_position_visibility_asymmetry",
+      "continued_minus_failed": -0.00336495627062312,
+      "ci95_low": -0.005781693900632443,
+      "ci95_high": -0.0007105350275313686,
+      "n": 337,
+      "n_seeds": 37
+    },
+    {
+      "lead": 2.0,
+      "cohort": "all",
+      "term": "alignment_external_alignment",
+      "continued_minus_failed": 0.01396087413969361,
+      "ci95_low": 0.0003099606930836305,
+      "ci95_high": 0.02680717528213852,
+      "n": 337,
+      "n_seeds": 37
+    },
+    {
+      "lead": 2.0,
+      "cohort": "all",
+      "term": "alignment_external_position",
+      "continued_minus_failed": -0.011289860343028006,
+      "ci95_low": -0.02561667741513076,
+      "ci95_high": 0.004509221920075687,
+      "n": 337,
+      "n_seeds": 37
+    },
+    {
+      "lead": 2.0,
+      "cohort": "all",
+      "term": "alignment_leading_receiver",
+      "continued_minus_failed": 0.015859467990022,
+      "ci95_low": -0.0013888620783861266,
+      "ci95_high": 0.032760870224414367,
+      "n": 337,
+      "n_seeds": 37
+    },
+    {
+      "lead": 2.0,
+      "cohort": "all",
+      "term": "alignment_trailing_receiver",
+      "continued_minus_failed": 0.0010606071372502575,
+      "ci95_low": -0.012015159699921812,
+      "ci95_high": 0.01324289357828614,
+      "n": 337,
+      "n_seeds": 37
+    },
+    {
+      "lead": 2.0,
+      "cohort": "all",
+      "term": "alignment_hull_receiver",
+      "continued_minus_failed": 0.0029214128526323904,
+      "ci95_low": -0.005621603209333081,
+      "ci95_high": 0.010893681259582766,
+      "n": 337,
+      "n_seeds": 37
+    },
+    {
+      "lead": 2.0,
+      "cohort": "all",
+      "term": "alignment_interior_receiver",
+      "continued_minus_failed": 0.013998662274639856,
+      "ci95_low": -0.004801004669777596,
+      "ci95_high": 0.03134848781841992,
+      "n": 337,
+      "n_seeds": 37
+    },
+    {
+      "lead": 2.0,
+      "cohort": "all",
+      "term": "alignment_approach_receiver",
+      "continued_minus_failed": 0.012931946139722258,
+      "ci95_low": -0.00022772537277410333,
+      "ci95_high": 0.026141249760647953,
+      "n": 337,
+      "n_seeds": 37
+    },
+    {
+      "lead": 2.0,
+      "cohort": "all",
+      "term": "alignment_nonapproach_receiver",
+      "continued_minus_failed": 0.003988128987549985,
+      "ci95_low": -0.00982834640978055,
+      "ci95_high": 0.017880692388992706,
+      "n": 337,
+      "n_seeds": 37
+    },
+    {
+      "lead": 2.0,
+      "cohort": "all",
+      "term": "alignment_social_total",
+      "continued_minus_failed": 0.01692007512727211,
+      "ci95_low": -0.006833666150128066,
+      "ci95_high": 0.03763703632445917,
+      "n": 337,
+      "n_seeds": 37
+    },
+    {
+      "lead": 2.0,
+      "cohort": "all",
+      "term": "alignment_coherent_spatial_approximation",
+      "continued_minus_failed": 0.0021686895599430274,
+      "ci95_low": -0.00581102632821617,
+      "ci95_high": 0.010288648528700121,
+      "n": 337,
+      "n_seeds": 37
+    },
+    {
+      "lead": 2.0,
+      "cohort": "all",
+      "term": "Ja",
+      "continued_minus_failed": -0.010274378540149159,
+      "ci95_low": -0.022381801659070513,
+      "ci95_high": 0.0032113946300872304,
+      "n": 337,
+      "n_seeds": 37
+    },
+    {
+      "lead": 2.0,
+      "cohort": "all",
+      "term": "b",
+      "continued_minus_failed": -0.026491636457934602,
+      "ci95_low": -0.03267736738776959,
+      "ci95_high": -0.019216815724520477,
+      "n": 337,
+      "n_seeds": 37
+    },
+    {
+      "lead": 1.0,
+      "cohort": "train",
+      "term": "alignment_internal_alignment_visual_asymmetry",
+      "continued_minus_failed": 0.058540143876163325,
+      "ci95_low": 0.039630728678113424,
+      "ci95_high": 0.08323237200102593,
+      "n": 208,
+      "n_seeds": 27
+    },
+    {
+      "lead": 1.0,
+      "cohort": "train",
+      "term": "alignment_internal_alignment_normalization_asymmetry",
+      "continued_minus_failed": 0.0003221759577370294,
+      "ci95_low": -0.012764594849543754,
+      "ci95_high": 0.008373163001003329,
+      "n": 208,
+      "n_seeds": 27
+    },
+    {
+      "lead": 1.0,
+      "cohort": "train",
+      "term": "alignment_internal_position_heading_mismatch",
+      "continued_minus_failed": 0.0029861502726009296,
+      "ci95_low": 0.00191273991095882,
+      "ci95_high": 0.004693115271601634,
+      "n": 208,
+      "n_seeds": 27
+    },
+    {
+      "lead": 1.0,
+      "cohort": "train",
+      "term": "alignment_internal_position_visibility_asymmetry",
+      "continued_minus_failed": -0.0005944093205496782,
+      "ci95_low": -0.0031040302819121206,
+      "ci95_high": 0.0035724896418096955,
+      "n": 208,
+      "n_seeds": 27
+    },
+    {
+      "lead": 1.0,
+      "cohort": "train",
+      "term": "alignment_external_alignment",
+      "continued_minus_failed": -0.002579494445885445,
+      "ci95_low": -0.018550088588483,
+      "ci95_high": 0.014340567340940767,
+      "n": 208,
+      "n_seeds": 27
+    },
+    {
+      "lead": 1.0,
+      "cohort": "train",
+      "term": "alignment_external_position",
+      "continued_minus_failed": 0.0011313819407701518,
+      "ci95_low": -0.011043434433652572,
+      "ci95_high": 0.012176654628912695,
+      "n": 208,
+      "n_seeds": 27
+    },
+    {
+      "lead": 1.0,
+      "cohort": "train",
+      "term": "alignment_leading_receiver",
+      "continued_minus_failed": 0.04988821178770982,
+      "ci95_low": 0.03017490052358781,
+      "ci95_high": 0.06918746452412082,
+      "n": 208,
+      "n_seeds": 27
+    },
+    {
+      "lead": 1.0,
+      "cohort": "train",
+      "term": "alignment_trailing_receiver",
+      "continued_minus_failed": 0.009917736493126477,
+      "ci95_low": -0.0010136025367660363,
+      "ci95_high": 0.02395955235543007,
+      "n": 208,
+      "n_seeds": 27
+    },
+    {
+      "lead": 1.0,
+      "cohort": "train",
+      "term": "alignment_hull_receiver",
+      "continued_minus_failed": 0.009450861321375422,
+      "ci95_low": -0.001370921348465966,
+      "ci95_high": 0.02555157619318553,
+      "n": 208,
+      "n_seeds": 27
+    },
+    {
+      "lead": 1.0,
+      "cohort": "train",
+      "term": "alignment_interior_receiver",
+      "continued_minus_failed": 0.05035508695946087,
+      "ci95_low": 0.028861619774194304,
+      "ci95_high": 0.07036815808772272,
+      "n": 208,
+      "n_seeds": 27
+    },
+    {
+      "lead": 1.0,
+      "cohort": "train",
+      "term": "alignment_approach_receiver",
+      "continued_minus_failed": 0.04274282831248626,
+      "ci95_low": 0.025654124032273583,
+      "ci95_high": 0.05984687963185606,
+      "n": 208,
+      "n_seeds": 27
+    },
+    {
+      "lead": 1.0,
+      "cohort": "train",
+      "term": "alignment_nonapproach_receiver",
+      "continued_minus_failed": 0.017063119968350034,
+      "ci95_low": 0.00102615507285781,
+      "ci95_high": 0.03874809288780269,
+      "n": 208,
+      "n_seeds": 27
+    },
+    {
+      "lead": 1.0,
+      "cohort": "train",
+      "term": "alignment_social_total",
+      "continued_minus_failed": 0.059805948280836324,
+      "ci95_low": 0.03605926279860186,
+      "ci95_high": 0.08731033286441901,
+      "n": 208,
+      "n_seeds": 27
+    },
+    {
+      "lead": 1.0,
+      "cohort": "train",
+      "term": "alignment_coherent_spatial_approximation",
+      "continued_minus_failed": 0.008835573046396,
+      "ci95_low": 0.0025382911350183292,
+      "ci95_high": 0.016525028484499847,
+      "n": 208,
+      "n_seeds": 27
+    },
+    {
+      "lead": 1.0,
+      "cohort": "train",
+      "term": "Ja",
+      "continued_minus_failed": 0.043242684337843715,
+      "ci95_low": 0.02560800876503816,
+      "ci95_high": 0.05439760323617229,
+      "n": 208,
+      "n_seeds": 27
+    },
+    {
+      "lead": 1.0,
+      "cohort": "train",
+      "term": "b",
+      "continued_minus_failed": -0.016643183871406682,
+      "ci95_low": -0.03020187959520181,
+      "ci95_high": 0.0015394132487983458,
+      "n": 208,
+      "n_seeds": 27
+    },
+    {
+      "lead": 1.0,
+      "cohort": "heldout",
+      "term": "alignment_internal_alignment_visual_asymmetry",
+      "continued_minus_failed": 0.055546910766021966,
+      "ci95_low": 0.026002596393715684,
+      "ci95_high": 0.08964202592692738,
+      "n": 129,
+      "n_seeds": 10
+    },
+    {
+      "lead": 1.0,
+      "cohort": "heldout",
+      "term": "alignment_internal_alignment_normalization_asymmetry",
+      "continued_minus_failed": 0.01067210949186009,
+      "ci95_low": -0.006271085983077959,
+      "ci95_high": 0.022187261646679574,
+      "n": 129,
+      "n_seeds": 10
+    },
+    {
+      "lead": 1.0,
+      "cohort": "heldout",
+      "term": "alignment_internal_position_heading_mismatch",
+      "continued_minus_failed": 0.003110387251252654,
+      "ci95_low": 0.0020349857340817763,
+      "ci95_high": 0.004731410679904868,
+      "n": 129,
+      "n_seeds": 10
+    },
+    {
+      "lead": 1.0,
+      "cohort": "heldout",
+      "term": "alignment_internal_position_visibility_asymmetry",
+      "continued_minus_failed": -0.0030184470901113733,
+      "ci95_low": -0.008861949495616089,
+      "ci95_high": 0.0032299823865799123,
+      "n": 129,
+      "n_seeds": 10
+    },
+    {
+      "lead": 1.0,
+      "cohort": "heldout",
+      "term": "alignment_external_alignment",
+      "continued_minus_failed": -0.02595294459864764,
+      "ci95_low": -0.046529504065816504,
+      "ci95_high": -0.008914016776379883,
+      "n": 129,
+      "n_seeds": 10
+    },
+    {
+      "lead": 1.0,
+      "cohort": "heldout",
+      "term": "alignment_external_position",
+      "continued_minus_failed": 0.02666937704589429,
+      "ci95_low": 0.006873126166935789,
+      "ci95_high": 0.052230924577281776,
+      "n": 129,
+      "n_seeds": 10
+    },
+    {
+      "lead": 1.0,
+      "cohort": "heldout",
+      "term": "alignment_leading_receiver",
+      "continued_minus_failed": 0.03088152242434877,
+      "ci95_low": 0.008596320107993948,
+      "ci95_high": 0.056255831471698554,
+      "n": 129,
+      "n_seeds": 10
+    },
+    {
+      "lead": 1.0,
+      "cohort": "heldout",
+      "term": "alignment_trailing_receiver",
+      "continued_minus_failed": 0.03614587044192122,
+      "ci95_low": 0.02227961315646099,
+      "ci95_high": 0.0506011567442499,
+      "n": 129,
+      "n_seeds": 10
+    },
+    {
+      "lead": 1.0,
+      "cohort": "heldout",
+      "term": "alignment_hull_receiver",
+      "continued_minus_failed": 0.0013403257745553258,
+      "ci95_low": -0.00957352402846408,
+      "ci95_high": 0.016102243405170493,
+      "n": 129,
+      "n_seeds": 10
+    },
+    {
+      "lead": 1.0,
+      "cohort": "heldout",
+      "term": "alignment_interior_receiver",
+      "continued_minus_failed": 0.06568706709171467,
+      "ci95_low": 0.040491710446098686,
+      "ci95_high": 0.09212002695317885,
+      "n": 129,
+      "n_seeds": 10
+    },
+    {
+      "lead": 1.0,
+      "cohort": "heldout",
+      "term": "alignment_approach_receiver",
+      "continued_minus_failed": 0.04422143601109958,
+      "ci95_low": 0.011910122093684,
+      "ci95_high": 0.07834810919288598,
+      "n": 129,
+      "n_seeds": 10
+    },
+    {
+      "lead": 1.0,
+      "cohort": "heldout",
+      "term": "alignment_nonapproach_receiver",
+      "continued_minus_failed": 0.022805956855170385,
+      "ci95_low": 0.01272277560739403,
+      "ci95_high": 0.03542589136509182,
+      "n": 129,
+      "n_seeds": 10
+    },
+    {
+      "lead": 1.0,
+      "cohort": "heldout",
+      "term": "alignment_social_total",
+      "continued_minus_failed": 0.06702739286627006,
+      "ci95_low": 0.03754287928074571,
+      "ci95_high": 0.10273695655109304,
+      "n": 129,
+      "n_seeds": 10
+    },
+    {
+      "lead": 1.0,
+      "cohort": "heldout",
+      "term": "alignment_coherent_spatial_approximation",
+      "continued_minus_failed": 0.009038405017625433,
+      "ci95_low": -0.004720916124004937,
+      "ci95_high": 0.02527373342754497,
+      "n": 129,
+      "n_seeds": 10
+    },
+    {
+      "lead": 1.0,
+      "cohort": "heldout",
+      "term": "Ja",
+      "continued_minus_failed": 0.07810357461141829,
+      "ci95_low": 0.04959646702250864,
+      "ci95_high": 0.10507700098548484,
+      "n": 129,
+      "n_seeds": 10
+    },
+    {
+      "lead": 1.0,
+      "cohort": "heldout",
+      "term": "b",
+      "continued_minus_failed": -0.0010993768978848622,
+      "ci95_low": -0.01216149638955918,
+      "ci95_high": 0.010712580941680396,
+      "n": 129,
+      "n_seeds": 10
+    },
+    {
+      "lead": 1.0,
+      "cohort": "all",
+      "term": "alignment_internal_alignment_visual_asymmetry",
+      "continued_minus_failed": 0.05414467928616311,
+      "ci95_low": 0.038196698797213074,
+      "ci95_high": 0.07387360627733211,
+      "n": 337,
+      "n_seeds": 37
+    },
+    {
+      "lead": 1.0,
+      "cohort": "all",
+      "term": "alignment_internal_alignment_normalization_asymmetry",
+      "continued_minus_failed": 0.004558587175819081,
+      "ci95_low": -0.0055875712753108465,
+      "ci95_high": 0.011322087084441207,
+      "n": 337,
+      "n_seeds": 37
+    },
+    {
+      "lead": 1.0,
+      "cohort": "all",
+      "term": "alignment_internal_position_heading_mismatch",
+      "continued_minus_failed": 0.00254175304973512,
+      "ci95_low": 0.0017778693685756145,
+      "ci95_high": 0.003945843804897788,
+      "n": 337,
+      "n_seeds": 37
+    },
+    {
+      "lead": 1.0,
+      "cohort": "all",
+      "term": "alignment_internal_position_visibility_asymmetry",
+      "continued_minus_failed": -0.0013575965109931362,
+      "ci95_low": -0.004291734344418105,
+      "ci95_high": 0.0022910586510605582,
+      "n": 337,
+      "n_seeds": 37
+    },
+    {
+      "lead": 1.0,
+      "cohort": "all",
+      "term": "alignment_external_alignment",
+      "continued_minus_failed": -0.010412983212288196,
+      "ci95_low": -0.023034209964218226,
+      "ci95_high": 0.0024175699870349595,
+      "n": 337,
+      "n_seeds": 37
+    },
+    {
+      "lead": 1.0,
+      "cohort": "all",
+      "term": "alignment_external_position",
+      "continued_minus_failed": 0.009991588548651082,
+      "ci95_low": -0.0012796366750547935,
+      "ci95_high": 0.02317682221673496,
+      "n": 337,
+      "n_seeds": 37
+    },
+    {
+      "lead": 1.0,
+      "cohort": "all",
+      "term": "alignment_leading_receiver",
+      "continued_minus_failed": 0.0406330481375844,
+      "ci95_low": 0.025960069015424938,
+      "ci95_high": 0.056349052541339276,
+      "n": 337,
+      "n_seeds": 37
+    },
+    {
+      "lead": 1.0,
+      "cohort": "all",
+      "term": "alignment_trailing_receiver",
+      "continued_minus_failed": 0.01883298019950267,
+      "ci95_low": 0.009678911467746113,
+      "ci95_high": 0.029259781342900346,
+      "n": 337,
+      "n_seeds": 37
+    },
+    {
+      "lead": 1.0,
+      "cohort": "all",
+      "term": "alignment_hull_receiver",
+      "continued_minus_failed": 0.006502750274332498,
+      "ci95_low": -0.0008453067454207689,
+      "ci95_high": 0.017246453316819527,
+      "n": 337,
+      "n_seeds": 37
+    },
+    {
+      "lead": 1.0,
+      "cohort": "all",
+      "term": "alignment_interior_receiver",
+      "continued_minus_failed": 0.052963278062754554,
+      "ci95_low": 0.03499217112320784,
+      "ci95_high": 0.06872256788560681,
+      "n": 337,
+      "n_seeds": 37
+    },
+    {
+      "lead": 1.0,
+      "cohort": "all",
+      "term": "alignment_approach_receiver",
+      "continued_minus_failed": 0.04024803941959533,
+      "ci95_low": 0.024929609111631296,
+      "ci95_high": 0.05666415002086043,
+      "n": 337,
+      "n_seeds": 37
+    },
+    {
+      "lead": 1.0,
+      "cohort": "all",
+      "term": "alignment_nonapproach_receiver",
+      "continued_minus_failed": 0.019217988917491734,
+      "ci95_low": 0.0076730597606509245,
+      "ci95_high": 0.03288495414594356,
+      "n": 337,
+      "n_seeds": 37
+    },
+    {
+      "lead": 1.0,
+      "cohort": "all",
+      "term": "alignment_social_total",
+      "continued_minus_failed": 0.05946602833708707,
+      "ci95_low": 0.04122390915280496,
+      "ci95_high": 0.08097352804222634,
+      "n": 337,
+      "n_seeds": 37
+    },
+    {
+      "lead": 1.0,
+      "cohort": "all",
+      "term": "alignment_coherent_spatial_approximation",
+      "continued_minus_failed": 0.008247376229130564,
+      "ci95_low": 0.0021502694152786437,
+      "ci95_high": 0.015376966276809602,
+      "n": 337,
+      "n_seeds": 37
+    },
+    {
+      "lead": 1.0,
+      "cohort": "all",
+      "term": "Ja",
+      "continued_minus_failed": 0.05575538441622187,
+      "ci95_low": 0.042819911788049725,
+      "ci95_high": 0.06837677707097915,
+      "n": 337,
+      "n_seeds": 37
+    },
+    {
+      "lead": 1.0,
+      "cohort": "all",
+      "term": "b",
+      "continued_minus_failed": -0.012540751390850239,
+      "ci95_low": -0.024723850960016464,
+      "ci95_high": 0.00022242450588147924,
+      "n": 337,
+      "n_seeds": 37
+    },
+    {
+      "lead": 0.5,
+      "cohort": "train",
+      "term": "alignment_internal_alignment_visual_asymmetry",
+      "continued_minus_failed": 0.04300299528402925,
+      "ci95_low": 0.014779680729045102,
+      "ci95_high": 0.06283856306508524,
+      "n": 208,
+      "n_seeds": 27
+    },
+    {
+      "lead": 0.5,
+      "cohort": "train",
+      "term": "alignment_internal_alignment_normalization_asymmetry",
+      "continued_minus_failed": 0.00444549589431152,
+      "ci95_low": -0.0022576512045902443,
+      "ci95_high": 0.011948269928991841,
+      "n": 208,
+      "n_seeds": 27
+    },
+    {
+      "lead": 0.5,
+      "cohort": "train",
+      "term": "alignment_internal_position_heading_mismatch",
+      "continued_minus_failed": 0.002903275725507745,
+      "ci95_low": 0.0015529926755551307,
+      "ci95_high": 0.0038719162760141603,
+      "n": 208,
+      "n_seeds": 27
+    },
+    {
+      "lead": 0.5,
+      "cohort": "train",
+      "term": "alignment_internal_position_visibility_asymmetry",
+      "continued_minus_failed": 0.005682116973628453,
+      "ci95_low": 0.0006957352951702027,
+      "ci95_high": 0.01089816759381854,
+      "n": 208,
+      "n_seeds": 27
+    },
+    {
+      "lead": 0.5,
+      "cohort": "train",
+      "term": "alignment_external_alignment",
+      "continued_minus_failed": -0.023245816395375155,
+      "ci95_low": -0.03618821164635859,
+      "ci95_high": -0.00823487881560785,
+      "n": 208,
+      "n_seeds": 27
+    },
+    {
+      "lead": 0.5,
+      "cohort": "train",
+      "term": "alignment_external_position",
+      "continued_minus_failed": 0.01902996104628142,
+      "ci95_low": 0.004211638405806183,
+      "ci95_high": 0.032901138051679164,
+      "n": 208,
+      "n_seeds": 27
+    },
+    {
+      "lead": 0.5,
+      "cohort": "train",
+      "term": "alignment_leading_receiver",
+      "continued_minus_failed": 0.03039101127468674,
+      "ci95_low": 0.008699503322989972,
+      "ci95_high": 0.05357403381829253,
+      "n": 208,
+      "n_seeds": 27
+    },
+    {
+      "lead": 0.5,
+      "cohort": "train",
+      "term": "alignment_trailing_receiver",
+      "continued_minus_failed": 0.021427017253696477,
+      "ci95_low": 0.005434989302398014,
+      "ci95_high": 0.03526807123344494,
+      "n": 208,
+      "n_seeds": 27
+    },
+    {
+      "lead": 0.5,
+      "cohort": "train",
+      "term": "alignment_hull_receiver",
+      "continued_minus_failed": 0.011664012358266723,
+      "ci95_low": 0.003946259223183492,
+      "ci95_high": 0.022380214903957505,
+      "n": 208,
+      "n_seeds": 27
+    },
+    {
+      "lead": 0.5,
+      "cohort": "train",
+      "term": "alignment_interior_receiver",
+      "continued_minus_failed": 0.0401540161701165,
+      "ci95_low": 0.013988944934424718,
+      "ci95_high": 0.062299666777720066,
+      "n": 208,
+      "n_seeds": 27
+    },
+    {
+      "lead": 0.5,
+      "cohort": "train",
+      "term": "alignment_approach_receiver",
+      "continued_minus_failed": 0.04422189525417829,
+      "ci95_low": 0.0229904737872987,
+      "ci95_high": 0.064807180924453,
+      "n": 208,
+      "n_seeds": 27
+    },
+    {
+      "lead": 0.5,
+      "cohort": "train",
+      "term": "alignment_nonapproach_receiver",
+      "continued_minus_failed": 0.007596133274204933,
+      "ci95_low": -0.011520208623546533,
+      "ci95_high": 0.025378227852468474,
+      "n": 208,
+      "n_seeds": 27
+    },
+    {
+      "lead": 0.5,
+      "cohort": "train",
+      "term": "alignment_social_total",
+      "continued_minus_failed": 0.051818028528383124,
+      "ci95_low": 0.02264760261319488,
+      "ci95_high": 0.07756254577014053,
+      "n": 208,
+      "n_seeds": 27
+    },
+    {
+      "lead": 0.5,
+      "cohort": "train",
+      "term": "alignment_coherent_spatial_approximation",
+      "continued_minus_failed": 0.012717433301854018,
+      "ci95_low": 0.004399068011181303,
+      "ci95_high": 0.0224578401366621,
+      "n": 208,
+      "n_seeds": 27
+    },
+    {
+      "lead": 0.5,
+      "cohort": "train",
+      "term": "Ja",
+      "continued_minus_failed": 0.05821935486528104,
+      "ci95_low": 0.040596513929999474,
+      "ci95_high": 0.07229191770609944,
+      "n": 208,
+      "n_seeds": 27
+    },
+    {
+      "lead": 0.5,
+      "cohort": "train",
+      "term": "b",
+      "continued_minus_failed": 0.0065849996037035475,
+      "ci95_low": -0.008340280109854954,
+      "ci95_high": 0.027127738648516763,
+      "n": 208,
+      "n_seeds": 27
+    },
+    {
+      "lead": 0.5,
+      "cohort": "heldout",
+      "term": "alignment_internal_alignment_visual_asymmetry",
+      "continued_minus_failed": 0.047040123003828906,
+      "ci95_low": 0.010985457852111741,
+      "ci95_high": 0.08813253473460778,
+      "n": 129,
+      "n_seeds": 10
+    },
+    {
+      "lead": 0.5,
+      "cohort": "heldout",
+      "term": "alignment_internal_alignment_normalization_asymmetry",
+      "continued_minus_failed": -0.014568202327599242,
+      "ci95_low": -0.02988346066570073,
+      "ci95_high": -0.003477178129266149,
+      "n": 129,
+      "n_seeds": 10
+    },
+    {
+      "lead": 0.5,
+      "cohort": "heldout",
+      "term": "alignment_internal_position_heading_mismatch",
+      "continued_minus_failed": 0.0020512383326923957,
+      "ci95_low": 6.230918195078512e-05,
+      "ci95_high": 0.004311654226179202,
+      "n": 129,
+      "n_seeds": 10
+    },
+    {
+      "lead": 0.5,
+      "cohort": "heldout",
+      "term": "alignment_internal_position_visibility_asymmetry",
+      "continued_minus_failed": 0.0008580213323781788,
+      "ci95_low": -0.002879080801415523,
+      "ci95_high": 0.006924726002402591,
+      "n": 129,
+      "n_seeds": 10
+    },
+    {
+      "lead": 0.5,
+      "cohort": "heldout",
+      "term": "alignment_external_alignment",
+      "continued_minus_failed": -0.029839096754718585,
+      "ci95_low": -0.05455448178574742,
+      "ci95_high": -0.017065520297887257,
+      "n": 129,
+      "n_seeds": 10
+    },
+    {
+      "lead": 0.5,
+      "cohort": "heldout",
+      "term": "alignment_external_position",
+      "continued_minus_failed": 0.020791895616223303,
+      "ci95_low": 0.011597081759006821,
+      "ci95_high": 0.0379245983647178,
+      "n": 129,
+      "n_seeds": 10
+    },
+    {
+      "lead": 0.5,
+      "cohort": "heldout",
+      "term": "alignment_leading_receiver",
+      "continued_minus_failed": 0.0023458324965555176,
+      "ci95_low": -0.025043316262594456,
+      "ci95_high": 0.03931350822375912,
+      "n": 129,
+      "n_seeds": 10
+    },
+    {
+      "lead": 0.5,
+      "cohort": "heldout",
+      "term": "alignment_trailing_receiver",
+      "continued_minus_failed": 0.023988146706249443,
+      "ci95_low": 0.007517912259285429,
+      "ci95_high": 0.047378735277764074,
+      "n": 129,
+      "n_seeds": 10
+    },
+    {
+      "lead": 0.5,
+      "cohort": "heldout",
+      "term": "alignment_hull_receiver",
+      "continued_minus_failed": 0.006464386109230415,
+      "ci95_low": -0.008113345089235951,
+      "ci95_high": 0.02027349514450029,
+      "n": 129,
+      "n_seeds": 10
+    },
+    {
+      "lead": 0.5,
+      "cohort": "heldout",
+      "term": "alignment_interior_receiver",
+      "continued_minus_failed": 0.01986959309357455,
+      "ci95_low": -0.013073346332982017,
+      "ci95_high": 0.055779828947957355,
+      "n": 129,
+      "n_seeds": 10
+    },
+    {
+      "lead": 0.5,
+      "cohort": "heldout",
+      "term": "alignment_approach_receiver",
+      "continued_minus_failed": 0.016134716984946944,
+      "ci95_low": -0.01973927250451086,
+      "ci95_high": 0.057583689019561464,
+      "n": 129,
+      "n_seeds": 10
+    },
+    {
+      "lead": 0.5,
+      "cohort": "heldout",
+      "term": "alignment_nonapproach_receiver",
+      "continued_minus_failed": 0.010199262217858012,
+      "ci95_low": -0.004957455229427109,
+      "ci95_high": 0.023403939504227114,
+      "n": 129,
+      "n_seeds": 10
+    },
+    {
+      "lead": 0.5,
+      "cohort": "heldout",
+      "term": "alignment_social_total",
+      "continued_minus_failed": 0.026333979202805006,
+      "ci95_low": -0.010413304849242548,
+      "ci95_high": 0.06842126824961645,
+      "n": 129,
+      "n_seeds": 10
+    },
+    {
+      "lead": 0.5,
+      "cohort": "heldout",
+      "term": "alignment_coherent_spatial_approximation",
+      "continued_minus_failed": -0.002121891178696064,
+      "ci95_low": -0.011187404445186244,
+      "ci95_high": 0.009622270337818893,
+      "n": 129,
+      "n_seeds": 10
+    },
+    {
+      "lead": 0.5,
+      "cohort": "heldout",
+      "term": "Ja",
+      "continued_minus_failed": 0.09257703616727482,
+      "ci95_low": 0.06842519469025146,
+      "ci95_high": 0.12100120054566477,
+      "n": 129,
+      "n_seeds": 10
+    },
+    {
+      "lead": 0.5,
+      "cohort": "heldout",
+      "term": "b",
+      "continued_minus_failed": 0.01739791158137808,
+      "ci95_low": 0.0035959378652977818,
+      "ci95_high": 0.04313415520366673,
+      "n": 129,
+      "n_seeds": 10
+    },
+    {
+      "lead": 0.5,
+      "cohort": "all",
+      "term": "alignment_internal_alignment_visual_asymmetry",
+      "continued_minus_failed": 0.04129458974888039,
+      "ci95_low": 0.023143300848317123,
+      "ci95_high": 0.059008166066240014,
+      "n": 337,
+      "n_seeds": 37
+    },
+    {
+      "lead": 0.5,
+      "cohort": "all",
+      "term": "alignment_internal_alignment_normalization_asymmetry",
+      "continued_minus_failed": -0.0012183562627438812,
+      "ci95_low": -0.008374626095752347,
+      "ci95_high": 0.004767262558508601,
+      "n": 337,
+      "n_seeds": 37
+    },
+    {
+      "lead": 0.5,
+      "cohort": "all",
+      "term": "alignment_internal_position_heading_mismatch",
+      "continued_minus_failed": 0.002449070838938141,
+      "ci95_low": 0.001500078496139946,
+      "ci95_high": 0.003360215772983704,
+      "n": 337,
+      "n_seeds": 37
+    },
+    {
+      "lead": 0.5,
+      "cohort": "all",
+      "term": "alignment_internal_position_visibility_asymmetry",
+      "continued_minus_failed": 0.0031900240229090506,
+      "ci95_low": 1.724464937587437e-05,
+      "ci95_high": 0.007440311342051249,
+      "n": 337,
+      "n_seeds": 37
+    },
+    {
+      "lead": 0.5,
+      "cohort": "all",
+      "term": "alignment_external_alignment",
+      "continued_minus_failed": -0.023669358826745885,
+      "ci95_low": -0.03546326685081555,
+      "ci95_high": -0.014489468380844524,
+      "n": 337,
+      "n_seeds": 37
+    },
+    {
+      "lead": 0.5,
+      "cohort": "all",
+      "term": "alignment_external_position",
+      "continued_minus_failed": 0.0174782637729798,
+      "ci95_low": 0.009384123522850875,
+      "ci95_high": 0.027740838330259487,
+      "n": 337,
+      "n_seeds": 37
+    },
+    {
+      "lead": 0.5,
+      "cohort": "all",
+      "term": "alignment_leading_receiver",
+      "continued_minus_failed": 0.020081156076456358,
+      "ci95_low": 0.0018910517285574023,
+      "ci95_high": 0.03745854623662955,
+      "n": 337,
+      "n_seeds": 37
+    },
+    {
+      "lead": 0.5,
+      "cohort": "all",
+      "term": "alignment_trailing_receiver",
+      "continued_minus_failed": 0.019443077217761257,
+      "ci95_low": 0.009093052409905879,
+      "ci95_high": 0.03206622897730102,
+      "n": 337,
+      "n_seeds": 37
+    },
+    {
+      "lead": 0.5,
+      "cohort": "all",
+      "term": "alignment_hull_receiver",
+      "continued_minus_failed": 0.009311354870208994,
+      "ci95_low": 0.001922189969180283,
+      "ci95_high": 0.016418404467791376,
+      "n": 337,
+      "n_seeds": 37
+    },
+    {
+      "lead": 0.5,
+      "cohort": "all",
+      "term": "alignment_interior_receiver",
+      "continued_minus_failed": 0.030212878424008632,
+      "ci95_low": 0.011851942783444992,
+      "ci95_high": 0.04775353303744492,
+      "n": 337,
+      "n_seeds": 37
+    },
+    {
+      "lead": 0.5,
+      "cohort": "all",
+      "term": "alignment_approach_receiver",
+      "continued_minus_failed": 0.03168487105046798,
+      "ci95_low": 0.012888636975221137,
+      "ci95_high": 0.04999518324800323,
+      "n": 337,
+      "n_seeds": 37
+    },
+    {
+      "lead": 0.5,
+      "cohort": "all",
+      "term": "alignment_nonapproach_receiver",
+      "continued_minus_failed": 0.007839362243749629,
+      "ci95_low": -0.00428002439287027,
+      "ci95_high": 0.019637342885923253,
+      "n": 337,
+      "n_seeds": 37
+    },
+    {
+      "lead": 0.5,
+      "cohort": "all",
+      "term": "alignment_social_total",
+      "continued_minus_failed": 0.03952423329421761,
+      "ci95_low": 0.018993439205123246,
+      "ci95_high": 0.05985499014080476,
+      "n": 337,
+      "n_seeds": 37
+    },
+    {
+      "lead": 0.5,
+      "cohort": "all",
+      "term": "alignment_coherent_spatial_approximation",
+      "continued_minus_failed": 0.005656693839608211,
+      "ci95_low": -0.0009556282409455806,
+      "ci95_high": 0.0134611133732557,
+      "n": 337,
+      "n_seeds": 37
+    },
+    {
+      "lead": 0.5,
+      "cohort": "all",
+      "term": "Ja",
+      "continued_minus_failed": 0.07288867517992388,
+      "ci95_low": 0.058475712856457834,
+      "ci95_high": 0.08644839364536196,
+      "n": 337,
+      "n_seeds": 37
+    },
+    {
+      "lead": 0.5,
+      "cohort": "all",
+      "term": "b",
+      "continued_minus_failed": 0.007741552454010842,
+      "ci95_low": -0.002112207727537695,
+      "ci95_high": 0.020698456189715296,
+      "n": 337,
+      "n_seeds": 37
+    },
+    {
+      "lead": 0.2,
+      "cohort": "train",
+      "term": "alignment_internal_alignment_visual_asymmetry",
+      "continued_minus_failed": 0.038296887247728166,
+      "ci95_low": 0.013467975741121466,
+      "ci95_high": 0.059863595248953565,
+      "n": 208,
+      "n_seeds": 27
+    },
+    {
+      "lead": 0.2,
+      "cohort": "train",
+      "term": "alignment_internal_alignment_normalization_asymmetry",
+      "continued_minus_failed": 0.005553294931814976,
+      "ci95_low": -0.0004150672381234852,
+      "ci95_high": 0.012484521747960466,
+      "n": 208,
+      "n_seeds": 27
+    },
+    {
+      "lead": 0.2,
+      "cohort": "train",
+      "term": "alignment_internal_position_heading_mismatch",
+      "continued_minus_failed": 0.002177163671477957,
+      "ci95_low": 0.0005469086528876124,
+      "ci95_high": 0.0035351688646308374,
+      "n": 208,
+      "n_seeds": 27
+    },
+    {
+      "lead": 0.2,
+      "cohort": "train",
+      "term": "alignment_internal_position_visibility_asymmetry",
+      "continued_minus_failed": 0.004356272843436584,
+      "ci95_low": -0.0006577170884853016,
+      "ci95_high": 0.009630895430082852,
+      "n": 208,
+      "n_seeds": 27
+    },
+    {
+      "lead": 0.2,
+      "cohort": "train",
+      "term": "alignment_external_alignment",
+      "continued_minus_failed": -0.02860074056335192,
+      "ci95_low": -0.03991132967161587,
+      "ci95_high": -0.01447420044765748,
+      "n": 208,
+      "n_seeds": 27
+    },
+    {
+      "lead": 0.2,
+      "cohort": "train",
+      "term": "alignment_external_position",
+      "continued_minus_failed": 0.02284396285134952,
+      "ci95_low": 0.007675233301857896,
+      "ci95_high": 0.03419443317414493,
+      "n": 208,
+      "n_seeds": 27
+    },
+    {
+      "lead": 0.2,
+      "cohort": "train",
+      "term": "alignment_leading_receiver",
+      "continued_minus_failed": 0.017793648726544015,
+      "ci95_low": -0.002021858754748447,
+      "ci95_high": 0.038663701077492764,
+      "n": 208,
+      "n_seeds": 27
+    },
+    {
+      "lead": 0.2,
+      "cohort": "train",
+      "term": "alignment_trailing_receiver",
+      "continued_minus_failed": 0.026833192255911256,
+      "ci95_low": 0.006511856393293034,
+      "ci95_high": 0.0437306506059621,
+      "n": 208,
+      "n_seeds": 27
+    },
+    {
+      "lead": 0.2,
+      "cohort": "train",
+      "term": "alignment_hull_receiver",
+      "continued_minus_failed": 0.0017938610412037022,
+      "ci95_low": -0.008349681667169791,
+      "ci95_high": 0.010487784508556615,
+      "n": 208,
+      "n_seeds": 27
+    },
+    {
+      "lead": 0.2,
+      "cohort": "train",
+      "term": "alignment_interior_receiver",
+      "continued_minus_failed": 0.04283297994125157,
+      "ci95_low": 0.017983088455089655,
+      "ci95_high": 0.06296958556449171,
+      "n": 208,
+      "n_seeds": 27
+    },
+    {
+      "lead": 0.2,
+      "cohort": "train",
+      "term": "alignment_approach_receiver",
+      "continued_minus_failed": 0.032920813818759914,
+      "ci95_low": 0.016243020973590806,
+      "ci95_high": 0.054310823989664574,
+      "n": 208,
+      "n_seeds": 27
+    },
+    {
+      "lead": 0.2,
+      "cohort": "train",
+      "term": "alignment_nonapproach_receiver",
+      "continued_minus_failed": 0.011706027163695358,
+      "ci95_low": -0.0065079286957582146,
+      "ci95_high": 0.025408602889930437,
+      "n": 208,
+      "n_seeds": 27
+    },
+    {
+      "lead": 0.2,
+      "cohort": "train",
+      "term": "alignment_social_total",
+      "continued_minus_failed": 0.04462684098245548,
+      "ci95_low": 0.016699783011735886,
+      "ci95_high": 0.06891579487402708,
+      "n": 208,
+      "n_seeds": 27
+    },
+    {
+      "lead": 0.2,
+      "cohort": "train",
+      "term": "alignment_coherent_spatial_approximation",
+      "continued_minus_failed": 0.006512443976415618,
+      "ci95_low": -0.0027423850353843196,
+      "ci95_high": 0.015105718479227813,
+      "n": 208,
+      "n_seeds": 27
+    },
+    {
+      "lead": 0.2,
+      "cohort": "train",
+      "term": "Ja",
+      "continued_minus_failed": 0.07282361858006775,
+      "ci95_low": 0.05307141969070826,
+      "ci95_high": 0.087417297510781,
+      "n": 208,
+      "n_seeds": 27
+    },
+    {
+      "lead": 0.2,
+      "cohort": "train",
+      "term": "b",
+      "continued_minus_failed": 0.024686094707252783,
+      "ci95_low": 0.006813858630678926,
+      "ci95_high": 0.04679148475470892,
+      "n": 208,
+      "n_seeds": 27
+    },
+    {
+      "lead": 0.2,
+      "cohort": "heldout",
+      "term": "alignment_internal_alignment_visual_asymmetry",
+      "continued_minus_failed": 0.05909189807059509,
+      "ci95_low": 0.007069411166147511,
+      "ci95_high": 0.09951989896247886,
+      "n": 129,
+      "n_seeds": 10
+    },
+    {
+      "lead": 0.2,
+      "cohort": "heldout",
+      "term": "alignment_internal_alignment_normalization_asymmetry",
+      "continued_minus_failed": -0.008113189258121935,
+      "ci95_low": -0.02201176334922481,
+      "ci95_high": 0.0047699574639217335,
+      "n": 129,
+      "n_seeds": 10
+    },
+    {
+      "lead": 0.2,
+      "cohort": "heldout",
+      "term": "alignment_internal_position_heading_mismatch",
+      "continued_minus_failed": 0.0039025736369459854,
+      "ci95_low": 0.0013843357679089742,
+      "ci95_high": 0.005469359588198551,
+      "n": 129,
+      "n_seeds": 10
+    },
+    {
+      "lead": 0.2,
+      "cohort": "heldout",
+      "term": "alignment_internal_position_visibility_asymmetry",
+      "continued_minus_failed": -0.000872831158816034,
+      "ci95_low": -0.005855130732957711,
+      "ci95_high": 0.010071895122899856,
+      "n": 129,
+      "n_seeds": 10
+    },
+    {
+      "lead": 0.2,
+      "cohort": "heldout",
+      "term": "alignment_external_alignment",
+      "continued_minus_failed": -0.04320170171112403,
+      "ci95_low": -0.059891984149926705,
+      "ci95_high": -0.022756589957773448,
+      "n": 129,
+      "n_seeds": 10
+    },
+    {
+      "lead": 0.2,
+      "cohort": "heldout",
+      "term": "alignment_external_position",
+      "continued_minus_failed": 0.031528882867809666,
+      "ci95_low": 0.008882087684992277,
+      "ci95_high": 0.05163175316122712,
+      "n": 129,
+      "n_seeds": 10
+    },
+    {
+      "lead": 0.2,
+      "cohort": "heldout",
+      "term": "alignment_leading_receiver",
+      "continued_minus_failed": 0.015068697404417384,
+      "ci95_low": -0.024566869425693215,
+      "ci95_high": 0.052080602342061716,
+      "n": 129,
+      "n_seeds": 10
+    },
+    {
+      "lead": 0.2,
+      "cohort": "heldout",
+      "term": "alignment_trailing_receiver",
+      "continued_minus_failed": 0.027266935042871324,
+      "ci95_low": 0.005135541966069861,
+      "ci95_high": 0.03863788922720637,
+      "n": 129,
+      "n_seeds": 10
+    },
+    {
+      "lead": 0.2,
+      "cohort": "heldout",
+      "term": "alignment_hull_receiver",
+      "continued_minus_failed": 0.019784513177542335,
+      "ci95_low": 0.0030031225272025724,
+      "ci95_high": 0.04433850133719512,
+      "n": 129,
+      "n_seeds": 10
+    },
+    {
+      "lead": 0.2,
+      "cohort": "heldout",
+      "term": "alignment_interior_receiver",
+      "continued_minus_failed": 0.02255111926974638,
+      "ci95_low": -0.024828944688574148,
+      "ci95_high": 0.04672265138678407,
+      "n": 129,
+      "n_seeds": 10
+    },
+    {
+      "lead": 0.2,
+      "cohort": "heldout",
+      "term": "alignment_approach_receiver",
+      "continued_minus_failed": 0.021374554302822986,
+      "ci95_low": -0.020998922966585665,
+      "ci95_high": 0.051088966019235446,
+      "n": 129,
+      "n_seeds": 10
+    },
+    {
+      "lead": 0.2,
+      "cohort": "heldout",
+      "term": "alignment_nonapproach_receiver",
+      "continued_minus_failed": 0.02096107814446572,
+      "ci95_low": -0.004277334136410556,
+      "ci95_high": 0.03757500978426459,
+      "n": 129,
+      "n_seeds": 10
+    },
+    {
+      "lead": 0.2,
+      "cohort": "heldout",
+      "term": "alignment_social_total",
+      "continued_minus_failed": 0.04233563244728865,
+      "ci95_low": -0.012785430796290086,
+      "ci95_high": 0.08426515279229538,
+      "n": 129,
+      "n_seeds": 10
+    },
+    {
+      "lead": 0.2,
+      "cohort": "heldout",
+      "term": "alignment_coherent_spatial_approximation",
+      "continued_minus_failed": -0.00103089087253368,
+      "ci95_low": -0.014273264362573807,
+      "ci95_high": 0.012407210708425258,
+      "n": 129,
+      "n_seeds": 10
+    },
+    {
+      "lead": 0.2,
+      "cohort": "heldout",
+      "term": "Ja",
+      "continued_minus_failed": 0.10734004620728668,
+      "ci95_low": 0.07212542543602443,
+      "ci95_high": 0.12693394168063216,
+      "n": 129,
+      "n_seeds": 10
+    },
+    {
+      "lead": 0.2,
+      "cohort": "heldout",
+      "term": "b",
+      "continued_minus_failed": 0.022866679283585243,
+      "ci95_low": 0.0032890809872933567,
+      "ci95_high": 0.05534455512286143,
+      "n": 129,
+      "n_seeds": 10
+    },
+    {
+      "lead": 0.2,
+      "cohort": "all",
+      "term": "alignment_internal_alignment_visual_asymmetry",
+      "continued_minus_failed": 0.044306637329159286,
+      "ci95_low": 0.02199186105952139,
+      "ci95_high": 0.0689770659214181,
+      "n": 337,
+      "n_seeds": 37
+    },
+    {
+      "lead": 0.2,
+      "cohort": "all",
+      "term": "alignment_internal_alignment_normalization_asymmetry",
+      "continued_minus_failed": 0.0005822608108949244,
+      "ci95_low": -0.006528864668909275,
+      "ci95_high": 0.007371318867261558,
+      "n": 337,
+      "n_seeds": 37
+    },
+    {
+      "lead": 0.2,
+      "cohort": "all",
+      "term": "alignment_internal_position_heading_mismatch",
+      "continued_minus_failed": 0.002792200525142858,
+      "ci95_low": 0.0015379752969388737,
+      "ci95_high": 0.00408007332400578,
+      "n": 337,
+      "n_seeds": 37
+    },
+    {
+      "lead": 0.2,
+      "cohort": "all",
+      "term": "alignment_internal_position_visibility_asymmetry",
+      "continued_minus_failed": 0.001971399682747412,
+      "ci95_low": -0.002109501206060057,
+      "ci95_high": 0.006859136614019815,
+      "n": 337,
+      "n_seeds": 37
+    },
+    {
+      "lead": 0.2,
+      "cohort": "all",
+      "term": "alignment_external_alignment",
+      "continued_minus_failed": -0.03340263486843984,
+      "ci95_low": -0.043701423207126194,
+      "ci95_high": -0.022321327207836073,
+      "n": 337,
+      "n_seeds": 37
+    },
+    {
+      "lead": 0.2,
+      "cohort": "all",
+      "term": "alignment_external_position",
+      "continued_minus_failed": 0.02467897175701874,
+      "ci95_low": 0.012891591189026058,
+      "ci95_high": 0.03554671626473378,
+      "n": 337,
+      "n_seeds": 37
+    },
+    {
+      "lead": 0.2,
+      "cohort": "all",
+      "term": "alignment_leading_receiver",
+      "continued_minus_failed": 0.015577931740400992,
+      "ci95_low": -0.0027499183341482773,
+      "ci95_high": 0.033440475206233805,
+      "n": 337,
+      "n_seeds": 37
+    },
+    {
+      "lead": 0.2,
+      "cohort": "all",
+      "term": "alignment_trailing_receiver",
+      "continued_minus_failed": 0.02535090349612236,
+      "ci95_low": 0.012351796062475088,
+      "ci95_high": 0.03785893467580785,
+      "n": 337,
+      "n_seeds": 37
+    },
+    {
+      "lead": 0.2,
+      "cohort": "all",
+      "term": "alignment_hull_receiver",
+      "continued_minus_failed": 0.007855372409072574,
+      "ci95_low": -0.0004970268058388937,
+      "ci95_high": 0.017819511796271708,
+      "n": 337,
+      "n_seeds": 37
+    },
+    {
+      "lead": 0.2,
+      "cohort": "all",
+      "term": "alignment_interior_receiver",
+      "continued_minus_failed": 0.033073462827450786,
+      "ci95_low": 0.011323924885907832,
+      "ci95_high": 0.05218488987398933,
+      "n": 337,
+      "n_seeds": 37
+    },
+    {
+      "lead": 0.2,
+      "cohort": "all",
+      "term": "alignment_approach_receiver",
+      "continued_minus_failed": 0.027013576162374927,
+      "ci95_low": 0.00791607850965882,
+      "ci95_high": 0.043328935123300855,
+      "n": 337,
+      "n_seeds": 37
+    },
+    {
+      "lead": 0.2,
+      "cohort": "all",
+      "term": "alignment_nonapproach_receiver",
+      "continued_minus_failed": 0.01391525907414843,
+      "ci95_low": 0.0018483613033687635,
+      "ci95_high": 0.026022587495921064,
+      "n": 337,
+      "n_seeds": 37
+    },
+    {
+      "lead": 0.2,
+      "cohort": "all",
+      "term": "alignment_social_total",
+      "continued_minus_failed": 0.04092883523652347,
+      "ci95_low": 0.016365223482512903,
+      "ci95_high": 0.06478449271786532,
+      "n": 337,
+      "n_seeds": 37
+    },
+    {
+      "lead": 0.2,
+      "cohort": "all",
+      "term": "alignment_coherent_spatial_approximation",
+      "continued_minus_failed": 0.0022875933722370564,
+      "ci95_low": -0.004968997299468416,
+      "ci95_high": 0.010894413421243372,
+      "n": 337,
+      "n_seeds": 37
+    },
+    {
+      "lead": 0.2,
+      "cohort": "all",
+      "term": "Ja",
+      "continued_minus_failed": 0.0861925282692264,
+      "ci95_low": 0.06818424549342594,
+      "ci95_high": 0.10095557381076149,
+      "n": 337,
+      "n_seeds": 37
+    },
+    {
+      "lead": 0.2,
+      "cohort": "all",
+      "term": "b",
+      "continued_minus_failed": 0.021122566534286524,
+      "ci95_low": 0.009105095445381286,
+      "ci95_high": 0.03580900191128396,
+      "n": 337,
+      "n_seeds": 37
+    }
+  ],
+  "supply_link": {
+    "train": {
+      "residual_spearman": 0.29756794027106465,
+      "ci95": [
+        0.19457993353260208,
+        0.40787019736495234
+      ],
+      "n": 208,
+      "n_seeds": 27
+    },
+    "heldout": {
+      "residual_spearman": 0.5157910906298003,
+      "ci95": [
+        0.3142348881919775,
+        0.6555407634412124
+      ],
+      "n": 129,
+      "n_seeds": 10
+    },
+    "all": {
+      "residual_spearman": 0.386173532360698,
+      "ci95": [
+        0.289138425225679,
+        0.48391544815805776
+      ],
+      "n": 337,
+      "n_seeds": 37
+    }
+  }
+}
