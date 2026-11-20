@@ -1,0 +1,344 @@
+{
+  "configuration": {
+    "attempt_definition": "complete excursion of b_left+b_right from zero back to zero",
+    "feature_dt": 0.5,
+    "transfer_threshold_fish": 5,
+    "train_seeds": "0-29",
+    "heldout_seeds": "30-39",
+    "new_simulations": 0,
+    "fitted_potentials": 0
+  },
+  "audits": {
+    "max_abs_crossing_conservation_residual": 0,
+    "n_complete_attempts": 2338,
+    "n_transitions": 2298,
+    "n_relocations": 9,
+    "n_both_sides_occupied_at_onset": 116,
+    "n_majority_source_attempts": 1811,
+    "n_equal_population_onsets": 24
+  },
+  "ordinary_renewal_diagnostics": {
+    "train": {
+      "n_attempts": 1724,
+      "n_transitions": 1694,
+      "outcomes": {
+        "no_entry": 1286,
+        "partial": 197,
+        "sustained": 168,
+        "returned": 73
+      },
+      "waiting_mean": 8.730519480519481,
+      "waiting_median": 10.0,
+      "waiting_cv": 0.41643948930185254,
+      "exponential_ks": 0.4003178881182126,
+      "lag1_wait": {
+        "estimate": 0.39173173183361715,
+        "ci95": [
+          0.29961694477684314,
+          0.45406466316492033
+        ],
+        "n": 1664,
+        "n_seeds": 30
+      },
+      "lag1_transfer": {
+        "estimate": 0.10835239195115563,
+        "ci95": [
+          0.04175832962767986,
+          0.18100621560046912
+        ],
+        "n": 1694,
+        "n_seeds": 30
+      },
+      "direction_persistence_excess": {
+        "estimate": 0.01093980033052275,
+        "ci95": [
+          -0.004101033720738836,
+          0.02783439556852107
+        ],
+        "n": 1724,
+        "n_seeds": 30
+      }
+    },
+    "heldout": {
+      "n_attempts": 614,
+      "n_transitions": 604,
+      "outcomes": {
+        "no_entry": 354,
+        "sustained": 110,
+        "partial": 109,
+        "returned": 41
+      },
+      "waiting_mean": 7.817880794701987,
+      "waiting_median": 9.5,
+      "waiting_cv": 0.46781096891123247,
+      "exponential_ks": 0.3569202641040678,
+      "lag1_wait": {
+        "estimate": 0.3859739952954298,
+        "ci95": [
+          0.29867325915005705,
+          0.46114294618751067
+        ],
+        "n": 594,
+        "n_seeds": 10
+      },
+      "lag1_transfer": {
+        "estimate": 0.059320916076699974,
+        "ci95": [
+          0.00814117691067221,
+          0.10890146101399649
+        ],
+        "n": 604,
+        "n_seeds": 10
+      },
+      "direction_persistence_excess": {
+        "estimate": 0.05864318042928207,
+        "ci95": [
+          0.01490578803913396,
+          0.10098327417873848
+        ],
+        "n": 614,
+        "n_seeds": 10
+      }
+    },
+    "all": {
+      "n_attempts": 2338,
+      "n_transitions": 2298,
+      "outcomes": {
+        "no_entry": 1640,
+        "partial": 306,
+        "sustained": 278,
+        "returned": 114
+      },
+      "waiting_mean": 8.49064403829417,
+      "waiting_median": 10.0,
+      "waiting_cv": 0.4314753247083969,
+      "exponential_ks": 0.38786861307612985,
+      "lag1_wait": {
+        "estimate": 0.4070023173528372,
+        "ci95": [
+          0.35165083579489687,
+          0.45137374894904614
+        ],
+        "n": 2258,
+        "n_seeds": 40
+      },
+      "lag1_transfer": {
+        "estimate": 0.10164755776698929,
+        "ci95": [
+          0.051866978136649707,
+          0.15453918044212858
+        ],
+        "n": 2298,
+        "n_seeds": 40
+      },
+      "direction_persistence_excess": {
+        "estimate": 0.02286564535521258,
+        "ci95": [
+          0.006174709722687752,
+          0.04061311613366513
+        ],
+        "n": 2338,
+        "n_seeds": 40
+      }
+    },
+    "heldout_semi_markov_wait_residual_lag1": {
+      "estimate": 0.14009737047677992,
+      "ci95": [
+        0.06908666982180522,
+        0.20934046941186416
+      ],
+      "n": 594,
+      "n_seeds": 10
+    }
+  },
+  "semi_markov_model": {
+    "states": [
+      "no_entry",
+      "returned",
+      "partial",
+      "sustained"
+    ],
+    "ordinary": {
+      "waiting_time": 8.730519480519481,
+      "next_transfer": 1.4421487603305785,
+      "next_first_entry": 0.2550177095631641,
+      "next_partial": 0.11334120425029516,
+      "next_sustained": 0.09858323494687131,
+      "same_direction": 0.7621015348288076
+    },
+    "conditional": {
+      "no_entry": {
+        "waiting_time": 9.740316205533597,
+        "next_transfer": 1.2126482213438736,
+        "next_first_entry": 0.17865612648221343,
+        "next_partial": 0.0616600790513834,
+        "next_sustained": 0.08458498023715415,
+        "same_direction": 0.8442687747035573,
+        "n_train": 1265
+      },
+      "returned": {
+        "waiting_time": 4.736111111111111,
+        "next_transfer": 1.8055555555555556,
+        "next_first_entry": 0.4861111111111111,
+        "next_partial": 0.2777777777777778,
+        "next_sustained": 0.1111111111111111,
+        "same_direction": 0.5555555555555556,
+        "n_train": 72
+      },
+      "partial": {
+        "waiting_time": 5.135897435897436,
+        "next_transfer": 2.2615384615384615,
+        "next_first_entry": 0.5076923076923077,
+        "next_partial": 0.28205128205128205,
+        "next_sustained": 0.15897435897435896,
+        "same_direction": 0.5333333333333333,
+        "n_train": 195
+      },
+      "sustained": {
+        "waiting_time": 6.947530864197531,
+        "next_transfer": 2.0864197530864197,
+        "next_first_entry": 0.4444444444444444,
+        "next_partial": 0.24074074074074073,
+        "next_sustained": 0.12962962962962962,
+        "same_direction": 0.4876543209876543,
+        "n_train": 162
+      }
+    },
+    "heldout_scores": [
+      {
+        "target": "waiting_time",
+        "n_test": 604,
+        "n_test_seeds": 10,
+        "ordinary_mse": 13.871878219710577,
+        "semi_markov_mse": 10.654931940772512,
+        "mse_improvement": 3.216946278938063,
+        "improvement_ci95": "[2.051374831293914, 4.486801203000511]"
+      },
+      {
+        "target": "next_transfer",
+        "n_test": 604,
+        "n_test_seeds": 10,
+        "ordinary_mse": 64.03717353089662,
+        "semi_markov_mse": 63.53832330833296,
+        "mse_improvement": 0.498850222563645,
+        "improvement_ci95": "[0.08948064323474253, 0.9192172221280647]"
+      },
+      {
+        "target": "next_first_entry",
+        "n_test": 604,
+        "n_test_seeds": 10,
+        "ordinary_mse": 0.2707254350716116,
+        "semi_markov_mse": 0.2626893585522585,
+        "mse_improvement": 0.008036076519353223,
+        "improvement_ci95": "[-0.0018077704525103033, 0.020360809931815122]"
+      },
+      {
+        "target": "next_partial",
+        "n_test": 604,
+        "n_test_seeds": 10,
+        "ordinary_mse": 0.14816970861657613,
+        "semi_markov_mse": 0.14359491758391213,
+        "mse_improvement": 0.004574791032664014,
+        "improvement_ci95": "[-0.003077393870487292, 0.01236670210871926]"
+      },
+      {
+        "target": "next_sustained",
+        "n_test": 604,
+        "n_test_seeds": 10,
+        "ordinary_mse": 0.15219285801946264,
+        "semi_markov_mse": 0.1517342319306523,
+        "mse_improvement": 0.0004586260888103497,
+        "improvement_ci95": "[-0.0012797467284446393, 0.0021833634810176287]"
+      },
+      {
+        "target": "same_direction",
+        "n_test": 604,
+        "n_test_seeds": 10,
+        "ordinary_mse": 0.24097594830036845,
+        "semi_markov_mse": 0.22321283992738933,
+        "mse_improvement": 0.017763108372979113,
+        "improvement_ci95": "[0.008475274989115582, 0.026521316497637316]"
+      }
+    ]
+  },
+  "heldout_aggregate_validation": [
+    {
+      "metric": "attempt_rate",
+      "train_prediction": 7.183333333333334,
+      "heldout_observed": 7.675,
+      "heldout_minus_train": 0.49166666666666625,
+      "difference_ci95": "[-0.03750000000000053, 0.9708333333333332]",
+      "n_train_seeds": 30,
+      "n_test_seeds": 10
+    },
+    {
+      "metric": "first_entry_probability",
+      "train_prediction": 0.22754756740991983,
+      "heldout_observed": 0.4146477111598079,
+      "heldout_minus_train": 0.1871001437498881,
+      "difference_ci95": "[0.07079173275806702, 0.2985702921766353]",
+      "n_train_seeds": 30,
+      "n_test_seeds": 10
+    },
+    {
+      "metric": "partial_probability",
+      "train_prediction": 0.10100494023837199,
+      "heldout_observed": 0.17221724847732914,
+      "heldout_minus_train": 0.07121230823895715,
+      "difference_ci95": "[0.00444615975122494, 0.13487439739336052]",
+      "n_train_seeds": 30,
+      "n_test_seeds": 10
+    },
+    {
+      "metric": "sustained_probability",
+      "train_prediction": 0.08825039870363997,
+      "heldout_observed": 0.17617197654496042,
+      "heldout_minus_train": 0.08792157784132044,
+      "difference_ci95": "[0.039231120690770636, 0.13560127035684813]",
+      "n_train_seeds": 30,
+      "n_test_seeds": 10
+    },
+    {
+      "metric": "mean_population_transfer",
+      "train_prediction": 1.3028146677092158,
+      "heldout_observed": 2.65239196958955,
+      "heldout_minus_train": 1.3495773018803343,
+      "difference_ci95": "[0.44192236823743275, 2.2745980773733594]",
+      "n_train_seeds": 30,
+      "n_test_seeds": 10
+    },
+    {
+      "metric": "mean_gross_crossings",
+      "train_prediction": 1.9980100010804003,
+      "heldout_observed": 4.055081350101512,
+      "heldout_minus_train": 2.057071349021111,
+      "difference_ci95": "[0.8897799824797616, 3.201364686132563]",
+      "n_train_seeds": 30,
+      "n_test_seeds": 10
+    }
+  ],
+  "resolution_sensitivity": {
+    "dt_0p5": {
+      "n_attempts": 2338,
+      "median_duration": 6.0,
+      "sustained_fraction": 0.11890504704875962,
+      "lag1_wait_spearman": 0.4070023173528372,
+      "direction_persistence_excess": 0.02286564535521258
+    },
+    "dt_1p0": {
+      "n_attempts": 2194,
+      "median_duration": 7.0,
+      "sustained_fraction": 0.12579762989972654,
+      "lag1_wait_spearman": 0.3498725999043695,
+      "direction_persistence_excess": 0.026271645101258057
+    }
+  },
+  "relocations": {
+    "n": 9,
+    "n_seeds": 6,
+    "median_duration": 97.0,
+    "median_overlapping_attempts": 10.0,
+    "minimum_overlapping_attempts": 2,
+    "maximum_overlapping_attempts": 45
+  }
+}
