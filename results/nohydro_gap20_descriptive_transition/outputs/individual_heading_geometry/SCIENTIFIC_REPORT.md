@@ -4,9 +4,9 @@
 
 Initial angular dispersion explains a meaningful minority of first entries, but not most of them. At the established prospective approach onset, independent fish rays predict entry substantially better than a rigid mean-heading school. Nevertheless, they miss about half of all held-out entries, and their finite-two-unit version misses about 69%. Existing positions and headings therefore do not determine entry: dynamical reorientation during the encounter remains essential.
 
-For the successful fixed-cohort entries missed by both frozen models, the median initial coherent turn required to expose any source fish to the aperture is 0.466 radians. The parameter-free independent-noise RMS accumulated before entry is only 0.107 radians, a median requirement-to-noise ratio of 4.37. The actual school mean heading turns in the required direction in two thirds of held-out cases, but reaches the full initial geometric angle in only one third because fish positions, the aperture bearing, and individual headings evolve simultaneously.
+For the successful fixed-cohort entries missed by both frozen models, the median initial coherent turn required to expose any source fish to the aperture is 0.466 radians. The parameter-free independent-noise RMS accumulated before entry is only 0.107 radians, a median requirement-to-noise ratio of 4.37. After correcting the transformation from the local inward-facing angle to the global heading frame, the actual school mean heading turns in the required direction in 97.1% of held-out cases and reaches the full initial geometric angle in 47.8%. Fish positions, the aperture bearing, and individual headings evolve simultaneously, so full initial-angle attainment is not required for every entry.
 
-The source-exact torque projection favors social rather than wall-guided turning during the final approach. At lead 1, the held-out social angular rate toward the required turn is +0.0487 `[0.0125,0.0777]`, while the wall rate is -0.0036 `[-0.0238,0.0143]`. The known internal nonreciprocal alignment term remains positive and resolved. This gives a defensible microscopic route to the required turn, but not a closed coarse theory: its magnitude still depends on the evolving directed visual graph and relative headings.
+The corrected source-exact torque projection strongly favors social rather than wall-guided turning during the final approach. At lead 1, the held-out social angular rate toward the required global turn is +0.1360 `[0.1225,0.1509]`, while the wall rate is -0.0160 `[-0.0297,-0.0062]`. The known internal nonreciprocal alignment term remains positive and resolved. This gives a defensible microscopic route to the required turn, but not a closed coarse theory: its magnitude still depends on the evolving directed visual graph and relative headings.
 
 ## Two parameter-free frozen predictions
 
@@ -36,7 +36,7 @@ The minimum coherent turn is the shortest signed angular distance from the curre
  |\operatorname{wrap}(\phi-\Theta)|.
 \]
 
-This is a geometric requirement, not a fitted turning threshold.
+This is a geometric requirement, not a fitted turning threshold. The aperture calculation is performed in the local inward-facing frame. For source sign `s`, its signed global-heading increment is exactly `-s deltaTheta_local`. The implementation now applies this transformation before comparing with global heading changes or torque rates. Reflection tests require the global increment to reverse sign when left and right chambers are exchanged. A separate seam test chooses the nearest wrapped aperture endpoint at `+/-pi`; both tests pass.
 
 ## Independent-seed entry validation
 
@@ -87,11 +87,11 @@ Of the 315 fixed-cohort events uniquely associated with a prospective storage ex
 | elapsed onset-to-entry time | 3.064 | descriptive median |
 | independent collective-noise RMS | 0.107 rad | `[0.100,0.115]` |
 | required turn / noise RMS | 4.37 | `[4.04,4.74]` |
-| actual mean-heading turn toward initial aperture | 0.360 rad | `[0.197,0.483]` |
+| actual mean-heading turn toward initial aperture | 0.483 rad | `[0.413,0.552]` |
 
 Independent angular noise is therefore too small to be the typical source of the required coherent deflection. This comparison is a scale test, not a claim that entry is a Gaussian first-passage event: social coupling, wall torques, and the moving aperture bearing invalidate such a scalar Brownian model.
 
-The actual mean heading turns in the initially required direction in 66.7% `[55.4%,76.2%]` of held-out missed entries, significantly above one half. It reaches the full initial minimum angle in only 34.8% `[25.0%,44.9%]`. The latter is not a contradiction. As the spatially extended school translates and deforms, a different fish can become the leader, individual headings change, and the fish-specific aperture intervals rotate. Collective mean reorientation is systematic but is not the entire kinematic path to entry.
+The actual mean heading turns in the initially required global direction in 97.1% `[94.4%,100%]` of held-out missed entries. It reaches the full initial minimum angle in 47.8% `[36.4%,59.1%]`. The latter is not a contradiction. As the spatially extended school translates and deforms, a different fish can become the leader, individual headings change, and the fish-specific aperture intervals rotate. Collective mean reorientation is nearly universal in direction but is not the entire kinematic path to entry.
 
 ## Wall-guided versus social turning
 
@@ -99,11 +99,11 @@ For the missed entries, the previously audited exact collective-heading projecti
 
 | held-out rate | lead 1 | lead 0.5 | lead 0.2 |
 |---|---:|---:|---:|
-| wall torque | -0.0036 `[-0.0238,0.0143]` | -0.0058 `[-0.0313,0.0157]` | -0.0009 `[-0.0265,0.0222]` |
-| total social torque | +0.0487 `[0.0125,0.0777]` | +0.0386 `[0.0018,0.0706]` | +0.0294 `[-0.0050,0.0601]` |
-| deterministic total | +0.0451 `[0.0089,0.0726]` | +0.0328 `[-0.0047,0.0609]` | +0.0284 `[-0.0063,0.0638]` |
+| wall torque | -0.0160 `[-0.0297,-0.0062]` | -0.0321 `[-0.0541,-0.0164]` | -0.0322 `[-0.0583,-0.0137]` |
+| total social torque | +0.1360 `[0.1225,0.1509]` | +0.1042 `[0.0912,0.1231]` | +0.0978 `[0.0883,0.1112]` |
+| deterministic total | +0.1200 `[0.1072,0.1312]` | +0.0721 `[0.0594,0.0831]` | +0.0656 `[0.0401,0.0856]` |
 
-The wall contribution is unresolved and centered near zero at every lead. It may shape the recurrent chamber trajectory and the spatial encounter, but it does not supply the resolved final deflection toward the required aperture in this subset. The social term does at leads 1 and 0.5 on held-out seeds, although its same-sign training estimate is individually unresolved.
+The wall contribution is resolved opposite to the required global turn at every lead. It may shape the recurrent chamber trajectory and bring the school into the encounter region, but it does not supply the final deflection toward the aperture in this subset. The social term is resolved toward the requirement at all three held-out leads. This corrected sign separation is stronger than the originally committed result.
 
 The internal visual-nonreciprocity contribution to improving gap alignment is independently positive in both splits. In the held-out missed subset it is +0.0735 `[0.0628,0.0862]` at lead 1, +0.0563 `[0.0442,0.0741]` at lead 0.5, and +0.0529 `[0.0392,0.0686]` at lead 0.2. Combined with the prior matched-noise intervention, this supports the physical route
 
@@ -114,7 +114,7 @@ individual heading dispersion gives some immediate aperture rays
   -> exact storage/lateral/neck-flux conversion.
 ```
 
-The torque association here is retrospective; causality comes from the separate symmetrization experiment. That experiment resolved transfer amount and turning changes but not first-entry probability, so nonreciprocity is a defensible source of reorientation rather than proven necessary for every first fish.
+The torque association here is retrospective; causality comes from symmetrization experiments. The new outcome-blind prospective restart test leaves first-entry probability unchanged (paired effect 0.000 with production noise, 95% seed interval `[-0.098,0.107]`) while reducing complete-excursion transfer by 3.125 fish `[0.205,8.215]`. Nonreciprocity is therefore a defensible source of reorientation and sustained propagation, but is not proven necessary for every first fish.
 
 ## Consequence for a minimal analytical encounter theory
 
@@ -122,7 +122,7 @@ A position-only or coherent frozen-ray theory is rejected. An independent-ray th
 
 The minimal viable analytical structure would combine the exact fish-specific angular aperture with a derived collective angular response from the production social rule. The known nonreciprocal mechanism has the correct sign, magnitude scale, causal transfer effect, and persistence near entry. What remains unavailable is its value from coarse school geometry alone: it depends on directed visible-edge weights and organized relative-heading differences. Supplying those microscopic quantities dynamically would reproduce the many-fish model rather than produce low-dimensional closure.
 
-The present stopping conclusion is therefore precise: geometry plus initial angular dispersion explains a substantial minority of entries; dynamic social reorientation is essential for the remainder; and a low-dimensional analytical encounter theory is not closed until the nonreciprocal collective torque can be derived from coarse physical information without adding a phenomenological hierarchy.
+The present stopping conclusion is therefore precise: geometry plus initial angular dispersion explains a substantial minority of archived entries; encounter-time dynamics is essential for the remainder; and the prospective intervention does not isolate internal nonreciprocity as necessary for binary first entry. It does establish that nonreciprocity supports subsequent population transfer. A low-dimensional analytical encounter theory is not closed until the collective turning response can be derived from coarse physical information without adding a phenomenological hierarchy.
 
 ## Reproduction
 

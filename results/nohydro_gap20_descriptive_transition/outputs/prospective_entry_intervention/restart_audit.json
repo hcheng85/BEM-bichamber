@@ -1,0 +1,93 @@
+{
+  "source_sha256": "5e57b9dca2cb962e2c35f540f3982d5f4018eb719067223e6b319866b4482284",
+  "adapter_sha256": "1a3a0723b56805a94a6fd34287caffb64219c8151444f98f3d9eccbcb5f35004",
+  "parity_passed": true,
+  "max_parity_error": 3.3306690738754696e-16,
+  "all_initial_storage_positive": true,
+  "rows": [
+    {
+      "sample_id": "onset_s0_i11",
+      "max_state_error": 0.0,
+      "max_velocity_error": 2.220446049250313e-16,
+      "initial_storage": 0.03703223091702444
+    },
+    {
+      "sample_id": "onset_s1_i4",
+      "max_state_error": 0.0,
+      "max_velocity_error": 2.220446049250313e-16,
+      "initial_storage": 0.0188192747646029
+    },
+    {
+      "sample_id": "onset_s2_i42",
+      "max_state_error": 0.0,
+      "max_velocity_error": 2.220446049250313e-16,
+      "initial_storage": 0.06118878773309909
+    },
+    {
+      "sample_id": "onset_s3_i67",
+      "max_state_error": 0.0,
+      "max_velocity_error": 2.220446049250313e-16,
+      "initial_storage": 0.00413300157151898
+    },
+    {
+      "sample_id": "onset_s4_i20",
+      "max_state_error": 0.0,
+      "max_velocity_error": 2.220446049250313e-16,
+      "initial_storage": 0.0010825495651206204
+    },
+    {
+      "sample_id": "onset_s5_i30",
+      "max_state_error": 0.0,
+      "max_velocity_error": 2.220446049250313e-16,
+      "initial_storage": 0.0003401831772859473
+    },
+    {
+      "sample_id": "onset_s6_i12",
+      "max_state_error": 0.0,
+      "max_velocity_error": 3.3306690738754696e-16,
+      "initial_storage": 0.022559346820971323
+    },
+    {
+      "sample_id": "onset_s7_i24",
+      "max_state_error": 0.0,
+      "max_velocity_error": 2.220446049250313e-16,
+      "initial_storage": 0.1052109751078873
+    },
+    {
+      "sample_id": "onset_s8_i1",
+      "max_state_error": 0.0,
+      "max_velocity_error": 3.3306690738754696e-16,
+      "initial_storage": 0.0019061599691711439
+    },
+    {
+      "sample_id": "onset_s9_i27",
+      "max_state_error": 0.0,
+      "max_velocity_error": 2.220446049250313e-16,
+      "initial_storage": 0.0010667330518658136
+    },
+    {
+      "sample_id": "onset_s10_i23",
+      "max_state_error": 0.0,
+      "max_velocity_error": 2.220446049250313e-16,
+      "initial_storage": 0.04929974468610035
+    },
+    {
+      "sample_id": "onset_s11_i31",
+      "max_state_error": 0.0,
+      "max_velocity_error": 2.220446049250313e-16,
+      "initial_storage": 0.028700896344755037
+    },
+    {
+      "sample_id": "onset_s12_i29",
+      "max_state_error": 0.0,
+      "max_velocity_error": 2.220446049250313e-16,
+      "initial_storage": 0.0039678546034753
+    },
+    {
+      "sample_id": "onset_s13_i30",
+      "max_state_error": 0.0,
+      "max_velocity_error": 3.3306690738754696e-16,
+      "initial_storage": 0.002021313549152526
+    }
+  ]
+}

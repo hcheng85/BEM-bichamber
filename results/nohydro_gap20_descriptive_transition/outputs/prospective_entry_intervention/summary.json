@@ -1,0 +1,588 @@
+{
+  "source_sha256": "5e57b9dca2cb962e2c35f540f3982d5f4018eb719067223e6b319866b4482284",
+  "adapter_sha256": "1a3a0723b56805a94a6fd34287caffb64219c8151444f98f3d9eccbcb5f35004",
+  "selection": "first majority-source storage onset from current/past samples only",
+  "arms": "original/symmetric internal alignment x production/zero post-restart angular noise",
+  "excursion_end": "first 0.5-grid sample with total weighted approach storage exactly zero",
+  "max_time": 20.0,
+  "paired_noise": true,
+  "new_full_trajectories": 0,
+  "n_rows": 448,
+  "n_states": 14,
+  "n_clones": 8,
+  "censored_rows": 0,
+  "median_collective_noise_sigma": 0.05527104476734051,
+  "fish_noise_sigma": 0.5,
+  "median_fish_to_collective_noise_ratio": 9.049400840789945,
+  "population_crossing_identity_passed": true,
+  "zero_noise_clone_determinism_passed": true,
+  "comparisons": [
+    {
+      "contrast": "symmetry_effect_at_production_noise",
+      "metric": "first_entry",
+      "arm_a": "baseline/production_noise",
+      "arm_b": "symmetric_internal_alignment/production_noise",
+      "effect_b_minus_a": 0.0,
+      "ci95": [
+        -0.09821428571428571,
+        0.10714285714285714
+      ],
+      "n_pairs": 112,
+      "n_seeds": 14
+    },
+    {
+      "contrast": "symmetry_effect_at_production_noise",
+      "metric": "entry_time",
+      "arm_a": "baseline/production_noise",
+      "arm_b": "symmetric_internal_alignment/production_noise",
+      "effect_b_minus_a": 0.2736238095238095,
+      "ci95": [
+        0.09972380952380946,
+        0.4509428571428572
+      ],
+      "n_pairs": 22,
+      "n_seeds": 5
+    },
+    {
+      "contrast": "symmetry_effect_at_production_noise",
+      "metric": "net_transfer",
+      "arm_a": "baseline/production_noise",
+      "arm_b": "symmetric_internal_alignment/production_noise",
+      "effect_b_minus_a": -3.125,
+      "ci95": [
+        -8.21517857142857,
+        -0.20513392857142776
+      ],
+      "n_pairs": 112,
+      "n_seeds": 14
+    },
+    {
+      "contrast": "symmetry_effect_at_production_noise",
+      "metric": "success5",
+      "arm_a": "baseline/production_noise",
+      "arm_b": "symmetric_internal_alignment/production_noise",
+      "effect_b_minus_a": -0.11607142857142858,
+      "ci95": [
+        -0.25,
+        -0.017857142857142856
+      ],
+      "n_pairs": 112,
+      "n_seeds": 14
+    },
+    {
+      "contrast": "symmetry_effect_at_production_noise",
+      "metric": "mean_Ja",
+      "arm_a": "baseline/production_noise",
+      "arm_b": "symmetric_internal_alignment/production_noise",
+      "effect_b_minus_a": -0.0058740725095834815,
+      "ci95": [
+        -0.020352691999870498,
+        0.005063079168108538
+      ],
+      "n_pairs": 112,
+      "n_seeds": 14
+    },
+    {
+      "contrast": "symmetry_effect_at_production_noise",
+      "metric": "integrated_Ja",
+      "arm_a": "baseline/production_noise",
+      "arm_b": "symmetric_internal_alignment/production_noise",
+      "effect_b_minus_a": -0.052029096162116414,
+      "ci95": [
+        -0.17577453009514848,
+        0.02956625581359378
+      ],
+      "n_pairs": 112,
+      "n_seeds": 14
+    },
+    {
+      "contrast": "symmetry_effect_at_production_noise",
+      "metric": "heading_toward_required_total",
+      "arm_a": "baseline/production_noise",
+      "arm_b": "symmetric_internal_alignment/production_noise",
+      "effect_b_minus_a": 0.02568434985472243,
+      "ci95": [
+        -0.00030060992174367674,
+        0.061335823188707984
+      ],
+      "n_pairs": 112,
+      "n_seeds": 14
+    },
+    {
+      "contrast": "symmetry_effect_at_production_noise",
+      "metric": "heading_toward_required_to_entry",
+      "arm_a": "baseline/production_noise",
+      "arm_b": "symmetric_internal_alignment/production_noise",
+      "effect_b_minus_a": -0.08300392192558055,
+      "ci95": [
+        -0.19223323742216145,
+        0.0010161069986598208
+      ],
+      "n_pairs": 22,
+      "n_seeds": 5
+    },
+    {
+      "contrast": "symmetry_effect_at_production_noise",
+      "metric": "duration",
+      "arm_a": "baseline/production_noise",
+      "arm_b": "symmetric_internal_alignment/production_noise",
+      "effect_b_minus_a": -0.05803571428571429,
+      "ci95": [
+        -0.33482142857142855,
+        0.1742187500000004
+      ],
+      "n_pairs": 112,
+      "n_seeds": 14
+    },
+    {
+      "contrast": "symmetry_effect_at_zero_noise",
+      "metric": "first_entry",
+      "arm_a": "baseline/zero_noise",
+      "arm_b": "symmetric_internal_alignment/zero_noise",
+      "effect_b_minus_a": 0.0,
+      "ci95": [
+        -0.21428571428571427,
+        0.21428571428571427
+      ],
+      "n_pairs": 112,
+      "n_seeds": 14
+    },
+    {
+      "contrast": "symmetry_effect_at_zero_noise",
+      "metric": "entry_time",
+      "arm_a": "baseline/zero_noise",
+      "arm_b": "symmetric_internal_alignment/zero_noise",
+      "effect_b_minus_a": 0.2283333333333332,
+      "ci95": [
+        0.04200000000000004,
+        0.34099999999999975
+      ],
+      "n_pairs": 24,
+      "n_seeds": 3
+    },
+    {
+      "contrast": "symmetry_effect_at_zero_noise",
+      "metric": "net_transfer",
+      "arm_a": "baseline/zero_noise",
+      "arm_b": "symmetric_internal_alignment/zero_noise",
+      "effect_b_minus_a": -1.4285714285714286,
+      "ci95": [
+        -4.142857142857143,
+        0.07142857142857142
+      ],
+      "n_pairs": 112,
+      "n_seeds": 14
+    },
+    {
+      "contrast": "symmetry_effect_at_zero_noise",
+      "metric": "success5",
+      "arm_a": "baseline/zero_noise",
+      "arm_b": "symmetric_internal_alignment/zero_noise",
+      "effect_b_minus_a": -0.07142857142857142,
+      "ci95": [
+        -0.21428571428571427,
+        0.0
+      ],
+      "n_pairs": 112,
+      "n_seeds": 14
+    },
+    {
+      "contrast": "symmetry_effect_at_zero_noise",
+      "metric": "mean_Ja",
+      "arm_a": "baseline/zero_noise",
+      "arm_b": "symmetric_internal_alignment/zero_noise",
+      "effect_b_minus_a": 0.0014817316847628918,
+      "ci95": [
+        -0.010938338817475121,
+        0.01397498849613192
+      ],
+      "n_pairs": 112,
+      "n_seeds": 14
+    },
+    {
+      "contrast": "symmetry_effect_at_zero_noise",
+      "metric": "integrated_Ja",
+      "arm_a": "baseline/zero_noise",
+      "arm_b": "symmetric_internal_alignment/zero_noise",
+      "effect_b_minus_a": -0.004064928015064307,
+      "ci95": [
+        -0.08894211054983804,
+        0.07433173650464292
+      ],
+      "n_pairs": 112,
+      "n_seeds": 14
+    },
+    {
+      "contrast": "symmetry_effect_at_zero_noise",
+      "metric": "heading_toward_required_total",
+      "arm_a": "baseline/zero_noise",
+      "arm_b": "symmetric_internal_alignment/zero_noise",
+      "effect_b_minus_a": 0.010838271173490026,
+      "ci95": [
+        -0.01874100484165342,
+        0.040631224496451665
+      ],
+      "n_pairs": 112,
+      "n_seeds": 14
+    },
+    {
+      "contrast": "symmetry_effect_at_zero_noise",
+      "metric": "heading_toward_required_to_entry",
+      "arm_a": "baseline/zero_noise",
+      "arm_b": "symmetric_internal_alignment/zero_noise",
+      "effect_b_minus_a": -0.07712858324830914,
+      "ci95": [
+        -0.21741524057944184,
+        0.0007603771600821485
+      ],
+      "n_pairs": 24,
+      "n_seeds": 3
+    },
+    {
+      "contrast": "symmetry_effect_at_zero_noise",
+      "metric": "duration",
+      "arm_a": "baseline/zero_noise",
+      "arm_b": "symmetric_internal_alignment/zero_noise",
+      "effect_b_minus_a": -0.03571428571428571,
+      "ci95": [
+        -0.2857142857142857,
+        0.17857142857142858
+      ],
+      "n_pairs": 112,
+      "n_seeds": 14
+    },
+    {
+      "contrast": "noise_suppression_effect_at_baseline",
+      "metric": "first_entry",
+      "arm_a": "baseline/production_noise",
+      "arm_b": "baseline/zero_noise",
+      "effect_b_minus_a": 0.044642857142857144,
+      "ci95": [
+        -0.017857142857142856,
+        0.14285714285714285
+      ],
+      "n_pairs": 112,
+      "n_seeds": 14
+    },
+    {
+      "contrast": "noise_suppression_effect_at_baseline",
+      "metric": "entry_time",
+      "arm_a": "baseline/production_noise",
+      "arm_b": "baseline/zero_noise",
+      "effect_b_minus_a": 0.029251488095238143,
+      "ci95": [
+        -0.12307142857142858,
+        0.15454464285714292
+      ],
+      "n_pairs": 26,
+      "n_seeds": 4
+    },
+    {
+      "contrast": "noise_suppression_effect_at_baseline",
+      "metric": "net_transfer",
+      "arm_a": "baseline/production_noise",
+      "arm_b": "baseline/zero_noise",
+      "effect_b_minus_a": -1.8125,
+      "ci95": [
+        -4.607142857142857,
+        0.10714285714285714
+      ],
+      "n_pairs": 112,
+      "n_seeds": 14
+    },
+    {
+      "contrast": "noise_suppression_effect_at_baseline",
+      "metric": "success5",
+      "arm_a": "baseline/production_noise",
+      "arm_b": "baseline/zero_noise",
+      "effect_b_minus_a": -0.09821428571428571,
+      "ci95": [
+        -0.22321428571428573,
+        -0.008928571428571428
+      ],
+      "n_pairs": 112,
+      "n_seeds": 14
+    },
+    {
+      "contrast": "noise_suppression_effect_at_baseline",
+      "metric": "mean_Ja",
+      "arm_a": "baseline/production_noise",
+      "arm_b": "baseline/zero_noise",
+      "effect_b_minus_a": -0.0037090230608555585,
+      "ci95": [
+        -0.00985442054694479,
+        0.0028507549824270456
+      ],
+      "n_pairs": 112,
+      "n_seeds": 14
+    },
+    {
+      "contrast": "noise_suppression_effect_at_baseline",
+      "metric": "integrated_Ja",
+      "arm_a": "baseline/production_noise",
+      "arm_b": "baseline/zero_noise",
+      "effect_b_minus_a": -0.024235048649442873,
+      "ci95": [
+        -0.0746242053255684,
+        0.02186662133069228
+      ],
+      "n_pairs": 112,
+      "n_seeds": 14
+    },
+    {
+      "contrast": "noise_suppression_effect_at_baseline",
+      "metric": "heading_toward_required_total",
+      "arm_a": "baseline/production_noise",
+      "arm_b": "baseline/zero_noise",
+      "effect_b_minus_a": 0.02888753999108757,
+      "ci95": [
+        0.002803366090045778,
+        0.06644484898563623
+      ],
+      "n_pairs": 112,
+      "n_seeds": 14
+    },
+    {
+      "contrast": "noise_suppression_effect_at_baseline",
+      "metric": "heading_toward_required_to_entry",
+      "arm_a": "baseline/production_noise",
+      "arm_b": "baseline/zero_noise",
+      "effect_b_minus_a": 0.007005690015855387,
+      "ci95": [
+        -0.04542978363582491,
+        0.07404406008883951
+      ],
+      "n_pairs": 26,
+      "n_seeds": 4
+    },
+    {
+      "contrast": "noise_suppression_effect_at_baseline",
+      "metric": "duration",
+      "arm_a": "baseline/production_noise",
+      "arm_b": "baseline/zero_noise",
+      "effect_b_minus_a": 0.20982142857142858,
+      "ci95": [
+        -0.08928571428571429,
+        0.5848214285714286
+      ],
+      "n_pairs": 112,
+      "n_seeds": 14
+    },
+    {
+      "contrast": "noise_suppression_effect_at_symmetric_internal_alignment",
+      "metric": "first_entry",
+      "arm_a": "symmetric_internal_alignment/production_noise",
+      "arm_b": "symmetric_internal_alignment/zero_noise",
+      "effect_b_minus_a": 0.044642857142857144,
+      "ci95": [
+        -0.07142857142857142,
+        0.16964285714285715
+      ],
+      "n_pairs": 112,
+      "n_seeds": 14
+    },
+    {
+      "contrast": "noise_suppression_effect_at_symmetric_internal_alignment",
+      "metric": "entry_time",
+      "arm_a": "symmetric_internal_alignment/production_noise",
+      "arm_b": "symmetric_internal_alignment/zero_noise",
+      "effect_b_minus_a": -0.24566964285714282,
+      "ci95": [
+        -0.44112499999999993,
+        -0.024785714285714106
+      ],
+      "n_pairs": 22,
+      "n_seeds": 4
+    },
+    {
+      "contrast": "noise_suppression_effect_at_symmetric_internal_alignment",
+      "metric": "net_transfer",
+      "arm_a": "symmetric_internal_alignment/production_noise",
+      "arm_b": "symmetric_internal_alignment/zero_noise",
+      "effect_b_minus_a": -0.11607142857142858,
+      "ci95": [
+        -0.4732142857142857,
+        0.17857142857142858
+      ],
+      "n_pairs": 112,
+      "n_seeds": 14
+    },
+    {
+      "contrast": "noise_suppression_effect_at_symmetric_internal_alignment",
+      "metric": "success5",
+      "arm_a": "symmetric_internal_alignment/production_noise",
+      "arm_b": "symmetric_internal_alignment/zero_noise",
+      "effect_b_minus_a": -0.05357142857142857,
+      "ci95": [
+        -0.14285714285714285,
+        0.0
+      ],
+      "n_pairs": 112,
+      "n_seeds": 14
+    },
+    {
+      "contrast": "noise_suppression_effect_at_symmetric_internal_alignment",
+      "metric": "mean_Ja",
+      "arm_a": "symmetric_internal_alignment/production_noise",
+      "arm_b": "symmetric_internal_alignment/zero_noise",
+      "effect_b_minus_a": 0.0036467811334908147,
+      "ci95": [
+        -2.1158912042847756e-05,
+        0.007394647544207364
+      ],
+      "n_pairs": 112,
+      "n_seeds": 14
+    },
+    {
+      "contrast": "noise_suppression_effect_at_symmetric_internal_alignment",
+      "metric": "integrated_Ja",
+      "arm_a": "symmetric_internal_alignment/production_noise",
+      "arm_b": "symmetric_internal_alignment/zero_noise",
+      "effect_b_minus_a": 0.02372911949760922,
+      "ci95": [
+        0.00391662507994643,
+        0.044065243426041414
+      ],
+      "n_pairs": 112,
+      "n_seeds": 14
+    },
+    {
+      "contrast": "noise_suppression_effect_at_symmetric_internal_alignment",
+      "metric": "heading_toward_required_total",
+      "arm_a": "symmetric_internal_alignment/production_noise",
+      "arm_b": "symmetric_internal_alignment/zero_noise",
+      "effect_b_minus_a": 0.014041461309855171,
+      "ci95": [
+        -0.009670381199267634,
+        0.0457016286770061
+      ],
+      "n_pairs": 112,
+      "n_seeds": 14
+    },
+    {
+      "contrast": "noise_suppression_effect_at_symmetric_internal_alignment",
+      "metric": "heading_toward_required_to_entry",
+      "arm_a": "symmetric_internal_alignment/production_noise",
+      "arm_b": "symmetric_internal_alignment/zero_noise",
+      "effect_b_minus_a": 0.023552152549721372,
+      "ci95": [
+        -0.0132036879210367,
+        0.06030799302047944
+      ],
+      "n_pairs": 22,
+      "n_seeds": 4
+    },
+    {
+      "contrast": "noise_suppression_effect_at_symmetric_internal_alignment",
+      "metric": "duration",
+      "arm_a": "symmetric_internal_alignment/production_noise",
+      "arm_b": "symmetric_internal_alignment/zero_noise",
+      "effect_b_minus_a": 0.23214285714285715,
+      "ci95": [
+        -0.04017857142857143,
+        0.5580357142857143
+      ],
+      "n_pairs": 112,
+      "n_seeds": 14
+    },
+    {
+      "contrast": "symmetry_by_noise_interaction",
+      "metric": "first_entry",
+      "effect_difference": 0.0,
+      "ci95": [
+        -0.10714285714285714,
+        0.09821428571428571
+      ],
+      "n_pairs": 112,
+      "n_seeds": 14
+    },
+    {
+      "contrast": "symmetry_by_noise_interaction",
+      "metric": "entry_time",
+      "effect_difference": 0.009539682539682619,
+      "ci95": [
+        -0.26266666666666644,
+        0.23785714285714296
+      ],
+      "n_pairs": 17,
+      "n_seeds": 3
+    },
+    {
+      "contrast": "symmetry_by_noise_interaction",
+      "metric": "net_transfer",
+      "effect_difference": -1.6964285714285714,
+      "ci95": [
+        -4.205580357142858,
+        -0.017857142857142856
+      ],
+      "n_pairs": 112,
+      "n_seeds": 14
+    },
+    {
+      "contrast": "symmetry_by_noise_interaction",
+      "metric": "success5",
+      "effect_difference": -0.044642857142857144,
+      "ci95": [
+        -0.17857142857142858,
+        0.07142857142857142
+      ],
+      "n_pairs": 112,
+      "n_seeds": 14
+    },
+    {
+      "contrast": "symmetry_by_noise_interaction",
+      "metric": "mean_Ja",
+      "effect_difference": -0.007355804194346374,
+      "ci95": [
+        -0.013244150116226193,
+        -0.0016239421005644916
+      ],
+      "n_pairs": 112,
+      "n_seeds": 14
+    },
+    {
+      "contrast": "symmetry_by_noise_interaction",
+      "metric": "integrated_Ja",
+      "effect_difference": -0.04796416814705211,
+      "ci95": [
+        -0.09627197765491895,
+        -0.006516231236978787
+      ],
+      "n_pairs": 112,
+      "n_seeds": 14
+    },
+    {
+      "contrast": "symmetry_by_noise_interaction",
+      "metric": "heading_toward_required_total",
+      "effect_difference": 0.014846078681232404,
+      "ci95": [
+        -0.0012287401377922885,
+        0.030993194703618325
+      ],
+      "n_pairs": 112,
+      "n_seeds": 14
+    },
+    {
+      "contrast": "symmetry_by_noise_interaction",
+      "metric": "heading_toward_required_to_entry",
+      "effect_difference": -0.00951645167159433,
+      "ci95": [
+        -0.07544881391122457,
+        0.03592671929575227
+      ],
+      "n_pairs": 17,
+      "n_seeds": 3
+    },
+    {
+      "contrast": "symmetry_by_noise_interaction",
+      "metric": "duration",
+      "effect_difference": -0.022321428571428572,
+      "ci95": [
+        -0.3705357142857143,
+        0.259040178571429
+      ],
+      "n_pairs": 112,
+      "n_seeds": 14
+    }
+  ]
+}

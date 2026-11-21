@@ -40,6 +40,11 @@ def wrap(x):
     return np.arctan2(np.sin(x), np.cos(x))
 
 
+def global_required_turn(local_turn: float, source_sign: int) -> float:
+    """Convert an inward-frame angular increment to the global frame."""
+    return float(wrap(-source_sign * local_turn))
+
+
 def mean_heading(theta: np.ndarray) -> tuple[float, float, np.ndarray]:
     vector = np.asarray([np.mean(np.cos(theta)), np.mean(np.sin(theta))])
     p = float(np.linalg.norm(vector)); angle = float(math.atan2(vector[1], vector[0]))
@@ -53,8 +58,11 @@ def angular_apertures(state: np.ndarray, source_sign: int, gap: float) -> dict:
     upper = np.arctan2(gap / 2 - state[1, indices], distance)
     theta_bar, p, vector = mean_heading(state[2, indices])
     phi_bar = float(math.atan2(vector[1], direction * vector[0]))
-    signed = np.where(phi_bar < lower, lower - phi_bar,
-                      np.where(phi_bar > upper, upper - phi_bar, 0.0))
+    # The inward-frame angle is periodic.  Outside the aperture, choose the
+    # nearer wrapped endpoint rather than comparing unwrapped scalars.
+    dlo = wrap(lower - phi_bar); dup = wrap(upper - phi_bar)
+    nearest = np.where(np.abs(dlo) <= np.abs(dup), dlo, dup)
+    signed = np.where((phi_bar >= lower) & (phi_bar <= upper), 0.0, nearest)
     pick = int(np.argmin(np.abs(signed)))
     weights = np.cos(state[2, indices] - theta_bar)
     variance_rate = IN_NOISE**2 * float(np.sum(weights**2)) / (len(indices)**2 * p**2)
@@ -233,14 +241,16 @@ def missed_entry_evolution(raw_dir: Path, associated: list[dict], kinematics_pat
                 _, _, v0 = mean_heading(s0[2, indices]); theta0 = math.atan2(v0[1], v0[0])
                 _, _, v1 = mean_heading(s1[2, indices]); theta1 = math.atan2(v1[1], v1[0])
                 membership_mismatch += int(np.any(source_mask(s1, source["source_sign"])[indices] == 0))
-                change = float(wrap(theta1 - theta0)); required = float(source["minimum_turn_signed"])
+                change = float(wrap(theta1 - theta0))
+                required_local = float(source["minimum_turn_signed"])
+                required = global_required_turn(required_local, int(source["source_sign"]))
                 duration = source["event_time"] - source["onset_time"]
                 noise_rms = source["collective_angular_sigma"] * math.sqrt(max(duration, 0))
                 sign = float(np.sign(required))
                 evolution.append(dict(
                     seed=seed, event_id=source["event_id"], attempt_id=source["attempt_id"],
                     onset_time=source["onset_time"], event_time=source["event_time"], duration=duration,
-                    required_turn_signed=required, minimum_turn=abs(required), actual_heading_change=change,
+                    required_turn_local=required_local, required_turn_signed=required, minimum_turn=abs(required), actual_heading_change=change,
                     actual_toward_required=sign * change, collective_noise_rms=noise_rms,
                     turn_to_noise_ratio=abs(required) / noise_rms if noise_rms > 0 else float("inf"),
                     reaches_required_direction=int(sign * change > 0),
@@ -313,8 +323,22 @@ def self_test() -> None:
     reflected = state.copy(); reflected[0] *= -1; reflected[2] = wrap(np.pi - reflected[2])
     b = angular_apertures(reflected, 1, 2.0)
     assert abs(a["minimum_turn"] - b["minimum_turn"]) < 1e-12
+    ga = global_required_turn(a["minimum_turn_signed"], -1)
+    gb = global_required_turn(b["minimum_turn_signed"], 1)
+    assert abs(float(wrap(ga + gb))) < 1e-12
+    # A global heading increment and every global torque reverse under the
+    # same reflection, so their projection toward the requirement is invariant.
+    test_change = .17
+    assert abs(np.sign(ga) * test_change - np.sign(gb) * (-test_change)) < 1e-12
+    # A heading just across the +/-pi seam must choose the wrapped-nearest
+    # aperture endpoint, not the endpoint nearest on the unwrapped line.
+    seam = state.copy(); seam[2, :2] = math.pi - .01
+    c = angular_apertures(seam, -1, 2.0)
+    lo, hi = c["lower"], c["upper"]; phi = math.pi - .01
+    brute = min((float(wrap(x - phi)) for x in np.r_[lo, hi]), key=abs)
+    assert abs(float(wrap(c["minimum_turn_signed"] - brute))) < 1e-12
     assert a["collective_angular_sigma"] > 0
-    print("PASS: reflected angular aperture and collective diffusion scale")
+    print("PASS: reflected global turn, periodic aperture, and collective diffusion scale")
 
 
 def main() -> None:
