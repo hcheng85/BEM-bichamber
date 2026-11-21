@@ -1,0 +1,252 @@
+{
+  "configuration": {
+    "section": "outward ray from exact chamber area centroid; both chiralities oriented by crossing direction",
+    "state": "(COM radius, mean-heading angle relative to oriented tangent)",
+    "train_seeds": "0-29",
+    "heldout_seeds": "30-39",
+    "population_role": "bookkeeping only",
+    "new_simulations": 0,
+    "nonlinear_map": 0
+  },
+  "production_geometry": {
+    "R": 7.158910531638177,
+    "gap": 2.8635642126552705,
+    "left_area": 74.74705105160112,
+    "right_area": 74.74705105160112,
+    "center_abs": 3.2525457874072097,
+    "left_center": [
+      -3.2525457874072106,
+      1.2833050665957852e-15
+    ],
+    "right_center": [
+      3.2525457874072097,
+      7.60477076501206e-16
+    ]
+  },
+  "audits": {
+    "source_sha256": "5e57b9dca2cb962e2c35f540f3982d5f4018eb719067223e6b319866b4482284",
+    "n_orbit_samples": 96424,
+    "n_no_entry_pairs": 1195,
+    "expected_no_entry_pairs": 1195
+  },
+  "physical_orbit": {
+    "n_section_events": 1076,
+    "n_same_chirality_no_sampled_count_change_returns": 191,
+    "chirality_reversal_fraction": 0.5771144278606966,
+    "no_sampled_count_change_return_period_train": {
+      "estimate": 31.55567001678773,
+      "ci95": [
+        31.444067567256123,
+        31.651635531590266
+      ],
+      "n": 168,
+      "n_seeds": 28
+    },
+    "no_sampled_count_change_return_period_heldout": {
+      "estimate": 31.618915316970174,
+      "ci95": [
+        31.30727957883414,
+        32.05226610957368
+      ],
+      "n": 23,
+      "n_seeds": 7
+    },
+    "no_entry_onset_pairs": {
+      "all": 1195,
+      "train": 1006,
+      "heldout": 189,
+      "median_all": 15.5,
+      "median_train": 15.5,
+      "median_heldout": 15.5
+    },
+    "same_direction_onset_phase_heldout": {
+      "n": 147,
+      "median_absolute_windings": 0.4640013948506311,
+      "median_directional_coherence": 0.9762919874570772,
+      "fraction_0p35_to_0p65_windings": 0.9183673469387755,
+      "fraction_0p8_to_1p2_windings": 0.0
+    },
+    "heldout_orbit_shape": {
+      "median_phase_advance_per_return": 0.8266678463456549,
+      "median_directional_phase_fraction": 0.8032786885245902,
+      "median_tangent_alignment": 0.22942524759370428,
+      "median_radial_sd": 2.028738656999232
+    },
+    "encounter_after_section": {
+      "n": 1005,
+      "fraction": 0.8786069651741294,
+      "heldout_fraction": 0.8059701492537313
+    },
+    "post_outcome_cycles": {
+      "train": {
+        "no_entry": {
+          "n": 1265,
+          "median_recovery_wait": 10.0,
+          "median_onset_interval": 15.5
+        },
+        "returned": {
+          "n": 72,
+          "median_recovery_wait": 5.0,
+          "median_onset_interval": 8.75
+        },
+        "partial": {
+          "n": 195,
+          "median_recovery_wait": 5.5,
+          "median_onset_interval": 8.0
+        },
+        "sustained": {
+          "n": 162,
+          "median_recovery_wait": 9.5,
+          "median_onset_interval": 15.5
+        }
+      },
+      "heldout": {
+        "no_entry": {
+          "n": 348,
+          "median_recovery_wait": 10.0,
+          "median_onset_interval": 15.0
+        },
+        "returned": {
+          "n": 40,
+          "median_recovery_wait": 7.0,
+          "median_onset_interval": 10.0
+        },
+        "partial": {
+          "n": 109,
+          "median_recovery_wait": 4.5,
+          "median_onset_interval": 8.0
+        },
+        "sustained": {
+          "n": 107,
+          "median_recovery_wait": 9.5,
+          "median_onset_interval": 16.0
+        }
+      }
+    }
+  },
+  "linear_return_test": {
+    "n_clean_train": 305,
+    "n_clean_test": 120,
+    "n_no_sampled_count_change_train": 168,
+    "n_no_sampled_count_change_test": 23,
+    "fixed_point": [
+      0.5985671449613367,
+      0.03731584057894726
+    ],
+    "linear_map": [
+      [
+        0.4928029333109258,
+        0.008205958372214389
+      ],
+      [
+        0.1794439031421248,
+        0.005129780284472694
+      ],
+      [
+        -0.044083507394376574,
+        0.6978099344295063
+      ]
+    ],
+    "eigenvalues": [
+      [
+        0.1798805238523682,
+        0.0
+      ],
+      [
+        0.697373313719263,
+        0.0
+      ]
+    ],
+    "constant_period": 49.25280521575551,
+    "return_time_coefficients": [
+      48.34025810424096,
+      1.249724422555021,
+      -11.570479307634018
+    ],
+    "heldout": [
+      {
+        "target": "section_state",
+        "n": 120,
+        "n_seeds": 10,
+        "constant_mse": 1.540086464060653,
+        "map_mse": 1.075346336640043,
+        "improvement": 0.46474012742061016,
+        "improvement_ci95": [
+          0.2976041720493553,
+          0.6207994760641835
+        ]
+      },
+      {
+        "target": "return_time",
+        "n": 120,
+        "n_seeds": 10,
+        "constant_mse": 3835.3397598781908,
+        "map_mse": 3806.858898551001,
+        "improvement": 28.480861327190336,
+        "improvement_ci95": [
+          -53.29851640172145,
+          112.08515218241172
+        ]
+      },
+      {
+        "target": "history_state",
+        "n": 42,
+        "n_seeds": 10,
+        "constant_mse": 0.9177241159791333,
+        "map_mse": 0.7779079128648386,
+        "improvement": 0.1398162031142948,
+        "improvement_ci95": [
+          0.058399631461972266,
+          0.2477957297610859
+        ]
+      },
+      {
+        "target": "encounter",
+        "n": 268,
+        "n_seeds": 10,
+        "constant_mse": 0.1600586624600614,
+        "map_mse": 0.1575307550356558,
+        "improvement": 0.002527907424405566,
+        "improvement_ci95": [
+          -0.002416155694298585,
+          0.007844358457304313
+        ]
+      },
+      {
+        "target": "population_transfer",
+        "n": 216,
+        "n_seeds": 10,
+        "constant_mse": 57.103846544061966,
+        "map_mse": 57.12355105951055,
+        "improvement": -0.019704515448571082,
+        "improvement_ci95": [
+          -0.33585869670471413,
+          0.3214538194448633
+        ]
+      },
+      {
+        "target": "sustained",
+        "n": 216,
+        "n_seeds": 10,
+        "constant_mse": 0.13971880565687228,
+        "map_mse": 0.13986353448906969,
+        "improvement": -0.00014472883219736972,
+        "improvement_ci95": [
+          -0.002284881566506282,
+          0.0018238871499535476
+        ]
+      }
+    ],
+    "n_memory_train": 108,
+    "n_memory_test": 42
+  },
+  "shuffled_return_control": {
+    "observed_improvement": 0.49084144608611524,
+    "shuffled_improvement_ci95": [
+      -0.1829699610063741,
+      0.12962865546455316
+    ],
+    "fraction_shuffled_at_least_observed": 0.0,
+    "n_shuffle": 500
+  }
+}
