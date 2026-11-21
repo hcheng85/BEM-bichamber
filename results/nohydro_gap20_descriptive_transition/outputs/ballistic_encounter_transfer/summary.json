@@ -1,0 +1,668 @@
+{
+  "configuration": {
+    "train_seeds": "0-29",
+    "heldout_seeds": "30-39",
+    "entry_horizon": 2.0,
+    "sustained_horizon": 5.0,
+    "transfer_threshold": 5,
+    "predictor": "rigid translation of actual source positions by v0 times instantaneous mean-heading vector",
+    "new_simulations": 0,
+    "fitted_coefficients": 0
+  },
+  "audits": {
+    "source_sha256": "5e57b9dca2cb962e2c35f540f3982d5f4018eb719067223e6b319866b4482284",
+    "gap": 2.8635642126552705,
+    "n_majority_source_attempts_input": 1811,
+    "n_rows": 1811,
+    "n_source_count_mismatch": 0,
+    "n_solid_wall_obstructions": 1,
+    "max_abs_integrated_budget_residual": 1.0413978707157767e-14,
+    "n_events": 337
+  },
+  "attempt_validation": [
+    {
+      "cohort": "train",
+      "target": "entry2",
+      "metric": "AUC",
+      "predictor": "ballistic_count",
+      "estimate": 0.5208197208197208,
+      "ci95": [
+        0.4985545973137397,
+        0.5459036561028019
+      ],
+      "n": 1386,
+      "n_seeds": 30
+    },
+    {
+      "cohort": "train",
+      "target": "entry2",
+      "metric": "AUC",
+      "predictor": "instantaneous_Ja",
+      "estimate": 0.8463320463320463,
+      "ci95": [
+        0.8019089151179831,
+        0.8938995221875877
+      ],
+      "n": 1386,
+      "n_seeds": 30
+    },
+    {
+      "cohort": "train",
+      "target": "entry2",
+      "metric": "AUC_difference",
+      "predictor": "ballistic_minus_Ja",
+      "estimate": -0.32551232551232545,
+      "ci95": [
+        -0.373777396694933,
+        -0.27791639914944516
+      ],
+      "n": 1386,
+      "n_seeds": 30
+    },
+    {
+      "cohort": "train",
+      "target": "positive_transfer2",
+      "metric": "AUC",
+      "predictor": "ballistic_count",
+      "estimate": 0.5221019677996422,
+      "ci95": [
+        0.4985557205524305,
+        0.5489214945452594
+      ],
+      "n": 1386,
+      "n_seeds": 30
+    },
+    {
+      "cohort": "train",
+      "target": "positive_transfer2",
+      "metric": "AUC",
+      "predictor": "instantaneous_Ja",
+      "estimate": 0.8217978533094812,
+      "ci95": [
+        0.7695048586043612,
+        0.880697985327047
+      ],
+      "n": 1386,
+      "n_seeds": 30
+    },
+    {
+      "cohort": "train",
+      "target": "positive_transfer2",
+      "metric": "AUC_difference",
+      "predictor": "ballistic_minus_Ja",
+      "estimate": -0.29969588550983894,
+      "ci95": [
+        -0.3540212409830655,
+        -0.25295892389653607
+      ],
+      "n": 1386,
+      "n_seeds": 30
+    },
+    {
+      "cohort": "train",
+      "target": "sustained5",
+      "metric": "AUC",
+      "predictor": "ballistic_count",
+      "estimate": 0.5144906712262829,
+      "ci95": [
+        0.49687481646436965,
+        0.5408406740642118
+      ],
+      "n": 1386,
+      "n_seeds": 30
+    },
+    {
+      "cohort": "train",
+      "target": "sustained5",
+      "metric": "AUC",
+      "predictor": "instantaneous_Ja",
+      "estimate": 0.7217173277391823,
+      "ci95": [
+        0.6692483083029253,
+        0.7797159902649297
+      ],
+      "n": 1386,
+      "n_seeds": 30
+    },
+    {
+      "cohort": "train",
+      "target": "sustained5",
+      "metric": "AUC_difference",
+      "predictor": "ballistic_minus_Ja",
+      "estimate": -0.2072266565128994,
+      "ci95": [
+        -0.26496347257869207,
+        -0.15529925549480705
+      ],
+      "n": 1386,
+      "n_seeds": 30
+    },
+    {
+      "cohort": "train",
+      "target": "net2",
+      "metric": "Spearman",
+      "predictor": "ballistic_count",
+      "estimate": 0.14844664287178808,
+      "ci95": [
+        -0.00813459317625531,
+        0.27232204519878667
+      ],
+      "n": 1386,
+      "n_seeds": 30
+    },
+    {
+      "cohort": "train",
+      "target": "net2",
+      "metric": "prediction_minus_actual",
+      "predictor": "ballistic_count",
+      "estimate": -0.14574314574314573,
+      "ci95": [
+        -0.21200607902735563,
+        -0.08885692031346866
+      ],
+      "n": 1386,
+      "n_seeds": 30
+    },
+    {
+      "cohort": "train",
+      "target": "net5",
+      "metric": "Spearman",
+      "predictor": "ballistic_count",
+      "estimate": 0.11353382095481973,
+      "ci95": [
+        0.016303425246231337,
+        0.20144105501362328
+      ],
+      "n": 1386,
+      "n_seeds": 30
+    },
+    {
+      "cohort": "train",
+      "target": "net5",
+      "metric": "prediction_minus_actual",
+      "predictor": "ballistic_count",
+      "estimate": -1.1327561327561328,
+      "ci95": [
+        -1.6546634615384614,
+        -0.6911554192229042
+      ],
+      "n": 1386,
+      "n_seeds": 30
+    },
+    {
+      "cohort": "train",
+      "target": "entry2",
+      "metric": "parameter_free_classification",
+      "predictor": "ballistic_entry2",
+      "estimate": 0.5208197208197208,
+      "ci95": [
+        0.49890027308442864,
+        0.545458180257876
+      ],
+      "n": 1386,
+      "n_seeds": 30,
+      "sensitivity": 0.04395604395604396,
+      "specificity": 0.9976833976833976,
+      "balanced_accuracy": 0.5208197208197208,
+      "predicted_positive_fraction": 0.005050505050505051,
+      "observed_positive_fraction": 0.06565656565656566
+    },
+    {
+      "cohort": "train",
+      "target": "sustained5",
+      "metric": "parameter_free_classification",
+      "predictor": "ballistic_sustained5",
+      "estimate": 0.5087827692484536,
+      "ci95": [
+        0.4992149622279851,
+        0.5233657383093202
+      ],
+      "n": 1386,
+      "n_seeds": 30,
+      "sensitivity": 0.01834862385321101,
+      "specificity": 0.9992169146436961,
+      "balanced_accuracy": 0.5087827692484536,
+      "predicted_positive_fraction": 0.0021645021645021645,
+      "observed_positive_fraction": 0.07864357864357864
+    },
+    {
+      "cohort": "heldout",
+      "target": "entry2",
+      "metric": "AUC",
+      "predictor": "ballistic_count",
+      "estimate": 0.5446666666666666,
+      "ci95": [
+        0.5113920406654433,
+        0.5865858670375563
+      ],
+      "n": 425,
+      "n_seeds": 10
+    },
+    {
+      "cohort": "heldout",
+      "target": "entry2",
+      "metric": "AUC",
+      "predictor": "instantaneous_Ja",
+      "estimate": 0.7696,
+      "ci95": [
+        0.7060593887910455,
+        0.8273267396184063
+      ],
+      "n": 425,
+      "n_seeds": 10
+    },
+    {
+      "cohort": "heldout",
+      "target": "entry2",
+      "metric": "AUC_difference",
+      "predictor": "ballistic_minus_Ja",
+      "estimate": -0.22493333333333332,
+      "ci95": [
+        -0.28709982964077135,
+        -0.14823676673714273
+      ],
+      "n": 425,
+      "n_seeds": 10
+    },
+    {
+      "cohort": "heldout",
+      "target": "positive_transfer2",
+      "metric": "AUC",
+      "predictor": "ballistic_count",
+      "estimate": 0.5548128342245989,
+      "ci95": [
+        0.526312254113729,
+        0.5792565909573385
+      ],
+      "n": 425,
+      "n_seeds": 10
+    },
+    {
+      "cohort": "heldout",
+      "target": "positive_transfer2",
+      "metric": "AUC",
+      "predictor": "instantaneous_Ja",
+      "estimate": 0.714795008912656,
+      "ci95": [
+        0.6463937138702082,
+        0.7789906653492001
+      ],
+      "n": 425,
+      "n_seeds": 10
+    },
+    {
+      "cohort": "heldout",
+      "target": "positive_transfer2",
+      "metric": "AUC_difference",
+      "predictor": "ballistic_minus_Ja",
+      "estimate": -0.1599821746880571,
+      "ci95": [
+        -0.22602739672601715,
+        -0.08366144613583139
+      ],
+      "n": 425,
+      "n_seeds": 10
+    },
+    {
+      "cohort": "heldout",
+      "target": "sustained5",
+      "metric": "AUC",
+      "predictor": "ballistic_count",
+      "estimate": 0.5224922651034034,
+      "ci95": [
+        0.49019343495141415,
+        0.5564333575737322
+      ],
+      "n": 425,
+      "n_seeds": 10
+    },
+    {
+      "cohort": "heldout",
+      "target": "sustained5",
+      "metric": "AUC",
+      "predictor": "instantaneous_Ja",
+      "estimate": 0.6441133365901319,
+      "ci95": [
+        0.5713874874398435,
+        0.7095404595404595
+      ],
+      "n": 425,
+      "n_seeds": 10
+    },
+    {
+      "cohort": "heldout",
+      "target": "sustained5",
+      "metric": "AUC_difference",
+      "predictor": "ballistic_minus_Ja",
+      "estimate": -0.12162107148672852,
+      "ci95": [
+        -0.1861114639334288,
+        -0.0618717183076928
+      ],
+      "n": 425,
+      "n_seeds": 10
+    },
+    {
+      "cohort": "heldout",
+      "target": "net2",
+      "metric": "Spearman",
+      "predictor": "ballistic_count",
+      "estimate": 0.23848729231975135,
+      "ci95": [
+        0.13898070509932892,
+        0.3247235572503587
+      ],
+      "n": 425,
+      "n_seeds": 10
+    },
+    {
+      "cohort": "heldout",
+      "target": "net2",
+      "metric": "prediction_minus_actual",
+      "predictor": "ballistic_count",
+      "estimate": -0.2847058823529412,
+      "ci95": [
+        -0.4927910248815166,
+        -0.11134610345765862
+      ],
+      "n": 425,
+      "n_seeds": 10
+    },
+    {
+      "cohort": "heldout",
+      "target": "net5",
+      "metric": "Spearman",
+      "predictor": "ballistic_count",
+      "estimate": 0.1808452225778792,
+      "ci95": [
+        0.07339353719814935,
+        0.26203026887169306
+      ],
+      "n": 425,
+      "n_seeds": 10
+    },
+    {
+      "cohort": "heldout",
+      "target": "net5",
+      "metric": "prediction_minus_actual",
+      "predictor": "ballistic_count",
+      "estimate": -2.588235294117647,
+      "ci95": [
+        -3.5852922907964855,
+        -1.675333409454214
+      ],
+      "n": 425,
+      "n_seeds": 10
+    },
+    {
+      "cohort": "heldout",
+      "target": "entry2",
+      "metric": "parameter_free_classification",
+      "predictor": "ballistic_entry2",
+      "estimate": 0.5446666666666666,
+      "ci95": [
+        0.5109675736430007,
+        0.5847060723514212
+      ],
+      "n": 425,
+      "n_seeds": 10,
+      "sensitivity": 0.1,
+      "specificity": 0.9893333333333333,
+      "balanced_accuracy": 0.5446666666666666,
+      "predicted_positive_fraction": 0.021176470588235293,
+      "observed_positive_fraction": 0.11764705882352941
+    },
+    {
+      "cohort": "heldout",
+      "target": "sustained5",
+      "metric": "parameter_free_classification",
+      "predictor": "ballistic_sustained5",
+      "estimate": 0.5058418824295717,
+      "ci95": [
+        0.4956137135360395,
+        0.52
+      ],
+      "n": 425,
+      "n_seeds": 10,
+      "sensitivity": 0.014492753623188406,
+      "specificity": 0.9971910112359551,
+      "balanced_accuracy": 0.5058418824295717,
+      "predicted_positive_fraction": 0.004705882352941176,
+      "observed_positive_fraction": 0.1623529411764706
+    }
+  ],
+  "event_residual_validation": [
+    {
+      "cohort": "train",
+      "target": "ballistic_residual",
+      "predictor": "nonreciprocal_alignment_turn",
+      "metric": "Spearman",
+      "estimate": 0.368577272861624,
+      "ci95": [
+        0.25002084205654956,
+        0.4834346292667117
+      ],
+      "n": 208,
+      "n_seeds": 27
+    },
+    {
+      "cohort": "train",
+      "target": "ballistic_residual",
+      "predictor": "exact_supply",
+      "metric": "Spearman",
+      "estimate": 0.6868798345175424,
+      "ci95": [
+        0.6008114542724342,
+        0.7432423958221254
+      ],
+      "n": 208,
+      "n_seeds": 27
+    },
+    {
+      "cohort": "train",
+      "target": "ballistic_residual",
+      "predictor": "exact_storage",
+      "metric": "Spearman",
+      "estimate": -0.38403589154528317,
+      "ci95": [
+        -0.5196633543617643,
+        -0.23271741507100263
+      ],
+      "n": 208,
+      "n_seeds": 27
+    },
+    {
+      "cohort": "train",
+      "target": "ballistic_residual",
+      "predictor": "exact_lateral",
+      "metric": "Spearman",
+      "estimate": 0.44237588155145596,
+      "ci95": [
+        0.32165148653057796,
+        0.552321577495874
+      ],
+      "n": 208,
+      "n_seeds": 27
+    },
+    {
+      "cohort": "train",
+      "target": "success4",
+      "predictor": "n_ballistic_to_entry",
+      "metric": "AUC",
+      "estimate": 0.5085807050092764,
+      "ci95": [
+        0.49126923750507084,
+        0.5284090909090909
+      ],
+      "n": 208,
+      "n_seeds": 27
+    },
+    {
+      "cohort": "train",
+      "target": "success4",
+      "predictor": "n_ballistic_through_plus1",
+      "metric": "AUC",
+      "estimate": 0.527643784786642,
+      "ci95": [
+        0.47353013151169515,
+        0.5885476239106753
+      ],
+      "n": 208,
+      "n_seeds": 27
+    },
+    {
+      "cohort": "train",
+      "target": "success4",
+      "predictor": "Ja",
+      "metric": "AUC",
+      "estimate": 0.5689239332096475,
+      "ci95": [
+        0.507989658068288,
+        0.6349600541714593
+      ],
+      "n": 208,
+      "n_seeds": 27
+    },
+    {
+      "cohort": "heldout",
+      "target": "ballistic_residual",
+      "predictor": "nonreciprocal_alignment_turn",
+      "metric": "Spearman",
+      "estimate": 0.4285110131312311,
+      "ci95": [
+        0.2559670926024484,
+        0.5488626263530144
+      ],
+      "n": 129,
+      "n_seeds": 10
+    },
+    {
+      "cohort": "heldout",
+      "target": "ballistic_residual",
+      "predictor": "exact_supply",
+      "metric": "Spearman",
+      "estimate": 0.7305493314069063,
+      "ci95": [
+        0.6172253779512753,
+        0.8024324906857013
+      ],
+      "n": 129,
+      "n_seeds": 10
+    },
+    {
+      "cohort": "heldout",
+      "target": "ballistic_residual",
+      "predictor": "exact_storage",
+      "metric": "Spearman",
+      "estimate": -0.32694321744268345,
+      "ci95": [
+        -0.5134330453324374,
+        -0.10203429051649109
+      ],
+      "n": 129,
+      "n_seeds": 10
+    },
+    {
+      "cohort": "heldout",
+      "target": "ballistic_residual",
+      "predictor": "exact_lateral",
+      "metric": "Spearman",
+      "estimate": 0.38993834199899385,
+      "ci95": [
+        0.17694114435103303,
+        0.5777097394489265
+      ],
+      "n": 129,
+      "n_seeds": 10
+    },
+    {
+      "cohort": "heldout",
+      "target": "success4",
+      "predictor": "n_ballistic_to_entry",
+      "metric": "AUC",
+      "estimate": 0.4825925925925926,
+      "ci95": [
+        0.4444444444444444,
+        0.5258359794275492
+      ],
+      "n": 129,
+      "n_seeds": 10
+    },
+    {
+      "cohort": "heldout",
+      "target": "success4",
+      "predictor": "n_ballistic_through_plus1",
+      "metric": "AUC",
+      "estimate": 0.5874074074074074,
+      "ci95": [
+        0.5336562563069656,
+        0.6339911856683716
+      ],
+      "n": 129,
+      "n_seeds": 10
+    },
+    {
+      "cohort": "heldout",
+      "target": "success4",
+      "predictor": "Ja",
+      "metric": "AUC",
+      "estimate": 0.6954320987654321,
+      "ci95": [
+        0.5821710549383122,
+        0.8110311532268053
+      ],
+      "n": 129,
+      "n_seeds": 10
+    }
+  ],
+  "intervention": {
+    "geometry_delta": {
+      "estimate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "n": 112,
+      "n_seeds": 14
+    },
+    "net_transfer_delta": {
+      "estimate": -4.4375,
+      "ci95": [
+        -7.116964285714286,
+        -1.8477678571428597
+      ],
+      "n": 112,
+      "n_seeds": 14
+    },
+    "first_entry_delta": {
+      "estimate": 0.03571428571428571,
+      "ci95": [
+        -0.008928571428571428,
+        0.09821428571428571
+      ],
+      "n": 112,
+      "n_seeds": 14
+    },
+    "success4_delta": {
+      "estimate": -0.008928571428571428,
+      "ci95": [
+        -0.16071428571428573,
+        0.16071428571428573
+      ],
+      "n": 112,
+      "n_seeds": 14
+    },
+    "turning_delta": {
+      "estimate": -0.028536657006786457,
+      "ci95": [
+        -0.046482259954994325,
+        -0.010531574355556728
+      ],
+      "n": 112,
+      "n_seeds": 14
+    },
+    "max_abs_geometry_delta": 0,
+    "n_states": 14,
+    "n_paired_clones": 112
+  }
+}
