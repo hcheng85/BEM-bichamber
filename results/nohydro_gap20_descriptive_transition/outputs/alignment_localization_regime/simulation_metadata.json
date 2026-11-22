@@ -1,0 +1,43 @@
+{
+  "total_time": 300.0,
+  "native_dt": 0.001,
+  "q_sample_dt": 0.1,
+  "n_new_runs": 33,
+  "seeds_per_initialization": 3,
+  "parameter_values": [
+    0.0,
+    1.0,
+    2.0,
+    4.0,
+    8.0
+  ],
+  "initializations": [
+    "localized",
+    "balanced"
+  ],
+  "archived_ip4_localized_runs": 40,
+  "production_source_unchanged": true,
+  "fixed_parameters": {
+    "N": 100,
+    "In": 0.5,
+    "Iw": 0.94,
+    "speed": 1.0,
+    "radius_ratio": 50,
+    "gap_ratio": 20,
+    "dt": 0.001,
+    "positional_social_rule": "unchanged production visual-position term"
+  },
+  "initialization_definitions": {
+    "localized": "production distribution with all 100 fish in left chamber",
+    "balanced": "same chamber distribution with exactly 50 fish on each side; random headings"
+  },
+  "output": "compact q count-difference trajectories only",
+  "source_sha256": "5e57b9dca2cb962e2c35f540f3982d5f4018eb719067223e6b319866b4482284",
+  "adapter_sha256": "1a3a0723b56805a94a6fd34287caffb64219c8151444f98f3d9eccbcb5f35004",
+  "localized_initial_state_max_error": 1.7763568394002505e-15,
+  "first_step_state_max_error": 1.7763568394002505e-15,
+  "first_step_velocity_max_error": 4.440892098500626e-16,
+  "balanced_initial_q": 0,
+  "social_off_max_abs_torque": 0.0,
+  "independent_definition": "all visual social torque disabled, including alignment and positional term; wall, noise, speed, clipping, and collision handling retained"
+}

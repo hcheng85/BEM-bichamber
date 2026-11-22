@@ -1,0 +1,10 @@
+{
+  "source_sha256": "5e57b9dca2cb962e2c35f540f3982d5f4018eb719067223e6b319866b4482284",
+  "adapter_sha256": "1a3a0723b56805a94a6fd34287caffb64219c8151444f98f3d9eccbcb5f35004",
+  "localized_initial_state_max_error": 1.7763568394002505e-15,
+  "first_step_state_max_error": 1.7763568394002505e-15,
+  "first_step_velocity_max_error": 4.440892098500626e-16,
+  "balanced_initial_q": 0,
+  "social_off_max_abs_torque": 0.0,
+  "independent_definition": "all visual social torque disabled, including alignment and positional term; wall, noise, speed, clipping, and collision handling retained"
+}
