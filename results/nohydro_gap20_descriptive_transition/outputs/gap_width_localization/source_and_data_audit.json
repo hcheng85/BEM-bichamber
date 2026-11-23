@@ -1,0 +1,51 @@
+{
+  "nohydro_source": "/Users/hao/Library/CloudStorage/Dropbox/code/bichamber/archive/archive_one_R_60/BEM_bichamber_parallel_instance_no_hydro.py",
+  "nohydro_source_sha256": "5e57b9dca2cb962e2c35f540f3982d5f4018eb719067223e6b319866b4482284",
+  "compatible_nohydro_counts": {
+    "10": 40,
+    "20": 40,
+    "30": 20,
+    "40": 20,
+    "50": 20,
+    "60": 20,
+    "70": 20,
+    "80": 20,
+    "85": 20
+  },
+  "common_initial_state_seed0_max_error": 0.0,
+  "initialization": "identical production all-left state across widths for a common seed",
+  "native_dt": 0.001,
+  "q_sample_dt": 0.1,
+  "common_duration": 1000.0,
+  "physical_gap_over_radius": {
+    "10": 0.2,
+    "20": 0.4,
+    "30": 0.6,
+    "40": 0.8,
+    "50": 1.0,
+    "60": 1.2,
+    "70": 1.4,
+    "80": 1.6,
+    "85": 1.7
+  },
+  "hydro_source": "/Users/hao/Library/CloudStorage/Dropbox/code/bichamber/archive/archive_one_R_60/BEM_bichamber_parallel_instance.py",
+  "hydro_source_sha256": "f0c841dce2c1ba735ca6784889c0374095879f12760ffcd5ba591ac5fa38edba",
+  "compatible_hydro_counts": {
+    "10": 20,
+    "20": 20,
+    "30": 20,
+    "40": 20,
+    "50": 20,
+    "60": 20,
+    "70": 20,
+    "80": 20,
+    "85": 20
+  },
+  "hydro_If": [
+    "1e-02"
+  ],
+  "hydro_nohydro_common_initial_state_max_error": 1.7763568394002505e-15,
+  "hydro_comparison": "same Ip, In, N, geometry, duration, seed initialization; hydrodynamic coupling If=1e-02 versus If=00",
+  "include_hydrodynamics": true,
+  "n_analyzed_runs": 400
+}
