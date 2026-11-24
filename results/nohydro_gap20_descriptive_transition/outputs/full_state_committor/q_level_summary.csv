@@ -1,0 +1,5 @@
+q,n_states,n_shots,n_A,n_B,n_censored,resolved_fraction,mean_state_lower_bound,mean_state_upper_bound,interpretation
+-0.4,4,32,8,0,24,0.25,0.0,0.75,bounds on the equal-state mean full committor at the safety horizon
+-0.2,4,32,9,2,21,0.34375,0.0625,0.71875,bounds on the equal-state mean full committor at the safety horizon
+0.0,4,32,8,3,21,0.34375,0.09375,0.75,bounds on the equal-state mean full committor at the safety horizon
+0.2,4,32,1,7,24,0.25,0.21875,0.96875,bounds on the equal-state mean full committor at the safety horizon

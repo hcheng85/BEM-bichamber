@@ -1,0 +1,5 @@
+q_level,eligible_seed_count,eligible_frame_count,time_window,exact_q_required
+-0.4,19,1058,200-900,True
+-0.2,17,1756,200-900,True
+0.0,19,1999,200-900,True
+0.2,17,1306,200-900,True

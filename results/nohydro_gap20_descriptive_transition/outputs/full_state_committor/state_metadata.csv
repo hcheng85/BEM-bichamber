@@ -1,0 +1,17 @@
+state_id,q_level,seed,native_step,time,selection_rank,selection_rule,nright,a_left
+q-0.4_s1_k820400,-0.4,1,820400,820.4,0,earliest exact-q frame after t=200 in first unused eligible seed; archived future unused,30,0.10175749737972958
+q-0.4_s2_k556800,-0.4,2,556800,556.8000000000001,1,earliest exact-q frame after t=200 in first unused eligible seed; archived future unused,30,-0.2495570193648574
+q-0.4_s3_k408200,-0.4,3,408200,408.2,2,earliest exact-q frame after t=200 in first unused eligible seed; archived future unused,30,-0.05768379251636613
+q-0.4_s4_k200000,-0.4,4,200000,200.0,3,earliest exact-q frame after t=200 in first unused eligible seed; archived future unused,30,-0.4807114967517821
+q-0.2_s8_k393600,-0.2,8,393600,393.6,0,earliest exact-q frame after t=200 in first unused eligible seed; archived future unused,40,-0.05074068787449189
+q-0.2_s12_k296500,-0.2,12,296500,296.5,1,earliest exact-q frame after t=200 in first unused eligible seed; archived future unused,40,-0.010674565568218053
+q-0.2_s14_k263900,-0.2,14,263900,263.9,2,earliest exact-q frame after t=200 in first unused eligible seed; archived future unused,40,0.1406796661735787
+q-0.2_s15_k583100,-0.2,15,583100,583.1,3,earliest exact-q frame after t=200 in first unused eligible seed; archived future unused,40,-0.7978927923894215
+q+0.0_s7_k859500,0.0,7,859500,859.5,0,earliest exact-q frame after t=200 in first unused eligible seed; archived future unused,50,-0.6200918307471518
+q+0.0_s20_k294000,0.0,20,294000,294.0,1,earliest exact-q frame after t=200 in first unused eligible seed; archived future unused,50,-0.2107443942531557
+q+0.0_s24_k289400,0.0,24,289400,289.40000000000003,2,earliest exact-q frame after t=200 in first unused eligible seed; archived future unused,50,-0.28448594470225624
+q+0.0_s30_k808100,0.0,30,808100,808.1,3,earliest exact-q frame after t=200 in first unused eligible seed; archived future unused,50,-0.5123819421668657
+q+0.2_s0_k835100,0.2,0,835100,835.1,0,earliest exact-q frame after t=200 in first unused eligible seed; archived future unused,60,-0.5332375752510741
+q+0.2_s31_k632400,0.2,31,632400,632.4,1,earliest exact-q frame after t=200 in first unused eligible seed; archived future unused,60,-0.11810524561228736
+q+0.2_s34_k332400,0.2,34,332400,332.40000000000003,2,earliest exact-q frame after t=200 in first unused eligible seed; archived future unused,60,-0.2943021963238231
+q+0.2_s35_k374000,0.2,35,374000,374.0,3,earliest exact-q frame after t=200 in first unused eligible seed; archived future unused,60,-0.4118001576099216

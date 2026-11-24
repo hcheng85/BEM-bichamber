@@ -1,0 +1,4 @@
+{
+  "selected_state_ids": [],
+  "rule": "one exact-q level with largest corrected pilot variance, requiring >=3 states with >=75% resolution and >=2 intermediate estimates; selected states expanded from 8 to 32 shots"
+}

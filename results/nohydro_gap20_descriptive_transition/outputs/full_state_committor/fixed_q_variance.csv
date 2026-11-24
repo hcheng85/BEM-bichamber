@@ -1,0 +1,5 @@
+q,n_states,observed_state_variance,estimated_shooting_variance,corrected_committor_variance,corrected_committor_sd,corrected_variance_bootstrap_ci95,method
+-0.4,3,0.0,0.0,0.0,0.0,"[0.0, 0.0]",sample variance of state estimates minus mean unbiased binomial proportion variance
+-0.2,3,0.020833333333333336,0.020833333333333332,3.469446951953614e-18,1.862645149230957e-09,"[0.0, 3.469446951953614e-18]",sample variance of state estimates minus mean unbiased binomial proportion variance
+0.0,2,0.3828125,0.0078125,0.375,0.6123724356957945,"[0.0, 0.375]",sample variance of state estimates minus mean unbiased binomial proportion variance
+0.2,3,0.03703703703703705,0.03703703703703704,6.938893903907228e-18,2.634178031930877e-09,"[0.0, 6.938893903907228e-18]",sample variance of state estimates minus mean unbiased binomial proportion variance

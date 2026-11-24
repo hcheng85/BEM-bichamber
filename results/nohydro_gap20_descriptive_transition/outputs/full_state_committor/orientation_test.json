@@ -1,0 +1,4 @@
+{
+  "tested": false,
+  "reason": "fixed-q spread was not resolved: no level had >=3 states with >=75% resolved shots and a bootstrap lower bound above 0.01"
+}
