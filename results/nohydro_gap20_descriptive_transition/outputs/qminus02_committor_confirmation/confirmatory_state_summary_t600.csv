@@ -1,0 +1,5 @@
+state_id,seed,horizon,shots,A,B,censored,F_A,F_B,survival,empirical_committor_lower,empirical_committor_upper,simultaneous_confidence_lower,simultaneous_confidence_upper,eventual_committor_estimate,binomial_ci95
+q-0.2_s8_k393600,8,600.0,16,7,5,4,0.4375,0.3125,0.25,0.3125,0.5625,0.07854122051307844,0.8469939237423174,,not applicable while censored
+q-0.2_s12_k296500,12,600.0,16,7,7,2,0.4375,0.4375,0.125,0.4375,0.5625,0.15300607625768262,0.8469939237423174,,not applicable while censored
+q-0.2_s14_k263900,14,600.0,16,11,4,1,0.6875,0.25,0.0625,0.25,0.3125,0.04840744890838887,0.649647165390287,,not applicable while censored
+q-0.2_s15_k583100,15,600.0,16,11,2,3,0.6875,0.125,0.1875,0.125,0.3125,0.0074725663811424795,0.649647165390287,,not applicable while censored

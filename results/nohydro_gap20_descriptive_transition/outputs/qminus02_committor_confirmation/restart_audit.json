@@ -1,0 +1,13 @@
+{
+  "native_replay_passed": true,
+  "max_native_replay_error": 2.220446049250313e-16,
+  "reflection_one_step_passed": true,
+  "max_reflection_error": 1.4072076837123859e-14,
+  "previous_step_memory": "reconstructed with validated production step from archived k-1 state; included in native k-to-k+1 replay",
+  "states": [
+    "q-0.2_s8_k393600",
+    "q-0.2_s12_k296500",
+    "q-0.2_s14_k263900",
+    "q-0.2_s15_k583100"
+  ]
+}

@@ -1,0 +1,5 @@
+state_id,seed,horizon,original_shots,confirmatory_shots,shots,A,B,censored,empirical_lower,empirical_upper,combined_estimate,binomial_ci95,interpretation
+q-0.2_s8_k393600,8,1200.0,8,16,24,12,12,0,0.5,0.5,0.5,"[0.29124177983621197, 0.708758220163788]",descriptive combination; not independent confirmatory evidence
+q-0.2_s12_k296500,12,1200.0,8,16,24,8,16,0,0.6666666666666666,0.6666666666666666,0.6666666666666666,"[0.4467803843403519, 0.8436977142908647]",descriptive combination; not independent confirmatory evidence
+q-0.2_s14_k263900,14,1200.0,8,16,24,19,5,0,0.20833333333333334,0.20833333333333334,0.20833333333333334,"[0.07131861719805496, 0.42151284363725267]",descriptive combination; not independent confirmatory evidence
+q-0.2_s15_k583100,15,1200.0,8,16,24,21,3,0,0.125,0.125,0.125,"[0.02655931498624894, 0.3236113581888329]",descriptive combination; not independent confirmatory evidence

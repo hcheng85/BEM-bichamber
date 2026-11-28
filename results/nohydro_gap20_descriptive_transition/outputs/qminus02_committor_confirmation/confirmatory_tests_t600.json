@@ -1,0 +1,36 @@
+{
+  "horizon": 600.0,
+  "primary": {
+    "test": "prespecified permutation Pearson test for A/B/censored",
+    "statistic": 6.666666666666666,
+    "permutations": 100000,
+    "p_value": 0.36772632273677264,
+    "estimand": "equality of finite-horizon A/B/unresolved distributions"
+  },
+  "B_by_horizon": {
+    "test": "exact conditional 4x2 equal-probability test",
+    "counts": [
+      5,
+      7,
+      4,
+      2
+    ],
+    "total": 18,
+    "p_value": 0.2875481595717713,
+    "enumerated_tables": 1314
+  },
+  "unresolved_by_horizon": {
+    "test": "exact conditional 4x2 equal-probability test",
+    "counts": [
+      4,
+      2,
+      1,
+      3
+    ],
+    "total": 10,
+    "p_value": 0.6638725595027123,
+    "enumerated_tables": 286
+  },
+  "eventual_test_performed": false,
+  "interpretation": "Resolved-only committors are not estimated while shots are censored; the primary test targets finite-horizon cumulative incidence and survival."
+}

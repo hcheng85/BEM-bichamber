@@ -1,0 +1,42 @@
+{
+  "horizon": 1200.0,
+  "primary": {
+    "test": "exact conditional 4x2 equal-probability test",
+    "counts": [
+      9,
+      9,
+      4,
+      2
+    ],
+    "total": 24,
+    "p_value": 0.01705445795873221,
+    "enumerated_tables": 2445,
+    "estimand": "equality of eventual B-before-A committors"
+  },
+  "B_by_horizon": {
+    "test": "exact conditional 4x2 equal-probability test",
+    "counts": [
+      9,
+      9,
+      4,
+      2
+    ],
+    "total": 24,
+    "p_value": 0.01705445795873221,
+    "enumerated_tables": 2445
+  },
+  "unresolved_by_horizon": {
+    "test": "exact conditional 4x2 equal-probability test",
+    "counts": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "total": 0,
+    "p_value": 1.0,
+    "enumerated_tables": 1
+  },
+  "eventual_test_performed": true,
+  "interpretation": "All shots resolved: the primary exact test targets equality of eventual B-before-A committors."
+}
